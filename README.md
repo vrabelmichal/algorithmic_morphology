@@ -5,7 +5,7 @@ The first implementation measures **concentration (C)**, **raw and
 sky-corrected 180° asymmetry (A)**, and **two named clumpiness/smoothness
 (S) profiles** for each galaxy and photometric band.
 
-**Status: pilot implementation exercised on 75 locally available DES candidates; scientific calibration remains open.**
+**Status: processing the complete 84,200-object upstream catalog; scientific calibration remains open.**
 The profiles are documented adaptations, not exact numerical reproductions
 of every implementation in the literature.
 
@@ -91,9 +91,11 @@ python scripts/validate_sensitivity.py --output .outputs/sensitivity_new
 python scripts/analyze_pilot.py --run-dir <completed-run-directory> --inputs .outputs/des_inputs_new --sensitivity .outputs/sensitivity_new --output <new-report-directory>
 ```
 
-The current shared method is `cas_discrete_v2`: bilinear rotation excludes any
+The pilot used shared method `cas_discrete_v2`: bilinear rotation excludes any
 masked contributor, and raw/sky A use the same valid-pixel flux denominator.
-Both original S profile parameter names remain unchanged.
+Both original S profile parameter names remain unchanged. The full run uses
+`cas_discrete_v3`, adding a flagged initial-center fallback for a rare SciPy
+Powell empty-direction exception; the formulas and sky criterion are unchanged.
 
 For architecture and remaining work see [project design](docs/PROJECT_DESIGN.md).
 
