@@ -1,0 +1,20 @@
+number,name,title
+1,structure_zoom,Concentration and aperture light-distribution diagnostics
+2,gini_m20,Joint aperture Gini and brightest-light moment
+3,asymmetry_zoom,Raw and sky-corrected asymmetry by band
+4,asymmetry_overlay,Raw and sky-corrected asymmetry on a common scale
+5,asymmetry_paired,Paired raw and corrected asymmetry
+6,clumpiness_zoom,Both clumpiness definitions and both correction states
+7,clumpiness_overlay,Clumpiness profiles after removing only the normalization factor
+8,clumpiness_paired_raw,Paired raw clumpiness with normalization removed
+9,clumpiness_paired_corrected,Paired corrected clumpiness with normalization removed
+10,shape_zoom,Positive-flux aperture shape
+11,galfit_correlation_matrix,Descriptive morphology–GALFIT rank correlations
+12,relations_gf_mu_mean,Morphology versus Mean effective surface brightness
+13,relations_gf_re_arcsec,Morphology versus GALFIT effective radius
+14,relations_gf_mag,Morphology versus GALFIT total apparent magnitude
+15,relations_gf_n,Morphology versus GALFIT Sersic index
+16,relations_gf_q,Morphology versus GALFIT minor/major axis ratio
+17,relations_gf_chi2red,Morphology versus Stored GALFIT reduced chi-square
+18,axis_ratio_comparison,Image-aperture and GALFIT model axis ratios
+19,radius_comparison,Petrosian radius and GALFIT effective radius are distinct

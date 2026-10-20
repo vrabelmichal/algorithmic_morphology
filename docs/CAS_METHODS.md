@@ -93,11 +93,14 @@ pixels produce a null result and a flag.
 
 The original Conselice (2003) paper establishes 0.30 Rpetro smoothing and
 ×10 normalization, but does not settle every implementation choice in the
-same way as modern code. The 0.075 value is **0.05×(1.5 Rpetro)** as
-explained in Appendix A of the 2011 method summary cited above; other
-published implementations exclude 0.3 Rpetro. We document this explicit
-interpretation instead of claiming exact reproduction of every published
-2003 measurement.
+same way as modern code. The retained pilot's 0.075 value equals **0.05×the outer aperture radius
+(1.5 Rpetro)**. This is a pilot adaptation, not the literal prescription in
+Appendix A of Hambleton et al. (2011), which states **0.05×Rpetro** and describes
+Rpetro/6 smoothing. The earlier wording incorrectly attributed our 0.075 value
+to that appendix. Citation checking during report revision 2 corrected this
+description; the user-approved profile parameters and measured values remain
+unchanged. Other implementations also differ in inner exclusion. Any numerical
+change would require a separately versioned profile and a matched comparison.
 
 The statmorph 0.7.2 reference uses 0.25 for both scale and inner exclusion,
 and ×1 normalization. Unlike our mask-normalized kernels and discrete

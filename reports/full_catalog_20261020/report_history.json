@@ -1,0 +1,14 @@
+{
+  "v1": {
+    "html": "report_v1.html",
+    "sha256": "17b753900d2e08c00a7d0ef8d5437e1a77a798c4c3c47c2f951806b3a45a9b1a",
+    "validation": "validation.json"
+  },
+  "v2": {
+    "html": "report_v2.html",
+    "sha256": "a2f6a33293c92b763403a25f342ce652659fa27bfd004f1973146e31f775fd26",
+    "validation": "report_v2_validation.json"
+  },
+  "default": "index.html",
+  "measurement_table_unchanged": true
+}

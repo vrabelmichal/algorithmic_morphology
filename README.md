@@ -35,7 +35,27 @@ not the full catalog result. The [completed HTML analysis](reports/full_catalog_
 contains all 252,600 requested rows: 247,800 with finite C and raw A, 4,704 with
 invalid CAS results, and 96 explicit missing-cutout rows. Individual metrics have
 separate validity counts; corrected A is available for 242,335 rows. The report
-includes 48 embedded plots, per-object Parquet metrics and exact provenance.
+now reads as a scientific paper: executive summary, methods and citations,
+19 grouped figures with robust shared ranges and full-range companions, a
+searchable column dictionary, GALFIT comparisons and reproducibility appendices.
+Per-object measurements and their hashes remain unchanged.
+
+The GALFIT comparison uses the 84,061-object single-Sersic export from
+`per_band_mag_reff__xy_2_5arcsec`, matched on exact ID and band, with declared
+warning and constraint-boundary sensitivity cohorts. It relates morphology to
+mean effective surface brightness, fitted radius, magnitude, Sersic index,
+axis ratio and stored reduced chi-square. Every data source and filtering rule
+is recorded in the HTML and `paper_v2_data/galfit_sources.json`.
+
+To build this report revision from existing full-catalog measurements:
+
+```bash
+python scripts/build_paper_report.py --report-dir reports/full_catalog_20261020 --source-project ../nucleated_lsbg
+```
+
+The revision builder refuses to overwrite an existing revision. Revision 1 and
+its validation record remain preserved as `report_v1.html` and `validation.json`;
+revision 2 has `report_v2_manifest.json` and `report_v2_validation.json`.
 
 The run also evaluates [aperture Gini/M20 and shape diagnostics](docs/EXTENDED_METHODS.md),
 with metric-specific validity counts. These are separately versioned aperture
