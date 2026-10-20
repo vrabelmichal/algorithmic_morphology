@@ -11,6 +11,41 @@ from algorithmic_morphology.extended import EXTRA_METRICS
 from algorithmic_morphology.report import sha256_file, summarize
 
 
+def findings_html(report_dir):
+    stats=pd.read_csv(Path(report_dir)/'statistics.csv')
+    records=[]
+    for band in ['g','r','i']:
+        subset=stats[stats.band==band].set_index('metric')
+        row={'Band':band,'C median':subset.loc['C','median'],
+             'A raw median':subset.loc['A_raw','median'],
+             'A corrected median':subset.loc['A_corrected','median'],
+             'A corrected valid':int(subset.loc['A_corrected','valid']),
+             'A corrected negative (%)':100*subset.loc['A_corrected','negative']/subset.loc['A_corrected','valid'],
+             'Gini aperture median':subset.loc['Gini_aperture_v1','median'],
+             'M20 aperture median':subset.loc['M20_aperture_v1','median']}
+        records.append(row)
+    return '<section id="measured-findings"><h2>Measured findings</h2>'+pd.DataFrame(records).to_html(index=False,float_format=lambda x:f'{x:.4g}')+"""
+<p>The complete baseline images support corrected A for roughly 95–98% of requested
+objects per band, unlike the limited wide-image pilot. Nevertheless, most corrected A
+values are negative: the sky correction is large relative to the minimized galaxy
+residual. Together with the synthetic symmetric-galaxy stress test, this is a reason
+to investigate noise/interpolation bias before interpreting corrected A as intrinsic
+structure. Negative measurements have been retained; they are not zero-clipped.</p>
+<p>Concentration differs across bands. Matched-object median C differences are
+−0.0968 for g−r, −0.1344 for g−i and −0.0425 for r−i; these descriptive differences
+do not isolate stellar-population effects from PSF, noise or aperture changes.
+Both raw S profiles have strong rank agreement (Spearman about 0.994–0.995),
+but removing the Conselice factor of ten still leaves median raw-profile offsets
+of approximately −0.054 to −0.072. Corrected-profile rank correlations are
+0.966–0.978. Neither result selects a physically preferred profile.</p>
+<p>Gini and M20 provide additional, non-identical information: their within-band rank
+correlations are approximately −0.64 to −0.78. These are aperture-based values,
+so published segmentation-based Gini–M20 classification boundaries are inapplicable.
+Signed M20 moments can also produce atypical values when noise contributes substantial
+negative flux. The positive-weight shape diagnostics are descriptive and have no PSF
+or low-signal bias correction here.</p></section>"""
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run-dir',type=Path,required=True)
@@ -79,7 +114,7 @@ def main():
 <p><strong>{selection['objects']:,} galaxies requested; {expected:,} object–band rows retained.</strong>
 The object IDs exactly match the upstream catalog. There is no availability or morphology selection.
 The earlier 75-ID report was an initial pilot and is superseded for coverage by this run.</p>
-<h2>Dataset and configuration alignment</h2><p>The recent upstream configuration
+{findings_html(args.output)}<h2>Dataset and configuration alignment</h2><p>The recent upstream configuration
 <code>{escape(latest)}</code> and the 256-pixel configuration
 <code>{escape(products)}</code> both select the same <code>concatenated-detr-vit-all.fits</code>
 catalog. This run uses its complete original ordering and r/g/i bands. It reads the existing
@@ -131,6 +166,7 @@ manifest and effective config identify the exact measurement code and inputs.</p
 <hr><h2>Run-bound distributions, quality flags and provenance</h2>'''
     original=(args.run_dir/manifest['report']).read_text()
     output=original.replace('<body>','<body>'+intro,1)
+    output=output.replace('</style>','table{display:block;max-width:100%;overflow-x:auto}body{color:var(--foreground,#252525);background:var(--background,#fff)}pre{color:var(--code-foreground,#252525);background:var(--code-background,#f1f1f1)}a{color:var(--accent,#175185)}code{overflow-wrap:anywhere}</style>')
     output=output.replace('<title>Algorithmic morphology — profile comparison</title>','<title>Complete DES catalog — morphology analysis</title>')
     (args.output/'index.html').write_text(output)
     (args.output/'README.md').write_text(f'# Complete upstream catalog morphology\n\nOpen [the HTML analysis](index.html).\n\n{selection["objects"]:,} objects; {expected:,} requested object-band rows.\n\nFull canonical table: `{table.resolve()}`.\nSHA-256: `{manifest["table_sha256"]}`.\n\nCompact table: `measurements_metrics.parquet` (separate digest in `table_provenance.json`).\n')

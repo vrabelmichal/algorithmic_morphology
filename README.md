@@ -5,13 +5,14 @@ The first implementation measures **concentration (C)**, **raw and
 sky-corrected 180° asymmetry (A)**, and **two named clumpiness/smoothness
 (S) profiles** for each galaxy and photometric band.
 
-**Status: processing the complete 84,200-object upstream catalog; scientific calibration remains open.**
+**Status: complete 84,200-object upstream catalog processed; scientific calibration remains open.**
 The profiles are documented adaptations, not exact numerical reproductions
 of every implementation in the literature.
 
 ## Metrics produced
 
 - `C = 5 log10(r80/r20)` in a Petrosian aperture.
+- Aperture Gini/M20 and positive-flux axis ratio, ellipticity and image-coordinate position angle (see [definitions](docs/EXTENDED_METHODS.md)).
 - `A_raw`, `A_sky` and `A_corrected`, using the *same* optimized center.
 - `S_lotz2004_statmorph_like_v1_{raw,sky,corrected}`: boxcar width
   0.25 Rpetro, central exclusion 0.25 Rpetro, ×1 normalization.
@@ -30,8 +31,11 @@ The full run selects the same **84,200 IDs** as the recent `nucleated_lsbg`
 configurations, with no availability filter: **252,600 object-band rows**.
 Existing 256-pixel sky-subtracted products provide 252,504 image-mask pairs.
 The earlier 75-object report missed this symlinked product tree and is a pilot,
-not the full catalog result. [Processing status](reports/full_catalog_20261020_progress.html)
-is explicitly provisional until the full analysis is published.
+not the full catalog result. The [completed HTML analysis](reports/full_catalog_20261020/index.html)
+contains all 252,600 requested rows: 247,800 with finite C and raw A, 4,704 with
+invalid CAS results, and 96 explicit missing-cutout rows. Individual metrics have
+separate validity counts; corrected A is available for 242,335 rows. The report
+includes 48 embedded plots, per-object Parquet metrics and exact provenance.
 
 The run also evaluates [aperture Gini/M20 and shape diagnostics](docs/EXTENDED_METHODS.md),
 with metric-specific validity counts. These are separately versioned aperture

@@ -1,0 +1,28 @@
+{
+  "validated_at_utc": "2026-10-20T19:57:09.399579+00:00",
+  "requested_rows": 252600,
+  "unique_upstream_ids": 84200,
+  "exact_ids_in_each_band": true,
+  "unique_object_band_keys": true,
+  "status_counts": {
+    "ok": 247800,
+    "invalid": 4704,
+    "error": 96
+  },
+  "error_messages": {
+    "missing_cutout": 96
+  },
+  "canonical_table_sha256": "4505526fbb05f410dcba1a3ac0063e684191eea19a40b376a77b21f774c3d9c7",
+  "compact_table_sha256": "c94e33086298e793bb3fa1978403bd5894079f50b38a61e972ea3f29bc397424",
+  "compact_numeric_and_metadata_values_equal_to_canonical": true,
+  "source_snapshot_hashes_match_manifest": true,
+  "finite_counts_match_metric_coverage": true,
+  "verified_embedded_pngs": 48,
+  "html_sha256": "17b753900d2e08c00a7d0ef8d5437e1a77a798c4c3c47c2f951806b3a45a9b1a",
+  "last_test_result": "19 passed; no scientific code changes since validation",
+  "limitations": [
+    "noise and PSF calibration pending",
+    "reference/segmentation matching pending",
+    "aperture diagnostics cannot use published segmentation thresholds"
+  ]
+}
