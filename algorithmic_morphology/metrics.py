@@ -182,7 +182,7 @@ def measure_cas(image, mask=None, center=None, *, rpetro=None,
     if not (0 <= center[0] < arr.shape[1] and 0 <= center[1] < arr.shape[0]):
         raise ValueError("center_outside_cutout")
 
-    out = {"method_version": "cas_discrete_v2", "center_initial_x": float(center[0]),
+    out = {"method_version": "cas_discrete_v3", "center_initial_x": float(center[0]),
            "center_initial_y": float(center[1]), "mask_fraction": float(1-good.mean())}
     flags = []
     try:
@@ -211,12 +211,20 @@ def measure_cas(image, mask=None, center=None, *, rpetro=None,
     bounds = [(center[0]-search, center[0]+search),
               (center[1]-search, center[1]+search)]
     if search > 0:
-        opt = minimize(lambda pos: _asymmetry_raw(cleaned, good, pos, aperture)[0],
-                       center, method="Powell", bounds=bounds,
-                       options={"xtol":1e-3,"ftol":1e-5,"maxiter":120})
-        best = opt.x if (opt.success and np.isfinite(opt.fun)
-                             and opt.fun <= _asymmetry_raw(cleaned, good, center, aperture)[0]) else center
-        if not opt.success:
+        try:
+            opt = minimize(lambda pos: _asymmetry_raw(cleaned, good, pos, aperture)[0],
+                           center, method="Powell", bounds=bounds,
+                           options={"xtol":1e-3,"ftol":1e-5,"maxiter":120})
+            best = opt.x if (opt.success and np.isfinite(opt.fun)
+                                 and opt.fun <= _asymmetry_raw(cleaned, good, center, aperture)[0]) else center
+            if not opt.success:
+                flags.append("center_optimization_failed")
+        except ValueError as exc:
+            # SciPy Powell can form an empty line-search direction on a flat
+            # objective. Preserve the defined initial-center fallback, with flag.
+            if 'zero-size array' not in str(exc):
+                raise
+            best = center
             flags.append("center_optimization_failed")
         if np.any(np.isclose(best, np.array(bounds)[:,0], atol=1e-2)) or np.any(np.isclose(best, np.array(bounds)[:,1], atol=1e-2)):
             flags.append("center_search_boundary")

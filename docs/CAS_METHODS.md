@@ -152,3 +152,17 @@ manifest. The report embeds the precise table SHA-256. The mutable
   catalogs, but only FITS image cutouts in this first implementation.
 - End-to-end pipeline tests require astropy and pyarrow; dependencies are
   declared in pyproject.toml and checked by GitHub Actions.
+
+
+## Shared method v3: full-catalog optimizer robustness
+
+The complete 84,200-ID run uses `cas_discrete_v3`. Its formulas, sky selection,
+mask interpolation and S profile parameters match v2. SciPy Powell's rare
+empty-line-search-direction ValueError now triggers the documented initial-center
+fallback with `center_optimization_failed`, rather than losing the entire row.
+The first full-catalog attempt exposed this issue and was stopped with its
+checkpoints preserved. A regression test reproduces the exception. The new full
+run starts in a fresh directory; no scientific rows are mixed across attempts.
+
+See [extended diagnostics](EXTENDED_METHODS.md) for the added aperture Gini/M20,
+shape outputs, exact upstream catalog identity and symlink-aware input inventory.

@@ -25,6 +25,7 @@ band_order=['g']
 band_sky_subtracted_dir_paths={{'g':Path({str(data)!r})}}
 band_mask_dir_paths={{'g':Path({str(masks)!r})}}
 allow_geometric_center=True
+workers=2
 morphology_output_dir_path=Path({str(tmp_path/'output')!r})
 ''')
     first=run(c,chunk_size=1)

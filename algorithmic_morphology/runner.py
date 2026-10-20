@@ -12,10 +12,14 @@ import re
 import subprocess
 import importlib.metadata
 import uuid
+from concurrent.futures import ProcessPoolExecutor
+from itertools import islice
+from functools import lru_cache
 
 import numpy as np
 import pandas as pd
 from .metrics import measure_cas, PROFILES
+from .extended import aperture_diagnostics
 from .report import render_report, sha256_file
 
 LOG = logging.getLogger('algorithmic_morphology')
@@ -89,6 +93,17 @@ def _catalog(settings):
     if df['coadd_object_id'].duplicated().any():
         raise ValueError('catalog_duplicate_object_ids')
     return df
+
+
+@lru_cache(maxsize=32)
+def _resolved_directory(path):
+    return Path(path).resolve()
+
+
+def _resolved_input(path):
+    path=Path(path)
+    resolved=_resolved_directory(str(path.parent))/path.name
+    return resolved.resolve() if resolved.is_symlink() else resolved
 
 
 def _read_fits(path):
@@ -173,7 +188,10 @@ def _one(settings, row, band):
     measurements = measure_cas(image,mask=contamination,center=center,
                                skybox_size=int(settings.get('skybox_size',32)),
                                center_search=float(settings.get('center_search',2.0)))
-    measurements.update({'image_file':str(selected.resolve()),'mask_file':str(mask_file.resolve()) if mask_file and mask_file.exists() else None,
+    measurements.update(aperture_diagnostics(image,contamination,
+                        (measurements.get('center_asym_x'),measurements.get('center_asym_y')),
+                        measurements.get('aperture_radius')))
+    measurements.update({'image_file':str(_resolved_input(selected)),'mask_file':str(_resolved_input(mask_file)) if mask_file and mask_file.exists() else None,
                          'image_sha256':sha256_file(selected),
                          'mask_sha256':sha256_file(mask_file) if mask_file and mask_file.exists() else None,
                          'image_unit':header.get('BUNIT'),
@@ -207,6 +225,18 @@ def _latest(root,run_id):
         os.close(fd)
 
 
+def _process_item(task):
+    cfg,record,band,run_id=task
+    item={'run_id':run_id,'coadd_object_id':str(record['coadd_object_id']),'band':band}
+    try:
+        item.update(_one(cfg,record,band))
+        item['status']='ok' if all(item.get(k) is not None for k in ['A_raw','C']) else 'invalid'
+        item['error_type']=None
+    except Exception as exc:
+        item.update({'status':'error','error_type':type(exc).__name__,'error_message':str(exc)})
+    return item
+
+
 def run(config_file, *, limit=None, chunk_size=50):
     if chunk_size<1:
         raise ValueError('chunk_size_must_be_positive')
@@ -228,16 +258,20 @@ def run(config_file, *, limit=None, chunk_size=50):
     effective={k:_jsonable(v) for k,v in cfg.items()}
     _publish_json(run_dir/'effective_config.json',{'settings':effective,'source':str(source),'sha256':chash})
     code_files = list(Path(__file__).parent.glob('*.py'))
+    (run_dir/'run_source').mkdir()
+    for p in code_files:
+        (run_dir/'run_source'/p.name).write_bytes(p.read_bytes())
     provenance = {
         **_git_provenance(),
         'code_sha256': {p.name:sha256_file(p) for p in code_files},
         'versions': {name:importlib.metadata.version(name) for name in
                      ['numpy','scipy','pandas','pyarrow','astropy','matplotlib']},
         'catalog_sha256':sha256_file(Path(cfg['lsb_catalog_fits_path'])),
-        'method_version':'cas_discrete_v2',
+        'method_version':'cas_discrete_v3',
         'parameters':{'skybox_size':cfg.get('skybox_size',32),
                       'center_search':cfg.get('center_search',2.0),
-                      'petrosian_eta':0.2,'aperture_factor':1.5},
+                      'petrosian_eta':0.2,'aperture_factor':1.5,
+                      'extended_method':'aperture_diagnostics_v1'},
     }
     state={'run_id':run_id,'status':'running','count':len(catalog)*len(bands),
            'checkpointed':0,'failed':0,'invalid':0,'provenance':provenance,'parts':[],'methods':[p.__dict__ for p in PROFILES],
@@ -246,23 +280,33 @@ def run(config_file, *, limit=None, chunk_size=50):
     LOG.info('Starting run=%s; galaxies=%d; bands=%s',run_id,len(catalog),bands)
     rows=[]; part_no=0
     try:
-        for record in catalog.to_dict('records'):
-            for band in bands:
-                item={'run_id':run_id,'coadd_object_id':str(record['coadd_object_id']),'band':band}
-                try:
-                    item.update(_one(cfg,record,band))
-                    item['status']='ok' if all(item.get(k) is not None for k in ['A_raw','C']) else 'invalid'
-                    item['error_type']=None
-                    state['invalid'] += int(item['status']=='invalid')
-                except Exception as exc:  # one bad galaxy/band must not abort catalog
-                    item.update({'status':'error','error_type':type(exc).__name__,'error_message':str(exc)})
-                    state['failed'] += 1
-                    LOG.warning('object=%s band=%s: %s: %s',item['coadd_object_id'],band,type(exc).__name__,exc)
+        workers=int(cfg.get('workers',1))
+        if workers<1:
+            raise ValueError('workers_must_be_positive')
+        records=catalog.to_dict('records')
+        tasks=((cfg,record,band,run_id) for record in records for band in bands)
+        pool=ProcessPoolExecutor(max_workers=workers) if workers>1 else None
+        try:
+            def bounded_results():
+                if not pool:
+                    yield from map(_process_item,tasks)
+                    return
+                while batch:=list(islice(tasks,workers*32)):
+                    yield from pool.map(_process_item,batch,chunksize=8)
+            results=bounded_results()
+            for item in results:
+                state['failed'] += int(item['status']=='error')
+                state['invalid'] += int(item['status']=='invalid')
+                if item['status']=='error':
+                    LOG.warning('object=%s band=%s: %s',item['coadd_object_id'],item['band'],item['error_message'])
                 rows.append(item)
                 if len(rows)>=chunk_size:
                     part_no += 1
                     _checkpoint(run_dir,rows,part_no,state)
                     rows=[]
+        finally:
+            if pool:
+                pool.shutdown(wait=True,cancel_futures=True)
         if rows:
             part_no += 1
             _checkpoint(run_dir,rows,part_no,state)

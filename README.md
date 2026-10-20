@@ -24,6 +24,27 @@ The raw and corrected A values and the two S definitions are
 See [implemented methods and their limitations](docs/CAS_METHODS.md)
 and the [scientific literature review](docs/CAS_LITERATURE_REVIEW.md).
 
+## Full upstream catalog processing
+
+The full run selects the same **84,200 IDs** as the recent `nucleated_lsbg`
+configurations, with no availability filter: **252,600 object-band rows**.
+Existing 256-pixel sky-subtracted products provide 252,504 image-mask pairs.
+The earlier 75-object report missed this symlinked product tree and is a pilot,
+not the full catalog result. [Processing status](reports/full_catalog_20261020_progress.html)
+is explicitly provisional until the full analysis is published.
+
+The run also evaluates [aperture Gini/M20 and shape diagnostics](docs/EXTENDED_METHODS.md),
+with metric-specific validity counts. These are separately versioned aperture
+adaptations rather than statmorph segmentation-based outputs.
+
+```bash
+python scripts/prepare_full_catalog.py --output .outputs/full_inputs_new
+python scripts/run_full_catalog.py --config .outputs/full_inputs_new/config.py --inputs .outputs/full_inputs_new --output reports/full_catalog_new
+```
+
+The second command processes every upstream ID, then automatically publishes
+its self-contained HTML findings, plots, per-object metrics and provenance.
+
 ## Installation and pilot execution
 
 Python 3.10+:

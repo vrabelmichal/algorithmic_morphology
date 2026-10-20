@@ -88,7 +88,7 @@ def test_sky_asymmetry_uses_same_masked_aperture_denominator():
     center = ((tile.shape[1]-1)/2,(tile.shape[0]-1)/2)
     skyok = valid & (_rotate(valid.astype(float),center,order=0)>.5)
     mean = np.abs(tile-_rotate(tile,center))[skyok].mean()
-    assert result['method_version'] == 'cas_discrete_v2'
+    assert result['method_version'] == 'cas_discrete_v3'
     assert result['A_sky'] == pytest.approx(mean*len(original)/np.abs(original).sum())
 
 
@@ -106,3 +106,13 @@ def test_concentration_matches_resolved_gaussian_growth_curve():
     # Exact infinite circular Gaussian has r_f=sigma*sqrt(-2*log(1-f)).
     expected=2.5*np.log10(np.log(5)/np.log(1.25))
     assert result['C'] == pytest.approx(expected,abs=.03)
+
+
+def test_powell_empty_direction_falls_back_to_initial_center(monkeypatch):
+    def fail(*args,**kwargs):
+        raise ValueError('zero-size array to reduction operation maximum which has no identity')
+    monkeypatch.setattr('algorithmic_morphology.metrics.minimize',fail)
+    r=measure_cas(galaxy(),rpetro=17)
+    assert r['A_raw'] == pytest.approx(0)
+    assert r['center_asym_x']==47.5
+    assert 'center_optimization_failed' in r['quality_flags']
