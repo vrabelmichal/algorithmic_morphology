@@ -9,6 +9,8 @@ import logging
 import os
 from pathlib import Path
 import re
+import subprocess
+import importlib.metadata
 import uuid
 
 import numpy as np
@@ -31,12 +33,33 @@ def _jsonable(value):
     return repr(value)
 
 
+def _git_provenance():
+    try:
+        root = str(Path(__file__).resolve().parent.parent)
+        commit = subprocess.check_output(['git','-C',root,'rev-parse','HEAD'],text=True,stderr=subprocess.DEVNULL).strip()
+        dirty = bool(subprocess.check_output(['git','-C',root,'status','--porcelain'],text=True,stderr=subprocess.DEVNULL).strip())
+        return {'git_commit':commit,'git_dirty':dirty}
+    except (OSError,subprocess.CalledProcessError):
+        return {'git_commit':None,'git_dirty':None}
+
+
+def _sync(path):
+    with Path(path).open('rb') as stream:
+        os.fsync(stream.fileno())
+    fd = os.open(Path(path).parent, os.O_RDONLY | os.O_DIRECTORY)
+    try:
+        os.fsync(fd)
+    finally:
+        os.close(fd)
+
+
 def _publish_json(path, obj):
     tmp = path.with_name('.'+path.name+'.'+uuid.uuid4().hex+'.tmp')
     with tmp.open('x',encoding='utf-8') as f:
         json.dump(obj,f,indent=2,sort_keys=True,default=str)
         f.flush();os.fsync(f.fileno())
     os.replace(tmp,path)
+    _sync(path)
 
 
 def _config(path):
@@ -131,16 +154,31 @@ def _one(settings, row, band):
             raise FileNotFoundError('missing_contamination_mask')
         contamination = None
     else:
-        mask_im,_ = _read_fits(mask_file)
-        contamination = mask_im != 0
+        mask_im,mask_header = _read_fits(mask_file)
+        contamination = (mask_im != 0) | ~np.isfinite(mask_im)
         if mask_im.shape != image.shape:
             raise ValueError('mask_shape_mismatch')
+        from astropy.wcs import WCS
+        iw, mw = WCS(header).celestial, WCS(mask_header).celestial
+        if iw.has_celestial and mw.has_celestial:
+            y, x = np.indices((3, 3), dtype=float)
+            x *= (image.shape[1]-1)/2
+            y *= (image.shape[0]-1)/2
+            mx, my = mw.world_to_pixel_values(*iw.pixel_to_world_values(x, y))
+            if not np.allclose(mx, x, atol=1e-3) or not np.allclose(my, y, atol=1e-3):
+                raise ValueError('mask_wcs_mismatch')
+        elif settings.get('require_mask_wcs', False):
+            raise ValueError('mask_wcs_missing')
     center = _center(settings,row,header,image.shape)
     measurements = measure_cas(image,mask=contamination,center=center,
                                skybox_size=int(settings.get('skybox_size',32)),
                                center_search=float(settings.get('center_search',2.0)))
     measurements.update({'image_file':str(selected.resolve()),'mask_file':str(mask_file.resolve()) if mask_file and mask_file.exists() else None,
-                         'center_source':'wcs_or_explicit_geometric_opt_in'})
+                         'image_sha256':sha256_file(selected),
+                         'mask_sha256':sha256_file(mask_file) if mask_file and mask_file.exists() else None,
+                         'image_unit':header.get('BUNIT'),
+                         'image_height':image.shape[0], 'image_width':image.shape[1],
+                         'center_source':'catalog_wcs' if not settings.get('allow_geometric_center', False) else 'wcs_or_geometric_opt_in'})
     return measurements
 
 
@@ -151,6 +189,7 @@ def _checkpoint(run_dir, rows, n, state):
     tmp = part.with_name('.'+part.name+'.'+uuid.uuid4().hex+'.tmp')
     pd.DataFrame(rows).to_parquet(tmp,engine='pyarrow',index=False)
     os.replace(tmp,part)
+    _sync(part)
     state['parts'].append({'file':str(part.relative_to(run_dir)),'rows':len(rows),'sha256':sha256_file(part)})
     state['checkpointed'] += len(rows)
     _publish_json(run_dir/'progress.json',state)
@@ -161,6 +200,11 @@ def _latest(root,run_id):
     temp = root/('.latest.'+uuid.uuid4().hex)
     os.symlink(run_id,temp)
     os.replace(temp,root/'latest')
+    fd = os.open(root, os.O_RDONLY | os.O_DIRECTORY)
+    try:
+        os.fsync(fd)
+    finally:
+        os.close(fd)
 
 
 def run(config_file, *, limit=None, chunk_size=50):
@@ -183,8 +227,20 @@ def run(config_file, *, limit=None, chunk_size=50):
     chash = hashlib.sha256(cfg_bytes).hexdigest()
     effective={k:_jsonable(v) for k,v in cfg.items()}
     _publish_json(run_dir/'effective_config.json',{'settings':effective,'source':str(source),'sha256':chash})
+    code_files = list(Path(__file__).parent.glob('*.py'))
+    provenance = {
+        **_git_provenance(),
+        'code_sha256': {p.name:sha256_file(p) for p in code_files},
+        'versions': {name:importlib.metadata.version(name) for name in
+                     ['numpy','scipy','pandas','pyarrow','astropy','matplotlib']},
+        'catalog_sha256':sha256_file(Path(cfg['lsb_catalog_fits_path'])),
+        'method_version':'cas_discrete_v2',
+        'parameters':{'skybox_size':cfg.get('skybox_size',32),
+                      'center_search':cfg.get('center_search',2.0),
+                      'petrosian_eta':0.2,'aperture_factor':1.5},
+    }
     state={'run_id':run_id,'status':'running','count':len(catalog)*len(bands),
-           'checkpointed':0,'failed':0,'parts':[],'methods':[p.__dict__ for p in PROFILES],
+           'checkpointed':0,'failed':0,'invalid':0,'provenance':provenance,'parts':[],'methods':[p.__dict__ for p in PROFILES],
            'config_sha256':chash,'catalog':str(cfg['lsb_catalog_fits_path'])}
     _publish_json(run_dir/'progress.json',state)
     LOG.info('Starting run=%s; galaxies=%d; bands=%s',run_id,len(catalog),bands)
@@ -197,6 +253,7 @@ def run(config_file, *, limit=None, chunk_size=50):
                     item.update(_one(cfg,record,band))
                     item['status']='ok' if all(item.get(k) is not None for k in ['A_raw','C']) else 'invalid'
                     item['error_type']=None
+                    state['invalid'] += int(item['status']=='invalid')
                 except Exception as exc:  # one bad galaxy/band must not abort catalog
                     item.update({'status':'error','error_type':type(exc).__name__,'error_message':str(exc)})
                     state['failed'] += 1
@@ -240,12 +297,14 @@ def run(config_file, *, limit=None, chunk_size=50):
         if recorded != state['count']:
             raise RuntimeError('partitions_failed_integrity_check')
         os.replace(tmp,table)
+        _sync(table)
         report=run_dir/f'report__{run_id}.html'
-        html=render_report(table,run_id,chash,inputs={'catalog':str(cfg['lsb_catalog_fits_path'])})
+        html=render_report(table,run_id,chash,inputs={'catalog':str(cfg['lsb_catalog_fits_path']),'provenance':provenance})
         report_temp=report.with_name('.'+report.name+'.'+uuid.uuid4().hex+'.tmp')
         with report_temp.open('x',encoding='utf-8') as f:
             f.write(html); f.flush(); os.fsync(f.fileno())
         os.replace(report_temp,report)
+        _sync(report)
         state.update({'status':'complete_with_errors' if state['failed'] else 'complete',
                       'table':table.name,'table_sha256':sha256_file(table),'report':report.name})
         _publish_json(run_dir/'manifest.json',state)

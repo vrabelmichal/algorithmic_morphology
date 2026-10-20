@@ -95,14 +95,30 @@ def _quantile_radius(image, good, center, outer_radius, fraction):
     return float(distances[k-1] + t*(distances[k]-distances[k-1]))
 
 
+def _asymmetry_samples(image, good, center, radius):
+    # Sample only the aperture bounding box; coordinates remain in the full image.
+    x0 = max(0, int(np.floor(center[0] - radius)))
+    x1 = min(image.shape[1], int(np.ceil(center[0] + radius)) + 1)
+    y0 = max(0, int(np.floor(center[1] - radius)))
+    y1 = min(image.shape[0], int(np.ceil(center[1] + radius)) + 1)
+    y, x = np.mgrid[y0:y1, x0:x1]
+    coords = [2 * center[1] - y, 2 * center[0] - x]
+    rotated = map_coordinates(image, coords, order=1, mode="constant", cval=0,
+                              prefilter=False)
+    # All bilinear contributors must be valid, including at mask boundaries.
+    support = map_coordinates(good.astype(float), coords, order=1,
+                              mode="constant", cval=0, prefilter=False)
+    inside = (np.hypot(x-center[0], y-center[1]) <= radius)
+    inside &= good[y0:y1, x0:x1] & (support >= 1 - 1e-12)
+    return image[y0:y1, x0:x1][inside], rotated[inside]
+
+
 def _asymmetry_raw(image, good, center, radius):
-    rotated = _rotate(image, center)
-    valid_rotated = _rotate(good.astype(float), center, order=0) > 0.5
-    inside = (_radius(image.shape, center) <= radius) & good & valid_rotated
-    denom = float(np.abs(image[inside]).sum())
-    if inside.sum() < 10 or denom <= 0:
+    original, rotated = _asymmetry_samples(image, good, center, radius)
+    denom = float(np.abs(original).sum())
+    if original.size < 10 or denom <= 0:
         return float("inf"), 0
-    return float(np.abs(image[inside] - rotated[inside]).sum() / denom), int(inside.sum())
+    return float(np.abs(original - rotated).sum() / denom), int(original.size)
 
 
 def _boxcar(image, good, width):
@@ -152,6 +168,10 @@ def measure_cas(image, mask=None, center=None, *, rpetro=None,
         contamination = np.asarray(mask, dtype=bool)
         if contamination.shape != arr.shape:
             raise ValueError("mask_shape_mismatch")
+    if not np.isfinite(center_search) or center_search < 0:
+        raise ValueError("invalid_center_search")
+    if skybox_size < 8:
+        raise ValueError("invalid_skybox_size")
     good = (~contamination) & np.isfinite(arr)
     cleaned = np.where(good, arr, 0.0)
     if center is None:
@@ -162,7 +182,7 @@ def measure_cas(image, mask=None, center=None, *, rpetro=None,
     if not (0 <= center[0] < arr.shape[1] and 0 <= center[1] < arr.shape[0]):
         raise ValueError("center_outside_cutout")
 
-    out = {"method_version": "cas_discrete_v1", "center_initial_x": float(center[0]),
+    out = {"method_version": "cas_discrete_v2", "center_initial_x": float(center[0]),
            "center_initial_y": float(center[1]), "mask_fraction": float(1-good.mean())}
     flags = []
     try:
@@ -194,7 +214,8 @@ def measure_cas(image, mask=None, center=None, *, rpetro=None,
         opt = minimize(lambda pos: _asymmetry_raw(cleaned, good, pos, aperture)[0],
                        center, method="Powell", bounds=bounds,
                        options={"xtol":1e-3,"ftol":1e-5,"maxiter":120})
-        best = opt.x if opt.success and np.isfinite(opt.fun) else center
+        best = opt.x if (opt.success and np.isfinite(opt.fun)
+                             and opt.fun <= _asymmetry_raw(cleaned, good, center, aperture)[0]) else center
         if not opt.success:
             flags.append("center_optimization_failed")
         if np.any(np.isclose(best, np.array(bounds)[:,0], atol=1e-2)) or np.any(np.isclose(best, np.array(bounds)[:,1], atol=1e-2)):
@@ -207,7 +228,10 @@ def measure_cas(image, mask=None, center=None, *, rpetro=None,
         a_raw = None
         flags.append("asymmetry_no_flux")
     out["A_raw"] = a_raw
-    denom = np.abs(cleaned[good & (_radius(arr.shape, best) <= aperture)]).sum()
+    a_original, _ = _asymmetry_samples(cleaned, good, best, aperture)
+    denom = float(np.abs(a_original).sum())
+    out["asymmetry_valid_pixels"] = a_pixels
+    out["asymmetry_absolute_flux"] = denom
     sky = _sky_tile(cleaned, good, best, aperture, width=skybox_size)
     if sky is None:
         flags.append("no_clean_sky_tile")

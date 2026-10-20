@@ -62,3 +62,47 @@ def test_petrosian_and_truncation():
     out=measure_cas(galaxy(),rpetro=32,center_search=0)
     assert out['A_raw'] is None
     assert 'aperture_truncated' in out['quality_flags']
+
+
+def test_bilinear_rotation_excludes_masked_contributors():
+    from algorithmic_morphology.metrics import _asymmetry_samples
+    image = np.ones((32,32))
+    good = np.ones_like(image,dtype=bool)
+    good[12,12] = False
+    image[12,12] = 0
+    original, rotated = _asymmetry_samples(image,good,(15.2,15.3),10)
+    assert np.all(original == 1)
+    assert np.allclose(rotated,1)
+
+
+def test_sky_asymmetry_uses_same_masked_aperture_denominator():
+    from algorithmic_morphology.metrics import _asymmetry_samples, _sky_tile, _rotate
+    image = galaxy() + np.random.default_rng(55).normal(0,.5,(96,96))
+    mask = np.zeros_like(image,dtype=bool)
+    mask[41:47,58:64] = True
+    result = measure_cas(image,mask,center=(47.2,47.3),rpetro=17,center_search=0)
+    good = ~mask
+    cleaned = np.where(good,image,0)
+    original, _ = _asymmetry_samples(cleaned,good,(47.2,47.3),25.5)
+    tile, valid = _sky_tile(cleaned,good,(47.2,47.3),25.5)
+    center = ((tile.shape[1]-1)/2,(tile.shape[0]-1)/2)
+    skyok = valid & (_rotate(valid.astype(float),center,order=0)>.5)
+    mean = np.abs(tile-_rotate(tile,center))[skyok].mean()
+    assert result['method_version'] == 'cas_discrete_v2'
+    assert result['A_sky'] == pytest.approx(mean*len(original)/np.abs(original).sum())
+
+
+def test_center_search_cannot_increase_asymmetry():
+    image = galaxy() + np.random.default_rng(9).normal(0,2,(96,96))
+    fixed = measure_cas(image,rpetro=17,center_search=0)
+    optimized = measure_cas(image,rpetro=17,center_search=2)
+    assert optimized['A_raw'] <= fixed['A_raw']
+
+
+def test_concentration_matches_resolved_gaussian_growth_curve():
+    y,x=np.indices((192,192))
+    image=40*np.exp(-((x-95.5)**2+(y-95.5)**2)/(2*12**2))
+    result=measure_cas(image,center_search=0)
+    # Exact infinite circular Gaussian has r_f=sigma*sqrt(-2*log(1-f)).
+    expected=2.5*np.log10(np.log(5)/np.log(1.25))
+    assert result['C'] == pytest.approx(expected,abs=.03)

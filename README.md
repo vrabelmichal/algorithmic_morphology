@@ -5,7 +5,7 @@ The first implementation measures **concentration (C)**, **raw and
 sky-corrected 180° asymmetry (A)**, and **two named clumpiness/smoothness
 (S) profiles** for each galaxy and photometric band.
 
-**Status: pilot implementation; needs validation on real DES LSBG images.**
+**Status: pilot implementation exercised on 75 locally available DES candidates; scientific calibration remains open.**
 The profiles are documented adaptations, not exact numerical reproductions
 of every implementation in the literature.
 
@@ -53,9 +53,26 @@ distributions and direct comparisons, progress and final manifests.
 Log messages with UTC timestamps go to stdout. A missing galaxy/band is
 recorded as an error row, not silently skipped.
 
-**No DES results have been calculated in this PR.** Scientific validation
-against known simulated galaxies and reference implementations remains
-necessary before drawing astrophysical conclusions.
+The [2026-10-20 analysis report](reports/des_pilot_20261020/README.md) includes
+225 requested object-band rows: 162 available images measured and 63 missing
+inputs recorded. Raw C/A and both S profiles are retained. Only 33 images pass
+the current corner-sky criterion, so corrected results are strongly selected.
+The exported directory includes the checksum-bound HTML, Parquet measurements,
+input inventory and 144 synthetic noise/PSF/mask experiments. Scientific
+reference matching and DES-specific calibration remain necessary.
+
+To inventory local upstream products and run a new pilot:
+
+```bash
+python scripts/prepare_des_pilot.py --output .outputs/des_inputs_new
+python -m algorithmic_morphology run --config-file-name .outputs/des_inputs_new/config.py --chunk-size 15
+python scripts/validate_sensitivity.py --output .outputs/sensitivity_new
+python scripts/analyze_pilot.py --run-dir <completed-run-directory> --inputs .outputs/des_inputs_new --sensitivity .outputs/sensitivity_new --output <new-report-directory>
+```
+
+The current shared method is `cas_discrete_v2`: bilinear rotation excludes any
+masked contributor, and raw/sky A use the same valid-pixel flux denominator.
+Both original S profile parameter names remain unchanged.
 
 For architecture and remaining work see [project design](docs/PROJECT_DESIGN.md).
 

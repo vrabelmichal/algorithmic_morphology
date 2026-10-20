@@ -17,6 +17,7 @@ band_mask_dir_paths = {
 cutout_file_name_format = 'LSB_ID{coadd_object_id}.fits'
 mask_file_name_format = 'mask{coadd_object_id}.fits'
 require_mask = True
+require_mask_wcs = False  # Set True for products expected to carry aligned WCS
 allow_geometric_center = False  # Prefer RA/Dec + cutout WCS
 skybox_size = 32
 center_search = 2.0

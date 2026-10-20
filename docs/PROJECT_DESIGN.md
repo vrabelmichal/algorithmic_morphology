@@ -66,3 +66,15 @@ A self-contained HTML document for each completed run. Show run ID, exact table 
 5. Run a representative faint-galaxy pilot, document systematic effects/failures; only then scale out.
 
 Later extensions can include Gini/M20, shape/outer asymmetry, MID and other interpretable features, with separate literature-backed method profiles. No trained classifier, GALFIT refitting, overwriting or silently changing scientific definitions is in scope for the initial implementation.
+
+## Pilot execution update (2026-10-20)
+
+The [availability-selected DES report](../reports/des_pilot_20261020/README.md)
+now contains 75 candidates, 162 measured image-mask pairs and 63 explicit
+missing-band rows. It includes exact input hashes, an archived source snapshot,
+144 synthetic noise/PSF/mask stress cases, finite-only summaries and comparison
+plots. Shared method v2 fixes bilinear mask support and the A sky denominator;
+both named S profiles remain v1. Report failures preserve the previous latest,
+and input WCS disagreement is rejected. Independent reference-code agreement,
+DES-specific uncertainty calibration and resume remain future work. Corner-sky
+coverage (33/162 images) is the principal observed pilot limitation.

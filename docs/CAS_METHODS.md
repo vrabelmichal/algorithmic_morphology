@@ -1,10 +1,10 @@
-# Implemented CAS pilot methods (v1)
+# Implemented CAS pilot methods (shared v2, S profiles v1)
 
 **Status:** both S profiles and both A outputs are implemented on fixed sky-subtracted
 pixel arrays. This is *not* a bitwise clone of the original papers or
 `statmorph`. The profile names deliberately end in `_like_v1`.
-Synthetic tests cover core invariants; **DES real-image calibration and
-independent reference matching are outstanding**.
+Synthetic tests cover core invariants and a 75-candidate DES pilot has run;
+**DES-specific calibration and independent reference matching remain outstanding**.
 
 ## Papers and reference code
 
@@ -21,7 +21,18 @@ independent reference matching are outstanding**.
 - Background-bias caveat: Thorp et al. (2021),
   https://doi.org/10.1093/mnras/stab2201
 
-## Shared conventions: `cas_discrete_v1`
+## Shared conventions: `cas_discrete_v2`
+
+The first real-data run uses shared method v2. Compared with v1, bilinear
+rotation now requires all contributing pixels to be unmasked (nearest-neighbor
+mask sampling could admit zero-filled contaminated neighbors), A_sky uses the
+same symmetrically valid aperture flux denominator as A_raw, and center
+optimization never accepts a result worse than the initial center. Aperture
+sampling is restricted to a bounding box for speed without moving coordinates.
+S profile parameters remain v1; centers can change under the corrected A method.
+The exact source used for the run is archived with matching SHA-256 hashes in
+`reports/des_pilot_20261020/run_source/`.
+
 
 The input image must be **sky-subtracted**. Mask True = contaminating source
 excluded, False = preserve target galaxy and sky. NaN/inf pixels are
@@ -45,8 +56,8 @@ Petrosian radius are explicitly flagged.
    nonpositive growth curves are flagged. This approximation differs from
    statmorph's fractional-pixel `photutils` aperture root-finding.
 4. **Rotation**: bilinear sample of sky-subtracted data at (2xc-x,2yc-y).
-   The rotated mask is nearest-neighbor sampled and intersected with the
-   unmasked original. Any out-of-image rotated position is invalid.
+   All bilinear contributors to a rotated pixel must be unmasked, and the
+   original pixel must be unmasked. Any out-of-image rotated position is invalid.
 5. **A_raw**: sum |I-I180| / sum |I| over valid symmetrically unmasked
    pixels within R. **No additional factor of 2** in the denominator.
 6. **Sky tile**: choose the cleanest (smallest unmasked standard deviation)
@@ -55,7 +66,7 @@ Petrosian radius are explicitly flagged.
    Requested size defaults to 32 and may shrink to N/4 for small stamps.
    If none qualifies, the sky correction is **null**, not zero.
 7. **A_sky**: average |B-B180| on valid tile pixels, multiplied by the
-   galaxy's number of valid A pixels / sum|I|. **A_corrected=A_raw-A_sky**.
+   galaxy's number of valid A pixels / sum|I| on the identical valid A pixels. **A_corrected=A_raw-A_sky**.
    These corrections are estimates and may be biased at low S/N; retain
    both and use noise/PSF experiments before interpreting them physically.
 
@@ -114,8 +125,13 @@ manifest. The report embeds the precise table SHA-256. The mutable
 
 ## Important restrictions and next validation tasks
 
-- **No real DES run performed yet**: local input cutouts and precomputed
-  mask directories are not available to the development environment.
+- A [real DES candidate pilot](../reports/des_pilot_20261020/README.md) has
+  measured 162 available image-mask pairs for 75 IDs. All 225 requested rows
+  remain in the table. The 129 `no_clean_sky_tile` flags are a major limitation:
+  only two g, two r and 29 i measurements have sky corrections. No preferred
+  A/S definition or physical classification follows from this selected sample.
+- 144 deterministic synthetic noise/PSF/masked-contaminant cases were run;
+  these stress tests are not a DES-specific uncertainty calibration.
 - Check cutout FITS WCS, image units, band flips and mask alignment against
   the source project. `configs/example.py` uses placeholders and requires
   pointing at existing sky-subtracted images/masks.

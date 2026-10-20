@@ -46,10 +46,31 @@ def _picture(frame, series, label, *, against=None):
         return base64.b64encode(buffer.getvalue()).decode("ascii")
 
 
+def summarize(frame):
+    """Finite-only per-band statistics, retaining denominators and flag counts."""
+    metrics = ['C','rpetro','A_raw','A_sky','A_corrected','mask_fraction']
+    metrics += [f'S_{p.name}_{suffix}' for p in PROFILES for suffix in ['raw','sky','corrected']]
+    stats = []
+    for band, part in frame.groupby('band',sort=True):
+        for metric in metrics:
+            vals = pd.to_numeric(part.get(metric,pd.Series(dtype=float)),errors='coerce')
+            vals = vals.replace([np.inf,-np.inf],np.nan).dropna()
+            stats.append(dict(band=str(band),metric=metric,total=len(part),valid=len(vals),
+                              negative=int((vals<0).sum()),median=float(vals.median()) if len(vals) else None,
+                              p16=float(vals.quantile(.16)) if len(vals) else None,
+                              p84=float(vals.quantile(.84)) if len(vals) else None))
+    flags = frame.get('quality_flags',pd.Series(dtype=str)).dropna().str.split('|').explode()
+    flags = flags[flags.ne('')].value_counts().to_dict()
+    errors = frame.get('error_message',pd.Series(dtype=str)).dropna().value_counts().to_dict()
+    return {'statistics':stats,'quality_flags':{str(k):int(v) for k,v in flags.items()},
+            'errors':{str(k):int(v) for k,v in errors.items()}}
+
+
 def render_report(table_path, run_id, config_hash, *, inputs=None):
     """Return HTML string; caller publishes atomically with this table digest."""
     df = pd.read_parquet(table_path)
     digest = sha256_file(table_path)
+    summary = summarize(df)
     status = df.get("status",pd.Series(dtype="str")).value_counts().to_dict()
     plots = []
     keys = ["C", "A_raw", "A_corrected"]
@@ -69,11 +90,13 @@ def render_report(table_path, run_id, config_hash, *, inputs=None):
         def count_numeric(key):
             if key not in part:
                 return 0
-            return int(pd.to_numeric(part[key],errors="coerce").notna().sum())
+            return int(pd.to_numeric(part[key],errors="coerce").replace([np.inf,-np.inf],np.nan).notna().sum())
         valid_raw = count_numeric('A_raw')
         valid_corr = count_numeric('A_corrected')
         ss = [count_numeric(f'S_{p.name}_corrected') for p in PROFILES]
         rows.append(f"<tr><td>{escape(str(band))}</td><td>{len(part)}</td><td>{valid_raw}</td><td>{valid_corr}</td><td>{ss[0]}</td><td>{ss[1]}</td></tr>")
+    stats_table = pd.DataFrame(summary['statistics']).to_html(index=False,float_format=lambda v:f'{v:.5g}',na_rep='missing')
+    flag_table = escape(json.dumps({'quality_flags':summary['quality_flags'],'errors':summary['errors']},indent=2))
     title = 'Algorithmic morphology — profile comparison'
     status_display = escape(json.dumps({str(k):int(v) for k,v in status.items()},sort_keys=True))
     figures = ''.join(f'<figure><img src="data:image/png;base64,{src}" alt="{escape(label)}"><figcaption>{escape(label)}</figcaption></figure>' for label,src in plots)
@@ -84,6 +107,8 @@ def render_report(table_path, run_id, config_hash, *, inputs=None):
 <body><h1>{escape(title)}</h1><p><strong>Run:</strong> {escape(run_id)}<br><strong>Parquet:</strong> {escape(table_path.name)}<br><strong>SHA-256:</strong> <code>{digest}</code><br><strong>Rows:</strong> {len(df)}<br><strong>Statuses:</strong> {status_display}</p>
 <p class="note">Exploratory comparison, not a benchmark or proof of physical accuracy. Both clumpiness profiles differ in smoothing, central exclusion and ×10 scaling: their numerical values are not directly interchangeable. Corrected A/S require a clean sky tile; a missing correction is shown as missing, not as raw or zero. The surviving valid subset can be biased.</p>
 <h2>Valid measurement counts by band</h2><table><thead><tr><th>Band</th><th>Rows</th><th>A raw</th><th>A corrected</th><th>S Lotz corrected</th><th>S Conselice corrected</th></tr></thead><tbody>{''.join(rows)}</tbody></table>
+<h2>Quality flags and failures (all rows retained)</h2><pre>{flag_table}</pre>
+<h2>Finite metric summaries</h2><p>p16–p84 describes the measured sample, not uncertainty on individual galaxies.</p>{stats_table}
 <h2>Distributions and direct comparisons</h2>{figures}
 <h2>Exact input / output provenance</h2><pre>{escape(metadata)}</pre>
 </body></html>'''
