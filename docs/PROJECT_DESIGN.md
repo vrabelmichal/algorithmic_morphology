@@ -1,6 +1,6 @@
 # Proposed project architecture (2026-10-20)
 
-**Design only; commands and files described below do not exist yet.** Scientific choices in [CAS_LITERATURE_REVIEW.md](CAS_LITERATURE_REVIEW.md) are pending.
+**Historical architecture proposal.** A first working pilot now exists (see [implemented methods](CAS_METHODS.md) and README.md). Some sections below remain aspirational, particularly resume and independent reference validation. The supported CLI is `python -m algorithmic_morphology run --config-file-name <config.py>`.
 
 ## Goals and inputs
 
