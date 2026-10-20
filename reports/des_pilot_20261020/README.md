@@ -108,6 +108,23 @@ experiments with known scenes, not a DES noise or PSF calibration. Three seeds
 are insufficient for quantitative uncertainty estimates. A masked scene also
 removes some genuine galaxy light under the contaminant footprint.
 
+## Continuing the analysis
+
+There is no execution or data-access blocker for the next methodological stage.
+The existing 162 images support testing a sky-region search throughout the stamp,
+while retaining the corner-only v2 results as a baseline. A new version should
+compare sky coverage and correction stability on the same objects, exclude the
+target aperture and contaminants, and use matching rotation/interpolation in
+sky and galaxy measurements. More synthetic noise realizations and DES-specific
+injection experiments can then quantify bias and PSF sensitivity.
+
+The 63 missing image-band combinations limit coverage of this availability
+sample; they do not prevent work on the existing images. Representative
+population claims require a broader sample. Reference-code matching and
+uncertainty calibration constrain interpretation, rather than preventing
+exploratory analysis. No external permission or additional input is needed to
+start these checks on the available data.
+
 ## Interpretation limits and next validation
 
 The corner-only sky estimator often cannot find a ≥95% valid 32-pixel tile in

@@ -53,7 +53,7 @@ distributions and direct comparisons, progress and final manifests.
 Log messages with UTC timestamps go to stdout. A missing galaxy/band is
 recorded as an error row, not silently skipped.
 
-The [2026-10-20 analysis report](reports/des_pilot_20261020/README.md) includes
+The [2026-10-20 analysis report](reports/des_pilot_20261020/index.html) includes
 225 requested object-band rows: 162 available images measured and 63 missing
 inputs recorded. Raw C/A and both S profiles are retained. Only 33 images pass
 the current corner-sky criterion, so corrected results are strongly selected.
