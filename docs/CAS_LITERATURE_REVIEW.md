@@ -1,6 +1,6 @@
 # CAS morphology: literature review (2026-10-20)
 
-**Status: discussion document. No metric definition has been approved or implemented.**
+**Status: literature background and open scientific questions.** The first pilot now implements both raw and corrected asymmetry, plus two explicit, versioned clumpiness profiles (see [CAS_METHODS.md](CAS_METHODS.md)). They are *-like* adaptations requiring real-data and matched-code validation, not exact historical reimplementations.
 
 CAS measures non-parametric **concentration (C)**, **180-degree asymmetry (A)**, and **clumpiness / smoothness (S)**. A fixed algorithm is repeatable on fixed input, but the results depend on image noise, PSF, band, sky, masks, radii, centering and processing details. These choices matter especially for faint, diffuse LSBGs.
 
@@ -68,3 +68,8 @@ In particular, zero-filling masked stars *before* boxcar convolution may produce
 ## Validation plan (not yet run)
 
 Test noise-free symmetric profiles and offset-clump variants, noise/sky gradients, bad background, no sky pixels, central bright point sources, elongated profiles, mask holes, cutout edges, missing FITS, NaNs, invalid total flux and mask orientation. Compare with statmorph only when the **entire** definition is matched, including pre-processing. For a small real DES LSBG pilot, plot A/C/S across bands versus S/N, R_p/PSF, masking fraction and quality flags; quantify failures rather than discarding them. A reference disagreement can indicate a mistaken interpretation in *either* implementation, not necessarily a regression.
+
+
+## Follow-up scientific decision, 2026-10-20
+
+The user requested **both A_raw and A_corrected**, and **both S profiles** to be measured on the same galaxies, preserving exact method names in Parquet and comparing distributions/scatter in the report before choosing any default. The question is now whether the v1 discrete/approximate methods recover the intended literature-based behavior on real cutouts, not which profile to silently choose. Detailed implemented values (0.25/0.25/×1 and 0.30/0.075/×10) and their limitations are recorded in [CAS_METHODS.md](CAS_METHODS.md).
