@@ -1,0 +1,16 @@
+{
+  "validated_utc": "2026-10-22T15:21:09.198405+00:00",
+  "html_sha256": "2fb9c1b17824847a39d98788f0aa223323d1aa38d5e8dd041aa08ee5888e0e71",
+  "report_version": "scientific_report_v4",
+  "association_records": 2040,
+  "interactive_combinations": 204,
+  "metrics_per_combination": 10,
+  "embedded_data_identical_to_frozen_table": true,
+  "standalone_and_embedded_data_identical": true,
+  "offline_inline_srcdoc": true,
+  "report_navigation_link": true,
+  "previous_report_preserved": true,
+  "morphology_unchanged": true,
+  "browser_combinations_checked": 204,
+  "browser_combination_errors": 0
+}

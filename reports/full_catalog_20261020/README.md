@@ -51,3 +51,9 @@ Every one of the 21 requested current PCA/UMAP spaces is shown across g/r/i.
 See `report_v3_manifest.json` and `report_v3_validation.json`. The immutable
 morphology table is unchanged; earlier per-revision digests remain valid for
 those revision files, rather than the newly promoted index.
+
+Revision 4 adds the chat's interactive correlation explorer directly to section
+6.4 and the top navigation. Both `index.html` and `report_v4.html` contain the
+explorer inline; `association_explorer.html` also opens independently. All v3
+scientific data and figures remain unchanged. See `report_v4_manifest.json` and
+`report_v4_validation.json`.

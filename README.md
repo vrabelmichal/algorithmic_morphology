@@ -168,3 +168,11 @@ python scripts/validate_classification_report.py --report-dir reports/full_catal
 The source JSON keys and current paths are recorded in
 `paper_v3_data/manifest.json`. Use new output directories/revisions; builders
 refuse to overwrite existing revisions. See [the analysis protocol](docs/CLASSIFICATION_CONTEXT.md).
+
+Report revision 4 embeds the interactive correlation explorer directly in
+**section 6.4**, with an **Interactive correlations** navigation link. Its class,
+band and cohort selectors use the same frozen 2,040 association records as the
+static figures. It is embedded through inline `srcdoc`, so it also works when
+opening the report from disk. A separate `association_explorer.html` is provided.
+Reproduce this presentation-only addition with
+`python scripts/integrate_association_explorer.py` (new revision required if v4 exists).
