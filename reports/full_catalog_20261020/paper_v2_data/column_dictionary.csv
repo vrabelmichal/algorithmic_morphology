@@ -1,0 +1,63 @@
+Column,Units,Meaning
+coadd_object_id,—,Stable DES catalog identifier; join key together with band.
+band,"g, r, i",Photometric band; measurements and GALFIT columns are matched within the same band.
+status,category,ok: finite C and raw A; invalid: one or both unavailable; error: input or processing failure. Other metrics can survive an invalid CAS status.
+quality_flags,text,Pipe-separated CAS diagnostics; the list of flag meanings follows below.
+error_type,text,Python exception category for error rows; absent for measured rows.
+error_message,text,Input/processing reason; the full run contains only missing_cutout error rows.
+method_version,text,Shared CAS definition identifier: cas_discrete_v3 for this run.
+aperture_diagnostics_version,text,Extended diagnostic definition: aperture_diagnostics_v1.
+extended_quality_flags,text,"Reasons an extended diagnostic is unavailable, including nonpositive flux or second moment."
+center_initial_x,zero-based pixels,Catalog coordinate transformed through input FITS WCS; x coordinate.
+center_initial_y,zero-based pixels,Catalog coordinate transformed through input FITS WCS; y coordinate.
+mask_fraction,fraction,Fraction of the entire stamp excluded by the contaminant mask or nonfinite pixels.
+rpetro,pixels,"Measured circular Petrosian radius, eta=0.2, about the catalog input center. It is not GALFIT effective radius."
+aperture_radius,pixels,"Outer measurement radius, 1.5 times the measured Petrosian radius."
+center_asym_x,zero-based pixels,Bounded raw-A minimizing center (or flagged initial-center fallback); x coordinate.
+center_asym_y,zero-based pixels,Bounded raw-A minimizing center (or flagged initial-center fallback); y coordinate.
+A_raw,dimensionless,Sum of absolute 180-degree residuals / absolute galaxy flux on the identical valid symmetric aperture pixels.
+asymmetry_valid_pixels,pixels,Number of original and bilinearly rotated valid pixels used in raw A.
+asymmetry_absolute_flux,input flux units,Sum |I| on precisely the pixels used by A; the common raw/sky correction denominator.
+A_sky,dimensionless,"Mean absolute rotation residual in the chosen blank corner, scaled by valid galaxy pixel count / galaxy absolute flux."
+A_corrected,dimensionless,A_raw − A_sky; valid negative values are retained.
+r20,pixels,Radius enclosing 20% of the signed aperture flux about the optimized A center.
+r80,pixels,Radius enclosing 80% of the signed aperture flux about the optimized A center.
+C,dimensionless,5 log10(r80/r20); larger values describe more centrally concentrated aperture light.
+S_lotz2004_statmorph_like_v1_boxcar_width_pixels,pixels,Actual integer boxcar width int(0.25 R_P); widths below two pixels are invalid.
+S_lotz2004_statmorph_like_v1_inner_radius,pixels,Central exclusion radius 0.25 R_P for the Lotz/statmorph-like profile.
+S_lotz2004_statmorph_like_v1_raw,dimensionless,"Lotz/statmorph-like, factor 1; smoothing 0.25 R_P and inner exclusion 0.25 R_P. Positive boxcar residual summed over the declared annulus / signed annular flux."
+S_lotz2004_statmorph_like_v1_sky,dimensionless,"Lotz/statmorph-like, factor 1; smoothing 0.25 R_P and inner exclusion 0.25 R_P. Mean positive boxcar residual in the selected sky tile, scaled to annular galaxy pixel count / signed annular flux."
+S_lotz2004_statmorph_like_v1_corrected,dimensionless,"Lotz/statmorph-like, factor 1; smoothing 0.25 R_P and inner exclusion 0.25 R_P. Raw minus sky term; valid negative values are retained."
+S_conselice2003_like_v1_boxcar_width_pixels,pixels,Actual integer boxcar width int(0.3 R_P); widths below two pixels are invalid.
+S_conselice2003_like_v1_inner_radius,pixels,Central exclusion radius 0.075 R_P for the Conselice-like profile.
+S_conselice2003_like_v1_raw,dimensionless,"Conselice-like, factor 10; smoothing 0.3 R_P and inner exclusion 0.075 R_P. Positive boxcar residual summed over the declared annulus / signed annular flux."
+S_conselice2003_like_v1_sky,dimensionless,"Conselice-like, factor 10; smoothing 0.3 R_P and inner exclusion 0.075 R_P. Mean positive boxcar residual in the selected sky tile, scaled to annular galaxy pixel count / signed annular flux."
+S_conselice2003_like_v1_corrected,dimensionless,"Conselice-like, factor 10; smoothing 0.3 R_P and inner exclusion 0.075 R_P. Raw minus sky term; valid negative values are retained."
+Gini_aperture_v1,dimensionless,"Absolute-flux inequality of pixels in our circular aperture; 0 is uniform, 1 is a single bright pixel. Not segmentation Gini."
+M20_aperture_v1,log10 ratio,"Signed second moment of brightest 20% of aperture flux / total signed second moment, about the signed centroid. Nonpositive moments are invalid; signed noise can produce atypical positive ratios."
+ellipticity_positive_aperture_v1,dimensionless,1 minus the positive-flux aperture axis ratio.
+axis_ratio_positive_aperture_v1,dimensionless,"Square root of the minor/major covariance-eigenvalue ratio using max(I,0) weights."
+position_angle_positive_aperture_v1,degrees,"Major-axis angle from increasing image x toward increasing image y, modulo 180 degrees. Not a celestial PA; unstable for round objects."
+aperture_valid_pixels,pixels,"Finite, unmasked pixels inside the aperture used for Gini, M20 and shape."
+aperture_mask_fraction,fraction,Fraction of the circular aperture excluded by contaminant/nonfinite pixels.
+centroid_signed_x,zero-based pixels,Signed-flux centroid inside the aperture for the extended moment diagnostics; x coordinate.
+centroid_signed_y,zero-based pixels,Signed-flux centroid inside the aperture for the extended moment diagnostics; y coordinate.
+image_unit,FITS BUNIT,"Stored input image unit, where present; no unit is invented for missing BUNIT."
+image_height,pixels,Input stamp height.
+image_width,pixels,Input stamp width.
+gf_mag,mag,"sersic_mag + band suffix → gf_mag. Stored total single-Sersic apparent magnitude; the source configuration uses a photometric zeropoint of 30. No additional extinction, redshift or K correction is applied here."
+gf_re_arcsec,arcsec,sersic_reff_arcsec + band suffix → gf_re_arcsec. Stored semi-major-axis effective (half-model-light) radius. The producer converts fitted pixels to arcsec; this analysis does not substitute it for R_P.
+gf_re_pixels,pixels,sersic_reff_pixels + band suffix → gf_re_pixels. Stored fitted semi-major-axis effective radius in pixels.
+gf_mu_mean,mag arcsec^-2,sersic_mean_mue + band suffix → gf_mu_mean. Stored mean surface brightness inside the effective ellipse; fainter corresponds to larger numbers. Equals m+2.5 log10(2 pi q R_e^2) for the model.
+gf_mu_e,mag arcsec^-2,"sersic_mue + band suffix → gf_mu_e. Stored Sersic surface brightness at R_e, distinct from the mean inside R_e."
+gf_n,dimensionless,"sersic_n + band suffix → gf_n. Sersic shape index; shared across bands in this GALFITM configuration, constrained to 0.2–5."
+gf_q,dimensionless,"sersic_q + band suffix → gf_q. Model minor/major axis ratio; shared across bands, constrained to 0.3–1."
+gf_chi2red,dimensionless,sersic_chi2red + band suffix → gf_chi2red. Stored CHI2NU/reduced chi-square from the fitter; not recomputed using exported NDOF.
+gf_present,flag/count,Object ID is present in the primary GALFIT export.
+gf_success,flag/count,"Producer success flag is True; it means a returned fit, not scientific validation."
+gf_warning_count,flag/count,"Number of nonzero x, y, magnitude, effective-radius, n and q parameter warning flags for this band."
+gf_finite_physical,flag/count,"Finite magnitude, mean/at-radius surface brightness, radius, n, q and reduced chi-square, with radius>0, n>0, 0<q<=1 and chi-square>0."
+gf_unflagged,flag/count,"Main relation-plot cohort: present, success, finite_physical, and warning_count=0."
+gf_at_n_bound,flag/count,n within absolute 0.001 of configured 0.2 or 5 bounds.
+gf_at_q_bound,flag/count,q within absolute 0.001 of configured 0.3 or 1 bounds; a round object is not necessarily a failed fit.
+gf_interior,flag/count,"Sensitivity cohort: main unflagged cohort minus n/q boundary cases. This is a selection check, not a claim those excluded fits are wrong."

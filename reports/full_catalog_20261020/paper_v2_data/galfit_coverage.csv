@@ -1,0 +1,4 @@
+band,requested,matched,unmatched,unflagged,interior,parameter_warning,invalid_core,near_n_boundary,near_q_boundary
+g,84200,84061,139,83941,82909,120,0,389,775
+i,84200,84061,139,83951,82919,110,2,386,778
+r,84200,84061,139,83958,82920,103,1,387,780

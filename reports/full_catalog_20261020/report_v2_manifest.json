@@ -1,0 +1,184 @@
+{
+  "report_version": "scientific_report_v2",
+  "built_utc": "2026-10-20T21:12:09.915478+00:00",
+  "morphology": {
+    "full_table": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/full_catalog/20261020T181011149128Z_48a36fe9/measurements__20261020T181011149128Z_48a36fe9.parquet",
+    "full_table_sha256": "4505526fbb05f410dcba1a3ac0063e684191eea19a40b376a77b21f774c3d9c7",
+    "compact_table": "measurements_metrics.parquet",
+    "compact_table_sha256": "c94e33086298e793bb3fa1978403bd5894079f50b38a61e972ea3f29bc397424",
+    "requested_rows": 252600,
+    "unique_objects": 84200,
+    "matched_upstream_ids": true,
+    "source_sha256": "2f5ac1e7c45bc9cef490bba81a1c2758b81d9f8a34424cc0b997b77a256825e1"
+  },
+  "galfit": {
+    "primary": {
+      "config": "sky_subtracted_2_onmr2__detr_and_vit_all_multiband_256__per_band_mag_reff__xy_2_5arcsec",
+      "path": "/media/vrabel/DATA_KIN4TB/lsbg/analysis/nucleated_lsbg/.outputs/sia/sky_subtracted_multiband_256/reff_mul_2_0/circ_upper_0_8/reff_mul_for_source_1_5/circ_upper_for_source_0_8/init_sep_2_0/final_sep_high_2_0/final_sep_low_2_0/initial_dilation_9/outside_dilation_9/object_non_masked_radius_2_0/per_band_mag_reff__xy_2_5arcsec/concatenated-detr-vit-all/single_component_fits_table.parquet",
+      "sha256": "2f950f8a90753719834266eaab77612dd8789329357806770d3855a8f6e20198",
+      "modified_utc": "2026-02-04T19:31:16.290420+00:00",
+      "rows": 84061,
+      "unique_ids": 84061
+    },
+    "alternate": {
+      "config": "sky_subtracted_2_onmr2__detr_and_vit_all_multiband_256__per_band_magnitude_optimization__r_constant_offset",
+      "path": "/media/vrabel/DATA_KIN4TB/lsbg/analysis/nucleated_lsbg/.outputs/sia/sky_subtracted_multiband_256/reff_mul_2_0/circ_upper_0_8/reff_mul_for_source_1_5/circ_upper_for_source_0_8/init_sep_2_0/final_sep_high_2_0/final_sep_low_2_0/initial_dilation_9/outside_dilation_9/object_non_masked_radius_2_0/per_band_magnitude_optimization__r_constant_offset/concatenated-detr-vit-all/single_component_fits_table.parquet",
+      "sha256": "7fcf6145559b989816d3aaac54c29bf414380be94fc5b1518d08656b69c8e93b",
+      "modified_utc": "2026-01-14T13:45:02.790941+00:00",
+      "rows": 5406,
+      "unique_ids": 5406
+    },
+    "band_suffixes": {
+      "g": "",
+      "r": "_r",
+      "i": "_i"
+    },
+    "source_columns": {
+      "gf_mag": "sersic_mag",
+      "gf_re_arcsec": "sersic_reff_arcsec",
+      "gf_re_pixels": "sersic_reff_pixels",
+      "gf_mu_mean": "sersic_mean_mue",
+      "gf_mu_e": "sersic_mue",
+      "gf_n": "sersic_n",
+      "gf_q": "sersic_q",
+      "gf_chi2red": "sersic_chi2red"
+    },
+    "mean_surface_brightness_formula_max_abs_residual": 1.0658141036401503e-14,
+    "config_sha256": {
+      "/mnt/data_sm870qvo/lsbg/analysis/nucleated_lsbg/configs/sky_subtracted_2_onmr2__detr_and_vit_all_multiband_256__per_band_mag_reff__xy_2_5arcsec.py": "801aef96ad6f10b3d8c41b60efcf0ff80f881049e3c00344648da023c4b47af5",
+      "/mnt/data_sm870qvo/lsbg/analysis/nucleated_lsbg/configs/sky_subtracted_2_onmr2__detr_and_vit_all_multiband_256__per_band_magnitude_optimization__r_constant_offset.py": "06f6094c3bba3a5a711be4ad4234e7753845de3fe98d691a38ca1d4f7100e1b3"
+    },
+    "upstream_code_sha256": {
+      "../nucleated_lsbg/galfit_functions/galfit_output_reading.py": "1d655f2f898642bc158e17c7119dd9ce32a329990ce0d36977e1c6c2d4a23076",
+      "../nucleated_lsbg/functions/statistics.py": "faccff29e6baa8007057ddce5c660c891222607d72a193b742e84234994d8565"
+    },
+    "main_cohort": "success; finite core; positive radius/n/q/reduced-chi-square; q<=1; no x/y/mag/Re/n/q warning",
+    "interior_cohort": "main cohort excluding n or q within 0.001 of configured bounds"
+  },
+  "display_policy": {
+    "quantiles": [
+      0.005,
+      0.995
+    ],
+    "padding": 0.035,
+    "histogram_bins": 60,
+    "outliers_removed_from_measurements": false,
+    "trend_bins": 16,
+    "trend_minimum_pairs": 30
+  },
+  "figures": [
+    {
+      "number": 1,
+      "name": "structure_zoom",
+      "title": "Concentration and aperture light-distribution diagnostics"
+    },
+    {
+      "number": 2,
+      "name": "gini_m20",
+      "title": "Joint aperture Gini and brightest-light moment"
+    },
+    {
+      "number": 3,
+      "name": "asymmetry_zoom",
+      "title": "Raw and sky-corrected asymmetry by band"
+    },
+    {
+      "number": 4,
+      "name": "asymmetry_overlay",
+      "title": "Raw and sky-corrected asymmetry on a common scale"
+    },
+    {
+      "number": 5,
+      "name": "asymmetry_paired",
+      "title": "Paired raw and corrected asymmetry"
+    },
+    {
+      "number": 6,
+      "name": "clumpiness_zoom",
+      "title": "Both clumpiness definitions and both correction states"
+    },
+    {
+      "number": 7,
+      "name": "clumpiness_overlay",
+      "title": "Clumpiness profiles after removing only the normalization factor"
+    },
+    {
+      "number": 8,
+      "name": "clumpiness_paired_raw",
+      "title": "Paired raw clumpiness with normalization removed"
+    },
+    {
+      "number": 9,
+      "name": "clumpiness_paired_corrected",
+      "title": "Paired corrected clumpiness with normalization removed"
+    },
+    {
+      "number": 10,
+      "name": "shape_zoom",
+      "title": "Positive-flux aperture shape"
+    },
+    {
+      "number": 11,
+      "name": "galfit_correlation_matrix",
+      "title": "Descriptive morphology\u2013GALFIT rank correlations"
+    },
+    {
+      "number": 12,
+      "name": "relations_gf_mu_mean",
+      "title": "Morphology versus Mean effective surface brightness"
+    },
+    {
+      "number": 13,
+      "name": "relations_gf_re_arcsec",
+      "title": "Morphology versus GALFIT effective radius"
+    },
+    {
+      "number": 14,
+      "name": "relations_gf_mag",
+      "title": "Morphology versus GALFIT total apparent magnitude"
+    },
+    {
+      "number": 15,
+      "name": "relations_gf_n",
+      "title": "Morphology versus GALFIT Sersic index"
+    },
+    {
+      "number": 16,
+      "name": "relations_gf_q",
+      "title": "Morphology versus GALFIT minor/major axis ratio"
+    },
+    {
+      "number": 17,
+      "name": "relations_gf_chi2red",
+      "title": "Morphology versus Stored GALFIT reduced chi-square"
+    },
+    {
+      "number": 18,
+      "name": "axis_ratio_comparison",
+      "title": "Image-aperture and GALFIT model axis ratios"
+    },
+    {
+      "number": 19,
+      "name": "radius_comparison",
+      "title": "Petrosian radius and GALFIT effective radius are distinct"
+    }
+  ],
+  "source_code_sha256": {
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/build_paper_report.py": "55164e8f3157e652c574ef7209d89bb504f354d77bc244201a6c6dc35ece9ff6",
+    "algorithmic_morphology/report_data.py": "553227aac5e99977b8cf4122ddec4199cb286e69cfdb456bce98cc123718e626",
+    "algorithmic_morphology/paper_plots.py": "176e85c2fbbb9e6e93a8f1f4412ca478812a2db4a39a1c73550df839b2f59385"
+  },
+  "html_sha256": "a2f6a33293c92b763403a25f342ce652659fa27bfd004f1973146e31f775fd26",
+  "compact_table_unchanged": true,
+  "files_sha256": {
+    "paper_v2_data/column_dictionary.csv": "589c58113c9a9508dd1111276d25057e770cb8147d992acf692d8e2726430c90",
+    "paper_v2_data/figure_index.csv": "ac0bb2a55080eb19b117fdb41a4fb79e605326f76cdb6da9eaa3894bf8b4caa7",
+    "paper_v2_data/fit_configuration_sensitivity.csv": "8857df3c012ebd7e5f50fc1f659b9f27983ff2f28545bbe5e20638cc0dbe4e9c",
+    "paper_v2_data/galfit_binned_trends.csv": "84bb839651fb77449ccce39972be0cf48a3d4ae09e7ce2ccfa504f7b6cf722a9",
+    "paper_v2_data/galfit_correlations.csv": "dc4809c40ed551530adbda7bd114b27187e2bf92d25f2640a07e62856a1cb27b",
+    "paper_v2_data/galfit_coverage.csv": "7d190360885872875f8e99c7549c381a83ec7164c5a6c62e442f06d195b414e2",
+    "paper_v2_data/galfit_join.parquet": "ec1e9c76539390cadc0d3d28077e987493e68b1377246edfc3f54afa66fd7297",
+    "paper_v2_data/galfit_sources.json": "12f35d49c757fb42bd72982374bafaebcdafd9726ebc237df5078193249045d7",
+    "paper_v2_data/plot_range_audit.csv": "ea39c76b549761f83eef4f46f996685073879bfee49e0cf0cadd440fb1521fdc"
+  }
+}

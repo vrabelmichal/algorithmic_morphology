@@ -1,0 +1,471 @@
+{
+  "classification": [
+    {
+      "name": "correlations_available",
+      "title": "Available probability associations",
+      "file": "paper_v3_assets/correlations_available.png",
+      "caption": "Numbers are finite-pair descriptive rank correlations, not accuracies. Human fractions require \u22652 responses to that question. Each cell uses all eligible finite pairs; no display-window cut."
+    },
+    {
+      "name": "correlations_human_zoobot_matched",
+      "title": "Human zoobot matched probability associations",
+      "file": "paper_v3_assets/correlations_human_zoobot_matched.png",
+      "caption": "Numbers are finite-pair descriptive rank correlations, not accuracies. Human fractions require \u22652 responses to that question. Each cell uses all eligible finite pairs; no display-window cut."
+    },
+    {
+      "name": "correlations_galfit_adjusted",
+      "title": "Galfit adjusted probability associations",
+      "file": "paper_v3_assets/correlations_galfit_adjusted.png",
+      "caption": "Numbers are finite-pair descriptive rank correlations, not accuracies. Human fractions require \u22652 responses to that question. Linear residuals of ranks adjusted for GALFIT mean effective surface brightness, effective radius and axis ratio; same finite control cohort."
+    },
+    {
+      "name": "correlations_three_plus_human_votes",
+      "title": "Three plus human votes probability associations",
+      "file": "paper_v3_assets/correlations_three_plus_human_votes.png",
+      "caption": "Numbers are finite-pair descriptive rank correlations, not accuracies. Human fractions require \u22652 responses to that question. Each cell uses all eligible finite pairs; no display-window cut."
+    },
+    {
+      "name": "class_effects",
+      "title": "Selected classes: distributional separation",
+      "file": "paper_v3_assets/class_effects.png",
+      "caption": "Effect = P(class value > other) \u2212 P(class value < other), including ties through the Mann\u2013Whitney statistic. Positive means larger morphology values in the named class. Human contrasts use only galaxies with \u22652 answers for that question; other includes split outcomes. Zoobot top-class contrasts use valid prediction vectors. Some top classes are rare; exact finite sample sizes and \u22650.5 confidence sensitivity are in the companion table."
+    },
+    {
+      "name": "human_distributions_g",
+      "title": "g band: human morphology distributions",
+      "file": "paper_v3_assets/human_distributions_g.png",
+      "caption": "Published weighted-consensus memberships are used unchanged. Four classes and split outcomes are distinct; unclassified objects are not coded as any class. Histograms use shared robust display windows and normalize by the full finite class sample; off-screen counts are downloadable."
+    },
+    {
+      "name": "human_distributions_r",
+      "title": "r band: human morphology distributions",
+      "file": "paper_v3_assets/human_distributions_r.png",
+      "caption": "Published weighted-consensus memberships are used unchanged. Four classes and split outcomes are distinct; unclassified objects are not coded as any class. Histograms use shared robust display windows and normalize by the full finite class sample; off-screen counts are downloadable."
+    },
+    {
+      "name": "human_distributions_i",
+      "title": "i band: human morphology distributions",
+      "file": "paper_v3_assets/human_distributions_i.png",
+      "caption": "Published weighted-consensus memberships are used unchanged. Four classes and split outcomes are distinct; unclassified objects are not coded as any class. Histograms use shared robust display windows and normalize by the full finite class sample; off-screen counts are downloadable."
+    },
+    {
+      "name": "trend_p_featureless",
+      "title": "Featureless: morphology trends",
+      "file": "paper_v3_assets/trend_p_featureless.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_p_irregular_or_unsure",
+      "title": "Not sure (Irr/other): morphology trends",
+      "file": "paper_v3_assets/trend_p_irregular_or_unsure.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_p_ltg",
+      "title": "LTG / spiral: morphology trends",
+      "file": "paper_v3_assets/trend_p_ltg.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_p_etg",
+      "title": "ETG / elliptical: morphology trends",
+      "file": "paper_v3_assets/trend_p_etg.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_p_lsb",
+      "title": "Is LSB: yes: morphology trends",
+      "file": "paper_v3_assets/trend_p_lsb.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_p_visible_nucleus",
+      "title": "Visible nucleus: yes: morphology trends",
+      "file": "paper_v3_assets/trend_p_visible_nucleus.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_p_failed_fitting",
+      "title": "Failed fitting: yes: morphology trends",
+      "file": "paper_v3_assets/trend_p_failed_fitting.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_0",
+      "title": "DECaLS10: Disturbed: morphology trends",
+      "file": "paper_v3_assets/trend_class_0.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_1",
+      "title": "DECaLS10: Merging: morphology trends",
+      "file": "paper_v3_assets/trend_class_1.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_2",
+      "title": "DECaLS10: Round smooth: morphology trends",
+      "file": "paper_v3_assets/trend_class_2.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_3",
+      "title": "DECaLS10: Intermediate round smooth: morphology trends",
+      "file": "paper_v3_assets/trend_class_3.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_4",
+      "title": "DECaLS10: Cigar-shaped smooth: morphology trends",
+      "file": "paper_v3_assets/trend_class_4.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_5",
+      "title": "DECaLS10: Barred spiral: morphology trends",
+      "file": "paper_v3_assets/trend_class_5.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_6",
+      "title": "DECaLS10: Unbarred tight spiral: morphology trends",
+      "file": "paper_v3_assets/trend_class_6.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_7",
+      "title": "DECaLS10: Unbarred loose spiral: morphology trends",
+      "file": "paper_v3_assets/trend_class_7.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_8",
+      "title": "DECaLS10: Edge-on without bulge: morphology trends",
+      "file": "paper_v3_assets/trend_class_8.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    },
+    {
+      "name": "trend_class_9",
+      "title": "DECaLS10: Edge-on with bulge: morphology trends",
+      "file": "paper_v3_assets/trend_class_9.png",
+      "caption": "Lines show within-bin medians; shading is the 16\u201384% object spread, not uncertainty on the median. Common probability bins of width 0.1, minimum 20 finite pairs. All finite morphology values contribute before the robust y-axis display window. Human vote fractions are discrete, often based on only two or three votes; they are not calibrated probabilities. Missing bins do not imply zero values."
+    }
+  ],
+  "embeddings": [
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 PCA \u00b7 g band",
+      "file": "paper_v3_assets/embedding_00_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 PCA \u00b7 r band",
+      "file": "paper_v3_assets/embedding_01_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 PCA \u00b7 i band",
+      "file": "paper_v3_assets/embedding_02_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 UMAP (120 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_03_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 UMAP (120 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_04_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 UMAP (120 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_05_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 UMAP (15 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_06_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 UMAP (15 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_07_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 probabilities \u00b7 UMAP (15 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_08_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 PCA \u00b7 g band",
+      "file": "paper_v3_assets/embedding_09_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 PCA \u00b7 r band",
+      "file": "paper_v3_assets/embedding_10_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 PCA \u00b7 i band",
+      "file": "paper_v3_assets/embedding_11_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 UMAP (120 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_12_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 UMAP (120 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_13_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 UMAP (120 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_14_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 UMAP (15 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_15_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 UMAP (15 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_16_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + DECaLS10 representation \u00b7 UMAP (15 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_17_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 PCA \u00b7 g band",
+      "file": "paper_v3_assets/embedding_18_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 PCA \u00b7 r band",
+      "file": "paper_v3_assets/embedding_19_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 PCA \u00b7 i band",
+      "file": "paper_v3_assets/embedding_20_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 UMAP (120 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_21_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 UMAP (120 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_22_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 UMAP (120 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_23_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 UMAP (15 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_24_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 UMAP (15 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_25_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 probabilities \u00b7 UMAP (15 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_26_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 PCA \u00b7 g band",
+      "file": "paper_v3_assets/embedding_27_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 PCA \u00b7 r band",
+      "file": "paper_v3_assets/embedding_28_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 PCA \u00b7 i band",
+      "file": "paper_v3_assets/embedding_29_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 UMAP (120 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_30_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 UMAP (120 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_31_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 UMAP (120 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_32_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 UMAP (15 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_33_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 UMAP (15 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_34_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v3 representation \u00b7 UMAP (15 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_35_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 PCA \u00b7 g band",
+      "file": "paper_v3_assets/embedding_36_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 PCA \u00b7 r band",
+      "file": "paper_v3_assets/embedding_37_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 PCA \u00b7 i band",
+      "file": "paper_v3_assets/embedding_38_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 UMAP (120 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_39_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 UMAP (120 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_40_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 UMAP (120 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_41_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 UMAP (15 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_42_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 UMAP (15 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_43_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 morphology representation \u00b7 UMAP (15 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_44_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 PCA \u00b7 g band",
+      "file": "paper_v3_assets/embedding_45_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 PCA \u00b7 r band",
+      "file": "paper_v3_assets/embedding_46_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 PCA \u00b7 i band",
+      "file": "paper_v3_assets/embedding_47_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 UMAP (120 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_48_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 UMAP (120 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_49_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 UMAP (120 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_50_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 UMAP (15 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_51_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 UMAP (15 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_52_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT + human-trained v4 probabilities \u00b7 UMAP (15 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_53_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 PCA \u00b7 g band",
+      "file": "paper_v3_assets/embedding_54_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 PCA \u00b7 r band",
+      "file": "paper_v3_assets/embedding_55_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 PCA \u00b7 i band",
+      "file": "paper_v3_assets/embedding_56_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 UMAP (120 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_57_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 UMAP (120 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_58_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 UMAP (120 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_59_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 UMAP (15 neighbors) \u00b7 g band",
+      "file": "paper_v3_assets/embedding_60_g.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 UMAP (15 neighbors) \u00b7 r band",
+      "file": "paper_v3_assets/embedding_61_r.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    },
+    {
+      "title": "GALFIT g+i fitted properties \u00b7 UMAP (15 neighbors) \u00b7 i band",
+      "file": "paper_v3_assets/embedding_62_i.png",
+      "caption": "59,780 loose-selection galaxies; 59,780 exact morphology ID matches. All saved points are retained; grey means that metric is unavailable. Each panel has its own finite count and color-tail audit. UMAP and PCA coordinates are dimensionless and are not physical distances. These are overlays on previously fitted spaces, not new morphology embeddings. Human-trained v3/v4 spaces are separate models from the DECaLS10 classifier; label agreement in a supervised space is not independent validation."
+    }
+  ]
+}

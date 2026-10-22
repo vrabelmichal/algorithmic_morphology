@@ -1,0 +1,576 @@
+{
+  "generated_utc": "20261022T100624Z",
+  "human_source": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/data/classifications_all_users_2026-10-14.csv",
+  "effective_config": {
+    "inputs": {
+      "candidate_catalog": "/mnt/data_sm870qvo/lsbg/analysis/clustering_lsbg/.outputs/galfit_results_analysis/sky_subtracted/multiband_256_per_band_mag_reff__xy_2_5arcsec_20251031/reff_mul_2_0/circ_upper_0_8/reff_mul_for_source_1_5/circ_upper_for_source_0_8/init_sep_2_0/final_sep_high_2_0/final_sep_low_2_0/initial_dilation_9/outside_dilation_9/object_non_masked_radius_2_0/detr_vit_nnn_ng_bautista2023/all/subset_catalog_nodupcols/priority_sorting/sorted_by_priority_0704f0830088970ff7912dc1d6901dca.parquet",
+      "loose_catalog": "/mnt/data_sm870qvo/lsbg/analysis/clustering_lsbg/.outputs/galfit_results_analysis/sky_subtracted/multiband_256_per_band_mag_reff__xy_2_5arcsec_20251031/reff_mul_2_0/circ_upper_0_8/reff_mul_for_source_1_5/circ_upper_for_source_0_8/init_sep_2_0/final_sep_high_2_0/final_sep_low_2_0/initial_dilation_9/outside_dilation_9/object_non_masked_radius_2_0/detr_vit_nnn_ng_bautista2023/loose/subset_catalog_nodupcols/priority_sorting/sorted_by_priority_0704f0830088970ff7912dc1d6901dca.parquet",
+      "strict_catalog": "/mnt/data_sm870qvo/lsbg/analysis/clustering_lsbg/.outputs/galfit_results_analysis/sky_subtracted/multiband_256_per_band_mag_reff__xy_2_5arcsec_20251031/reff_mul_2_0/circ_upper_0_8/reff_mul_for_source_1_5/circ_upper_for_source_0_8/init_sep_2_0/final_sep_high_2_0/final_sep_low_2_0/initial_dilation_9/outside_dilation_9/object_non_masked_radius_2_0/detr_vit_nnn_ng_bautista2023/strict/subset_catalog_nodupcols/priority_sorting/sorted_by_priority_0704f0830088970ff7912dc1d6901dca.parquet",
+      "classifications_csv": "data/classifications_all_users_2026-10-14.csv",
+      "preview_image_root": "/media/vrabel/DATA_KIN4TB/lsbg/lsb_images/lsb_images"
+    },
+    "outputs": {
+      "root": "outputs",
+      "timestamp_format": "%Y%m%dT%H%M%S"
+    },
+    "logging": {
+      "level": "INFO"
+    },
+    "catalog": {
+      "field_candidates": {
+        "galaxy_id": [
+          "coadd_object_id"
+        ],
+        "galaxy_creation_time": [],
+        "numeric_id": [
+          "object_number",
+          "parent_number"
+        ],
+        "paper": [
+          "paper"
+        ],
+        "catalog_nucleus": [
+          "is_nucleated",
+          "nucleus"
+        ],
+        "ra": [
+          "ra",
+          "ra__best_fit",
+          "ra__best_available_fit"
+        ],
+        "dec": [
+          "dec",
+          "dec__best_fit",
+          "dec__best_available_fit"
+        ],
+        "reff": [
+          "sersic_reff_arcsec__best_fit",
+          "sersic_reff_arcsec__best_available_fit",
+          "reff_i_thur",
+          "reff_g_thur"
+        ],
+        "q": [
+          "sersic_q__best_fit",
+          "sersic_q__best_available_fit",
+          "q_thur",
+          "catalog_axes_ratio"
+        ],
+        "pa": [
+          "sersic_PA__best_fit"
+        ],
+        "mag": [
+          "sersic_mag__best_fit__extinction_corrected",
+          "sersic_mag__best_fit",
+          "mag_i_cor_thur",
+          "mag_g_cor_thur"
+        ],
+        "mag_r_corrected": [
+          "sersic_mag_r__best_fit__extinction_corrected"
+        ],
+        "mag_i_corrected": [
+          "sersic_mag_i__best_fit__extinction_corrected"
+        ],
+        "mean_mue": [
+          "sersic_mean_mue__best_fit__extinction_corrected",
+          "sersic_mean_mue__best_fit",
+          "mue_mean_i_gf_thur",
+          "mue_mean_g_gf_thur"
+        ],
+        "mean_mue_r": [
+          "sersic_mean_mue_r__best_fit__extinction_corrected",
+          "sersic_mean_mue_r__best_fit"
+        ],
+        "mean_mue_i": [
+          "sersic_mean_mue_i__best_fit__extinction_corrected",
+          "sersic_mean_mue_i__best_fit"
+        ],
+        "central_mue_g": [
+          "sersic_mue__best_fit__extinction_corrected",
+          "sersic_mue__best_fit"
+        ],
+        "central_mue_r": [
+          "sersic_mue_r__best_fit__extinction_corrected",
+          "sersic_mue_r__best_fit"
+        ],
+        "central_mue_i": [
+          "sersic_mue_i__best_fit__extinction_corrected",
+          "sersic_mue_i__best_fit"
+        ],
+        "sersic_n": [
+          "sersic_n__best_fit",
+          "sersic_n__best_available_fit"
+        ],
+        "chi2_reduced": [
+          "sersic_chi2red__best_fit",
+          "sersic_chi2red__best_available_fit"
+        ],
+        "bic": [
+          "BIC__best_fit",
+          "BIC__best_available_fit"
+        ],
+        "bic_single": [
+          "BIC_1__good_fit",
+          "BIC_1"
+        ],
+        "bic_sersic_psf": [
+          "BIC_2__good_fit",
+          "BIC_2"
+        ],
+        "psf_mag_g": [
+          "sersic_psf_mag__best_fit__extinction_corrected",
+          "sersic_psf_mag__best_fit"
+        ],
+        "psf_mag_r": [
+          "sersic_psf_mag_r__best_fit__extinction_corrected",
+          "sersic_psf_mag_r__best_fit"
+        ],
+        "psf_mag_i": [
+          "sersic_psf_mag_i__best_fit__extinction_corrected",
+          "sersic_psf_mag_i__best_fit"
+        ],
+        "surface_brightness_corrected": [
+          "sersic_mue__best_fit__extinction_corrected",
+          "sersic_mean_mue__best_fit__extinction_corrected"
+        ]
+      }
+    },
+    "classification_analysis": {
+      "stats_reference_json": "data/classification-analysis-stats-2026-05-28.json",
+      "llm_comment_sentiment": {
+        "enabled": true,
+        "generation": {
+          "provider": "kilogateway",
+          "model": "deepseek/deepseek-v4-flash",
+          "reasoning_effort": "high"
+        },
+        "api_key_env": "GEMINI_API_KEY",
+        "env_file": ".env",
+        "output_root": "data/llm_sentiment_analysis",
+        "batch_size": 50,
+        "temperature": 0.1,
+        "temp_root": "data/llm_sentiment_analysis/_temp_batches",
+        "resume_dir": "",
+        "keep_temp_files": false,
+        "retry_attempts": 4,
+        "retry_initial_delay_seconds": 2.0,
+        "retry_max_delay_seconds": 30.0,
+        "retry_jitter_seconds": 0.5,
+        "auto_generate_if_missing": false,
+        "confirm_cost": false,
+        "regenerate": false,
+        "report": {}
+      },
+      "seniority": {
+        "enabled": true,
+        "users_csv": "data/users_export_2026-05-28.csv",
+        "senior_experience_label": "Senior",
+        "senior_weight": 1.5
+      },
+      "human_label_mapping": {
+        "mapping_json": "docs/human_label_query_mapping_min2.json"
+      },
+      "good_fit_mapping": {
+        "mapping_json": "docs/good_fit_query_mapping.json"
+      },
+      "report": {
+        "inspector_time": {
+          "timezone": "Europe/Bratislava",
+          "minimum_weekly_answers": 20,
+          "minimum_daily_answers": 20,
+          "minimum_intraday_answers": 20,
+          "large_shift_threshold": 0.2
+        },
+        "histogram_zero_defaults": "configs/histogram_zero_defaults.yaml",
+        "classification_interface_base_url": "https://galaxies.michalvrabel.sk/classify",
+        "preview_image_names": [
+          "aplpy_linear_based_on_109534177__1_995_unmasked_irg.png",
+          "aplpy_linear_based_on_109534177__1_995_unmasked.png",
+          "aplpy_linear_based_on_109534177_unmasked_irg.png",
+          "aplpy_linear_based_on_109534177_unmasked.png",
+          "aplpy_linear_based_on_109534177_irg.png",
+          "aplpy_zscale_unmasked.png"
+        ],
+        "top_preview_limit_default": 10,
+        "classification_preview_limit_default": 10,
+        "preview": {
+          "image_base_url": "https://images.galaxies.michalvrabel.sk",
+          "image_filename": "aplpy_linear_based_on_109534177__1_995_unmasked_irg.avif"
+        },
+        "gallery": {
+          "image_base_url": "https://images.galaxies.michalvrabel.sk",
+          "image_filename": "aplpy_linear_based_on_109534177__1_995_unmasked_irg.avif",
+          "detail_base_url": "https://galaxies.michalvrabel.sk"
+        }
+      },
+      "label_mixtures": {
+        "zoobot_predictions": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_bgsub_masked_20260615/predictions_zoobot_finetuned_decals10.parquet",
+        "human_weight": 0.5,
+        "random_seed": 42,
+        "uncertainty_samples": 128,
+        "run_umap": true,
+        "include_catalog_properties": true
+      }
+    },
+    "_meta": {
+      "config_path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/configs/label-mixtures-local.yaml",
+      "project_root": "/mnt/data_xpg1/lsbg/analysis/classification_analysis"
+    }
+  },
+  "input_diagnostics": {
+    "raw_vote_rows": 83995,
+    "missing_reviewer_names": 0,
+    "invalid_morphology_rows": 0,
+    "retained_morphology_votes": 83995
+  },
+  "human_galaxies": 33164,
+  "seed": 42,
+  "posterior_samples": 128,
+  "human_mapping": {
+    "-1": "Featureless",
+    "0": "Not sure (Irr/other)",
+    "1": "LTG",
+    "2": "ETG"
+  },
+  "umap_status": "enabled",
+  "reviewer_policy": "last known per reviewer+galaxy; anonymous rows retained",
+  "zoobot_source": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_bgsub_masked_20260615/predictions_zoobot_finetuned_decals10.parquet",
+  "zoobot_provenance": {
+    "checkpoint_spec": "mwalmsley/zoobot-finetuned-decals10",
+    "task": "classify",
+    "n_objects": 26209,
+    "prediction_columns": [
+      "class_0",
+      "class_1",
+      "class_2",
+      "class_3",
+      "class_4",
+      "class_5",
+      "class_6",
+      "class_7",
+      "class_8",
+      "class_9"
+    ],
+    "class_label_map": {
+      "class_0": "Disturbed Galaxies",
+      "class_1": "Merging Galaxies",
+      "class_2": "Round Smooth Galaxies",
+      "class_3": "In-between Round Smooth Galaxies",
+      "class_4": "Cigar-shaped Smooth Galaxies",
+      "class_5": "Barred Spiral Galaxies",
+      "class_6": "Unbarred Tight Spiral Galaxies",
+      "class_7": "Unbarred Loose Spiral Galaxies",
+      "class_8": "Edge-on Galaxies without a Bulge",
+      "class_9": "Edge-on Galaxies with a Bulge"
+    },
+    "predict_catalog": "/media/vrabel/DATA_KIN4TB/lsbg/analysis/zoobot_classification/outputs/aplpy_irg_linear_bgsub_masked_20260615/predict_catalog_intersection.parquet",
+    "embedding_export": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/embedding_artifacts/convnext_nano_aplpy_irg_linear_bgsub_masked_20260615/all_processed/embeddings_export.csv",
+    "data_quality_status": "OK",
+    "checkpoint_encoder_name": "hf_hub:mwalmsley/zoobot-encoder-convnext_nano",
+    "checkpoint_encoder_tag": "convnext_nano",
+    "config_encoder_name": "convnext_nano",
+    "config_encoder_tag": "convnext_nano",
+    "checkpoint_config_encoder_mismatch": false
+  },
+  "zoobot_join": {
+    "prediction_rows": 26209,
+    "valid_prediction_rows": 26209,
+    "human_rows": 33164,
+    "matched_rows": 11288,
+    "excluded_invalid_predictions": 0,
+    "human_without_valid_zoobot": 21876
+  },
+  "physical_catalog_rows": 84200,
+  "top_vote_ties": {
+    "n_all": 33164,
+    "n_tied": 10566,
+    "percent_tied": 31.85984802798215,
+    "two_vote_ties": 8122,
+    "percent_two_vote_ties": 76.8692031042968,
+    "multiway_ties": 2421,
+    "with_nonleading_votes": 0,
+    "unique_tied_vote_fractions": 10,
+    "patterns": [
+      {
+        "pattern": "irregular_or_unsure|etg",
+        "label": "Not sure / Irr-other + ETG / elliptical",
+        "n": 2622,
+        "degree": 2,
+        "percent_of_ties": 24.815445769449177,
+        "two_vote_galaxies": 2606,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "featureless|irregular_or_unsure",
+        "label": "Featureless + Not sure / Irr-other",
+        "n": 2256,
+        "degree": 2,
+        "percent_of_ties": 21.35150482680295,
+        "two_vote_galaxies": 2255,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "irregular_or_unsure|ltg",
+        "label": "Not sure / Irr-other + LTG / spiral",
+        "n": 1161,
+        "degree": 2,
+        "percent_of_ties": 10.988074957410563,
+        "two_vote_galaxies": 1156,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "irregular_or_unsure|ltg|etg",
+        "label": "Not sure / Irr-other + LTG / spiral + ETG / elliptical",
+        "n": 1144,
+        "degree": 3,
+        "percent_of_ties": 10.827181525648307,
+        "two_vote_galaxies": 0,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "featureless|irregular_or_unsure|etg",
+        "label": "Featureless + Not sure / Irr-other + ETG / elliptical",
+        "n": 1094,
+        "degree": 3,
+        "percent_of_ties": 10.353965549876964,
+        "two_vote_galaxies": 0,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "ltg|etg",
+        "label": "LTG / spiral + ETG / elliptical",
+        "n": 1047,
+        "degree": 2,
+        "percent_of_ties": 9.909142532651902,
+        "two_vote_galaxies": 1046,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "featureless|etg",
+        "label": "Featureless + ETG / elliptical",
+        "n": 902,
+        "degree": 2,
+        "percent_of_ties": 8.536816202915011,
+        "two_vote_galaxies": 902,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "featureless|ltg",
+        "label": "Featureless + LTG / spiral",
+        "n": 157,
+        "degree": 2,
+        "percent_of_ties": 1.485898163922014,
+        "two_vote_galaxies": 157,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "featureless|irregular_or_unsure|ltg",
+        "label": "Featureless + Not sure / Irr-other + LTG / spiral",
+        "n": 147,
+        "degree": 3,
+        "percent_of_ties": 1.3912549687677456,
+        "two_vote_galaxies": 0,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      },
+      {
+        "pattern": "featureless|ltg|etg",
+        "label": "Featureless + LTG / spiral + ETG / elliptical",
+        "n": 36,
+        "degree": 3,
+        "percent_of_ties": 0.34071550255536626,
+        "two_vote_galaxies": 0,
+        "with_nonleading_votes": 0,
+        "distinct_vote_fractions": 1
+      }
+    ],
+    "evidence": [
+      {
+        "votes": 1,
+        "n_all": 876,
+        "n_2_way": 0,
+        "n_3_way": 0,
+        "n_4_way": 0,
+        "n_tied": 0,
+        "tie_fraction": 0.0
+      },
+      {
+        "votes": 2,
+        "n_all": 13848,
+        "n_2_way": 8122,
+        "n_3_way": 0,
+        "n_4_way": 0,
+        "n_tied": 8122,
+        "tie_fraction": 0.5865106874638937
+      },
+      {
+        "votes": 3,
+        "n_all": 18342,
+        "n_2_way": 0,
+        "n_3_way": 2421,
+        "n_4_way": 0,
+        "n_tied": 2421,
+        "tie_fraction": 0.13199214916584887
+      },
+      {
+        "votes": 4,
+        "n_all": 95,
+        "n_2_way": 23,
+        "n_3_way": 0,
+        "n_4_way": 0,
+        "n_tied": 23,
+        "tie_fraction": 0.24210526315789474
+      },
+      {
+        "votes": 5,
+        "n_all": 2,
+        "n_2_way": 0,
+        "n_3_way": 0,
+        "n_4_way": 0,
+        "n_tied": 0,
+        "tie_fraction": 0.0
+      },
+      {
+        "votes": 7,
+        "n_all": 1,
+        "n_2_way": 0,
+        "n_3_way": 0,
+        "n_4_way": 0,
+        "n_tied": 0,
+        "tie_fraction": 0.0
+      }
+    ]
+  },
+  "scatter_policy": "All finite-coordinate galaxies; no sampling cap; legend marker alpha=1",
+  "morphology_density_histograms": [
+    {
+      "id": "simple",
+      "n": 33164,
+      "bins_x": 25,
+      "bins_y": 25,
+      "max_count_per_bin": 4965,
+      "max_count_per_bin_by_morphology": {
+        "featureless": 1131,
+        "irregular_or_unsure": 4965,
+        "ltg": 1462,
+        "etg": 3493,
+        "tied": 2622
+      }
+    },
+    {
+      "id": "human_pca",
+      "n": 33164,
+      "bins_x": 25,
+      "bins_y": 25,
+      "max_count_per_bin": 4965,
+      "max_count_per_bin_by_morphology": {
+        "featureless": 1131,
+        "irregular_or_unsure": 4965,
+        "ltg": 1462,
+        "etg": 3493,
+        "tied": 2622
+      }
+    },
+    {
+      "id": "human_umap",
+      "n": 33164,
+      "bins_x": 25,
+      "bins_y": 25,
+      "max_count_per_bin": 876,
+      "max_count_per_bin_by_morphology": {
+        "featureless": 517,
+        "irregular_or_unsure": 446,
+        "ltg": 315,
+        "etg": 223,
+        "tied": 876
+      }
+    },
+    {
+      "id": "zoobot_pca",
+      "n": 11288,
+      "bins_x": 25,
+      "bins_y": 25,
+      "max_count_per_bin": 173,
+      "max_count_per_bin_by_morphology": {
+        "featureless": 164,
+        "irregular_or_unsure": 129,
+        "ltg": 16,
+        "etg": 173,
+        "tied": 88
+      }
+    },
+    {
+      "id": "zoobot_umap",
+      "n": 11288,
+      "bins_x": 25,
+      "bins_y": 25,
+      "max_count_per_bin": 73,
+      "max_count_per_bin_by_morphology": {
+        "featureless": 52,
+        "irregular_or_unsure": 72,
+        "ltg": 48,
+        "etg": 73,
+        "tied": 51
+      }
+    },
+    {
+      "id": "joint_pca",
+      "n": 11288,
+      "bins_x": 25,
+      "bins_y": 25,
+      "max_count_per_bin": 313,
+      "max_count_per_bin_by_morphology": {
+        "featureless": 259,
+        "irregular_or_unsure": 313,
+        "ltg": 104,
+        "etg": 216,
+        "tied": 139
+      }
+    },
+    {
+      "id": "joint_umap",
+      "n": 11288,
+      "bins_x": 25,
+      "bins_y": 25,
+      "max_count_per_bin": 236,
+      "max_count_per_bin_by_morphology": {
+        "featureless": 184,
+        "irregular_or_unsure": 236,
+        "ltg": 153,
+        "etg": 145,
+        "tied": 186
+      }
+    }
+  ],
+  "human_neighborhood_comparison": [
+    {
+      "method": "Simple vote contrasts",
+      "recall": "53.5% of 5 neighbors (n=43)"
+    },
+    {
+      "method": "PCA (human only)",
+      "recall": "52.1% of 5 neighbors (n=43)"
+    },
+    {
+      "method": "UMAP (human only)",
+      "recall": "49.8% of 5 neighbors (n=43)"
+    }
+  ],
+  "combined_1d_histograms": {
+    "simple_1d.png": "simple_1d_mixtures.png",
+    "human_pca_1d.png": "human_pca_1d_mixtures.png",
+    "human_umap_1d.png": "human_umap_1d_mixtures.png",
+    "zoobot_pca_1d.png": "zoobot_pca_1d_mixtures.png",
+    "zoobot_umap_1d.png": "zoobot_umap_1d_mixtures.png",
+    "joint_pca_1d.png": "joint_pca_1d_mixtures.png",
+    "joint_umap_1d.png": "joint_umap_1d_mixtures.png"
+  },
+  "visualizations_updated_utc": "2026-10-22T14:22:49.583685+00:00"
+}

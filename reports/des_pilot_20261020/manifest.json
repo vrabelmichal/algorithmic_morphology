@@ -1,0 +1,131 @@
+{
+  "catalog": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/des_inputs_v2/catalog.parquet",
+  "checkpointed": 225,
+  "config_sha256": "ce7ca110cb5a9fe6b48c9eacb56cea70381d0440d2e6bfd19c1a4c81c696dd94",
+  "count": 225,
+  "failed": 63,
+  "invalid": 0,
+  "methods": [
+    {
+      "excluded_fraction": 0.25,
+      "name": "lotz2004_statmorph_like_v1",
+      "scale": 1.0,
+      "width_fraction": 0.25
+    },
+    {
+      "excluded_fraction": 0.075,
+      "name": "conselice2003_like_v1",
+      "scale": 10.0,
+      "width_fraction": 0.3
+    }
+  ],
+  "parts": [
+    {
+      "file": "parts/part-000001.parquet",
+      "rows": 15,
+      "sha256": "a477d9dc1c3052c65e5b54caaa16e495c2ee840ff59ff8e9a9e473f4185d8518"
+    },
+    {
+      "file": "parts/part-000002.parquet",
+      "rows": 15,
+      "sha256": "c56150a954bb8c3af4071ef3319ab4c5008df0ac4ee916e68a4436c882d0ebe9"
+    },
+    {
+      "file": "parts/part-000003.parquet",
+      "rows": 15,
+      "sha256": "349a2a8fef750d169957306304198f4eb467fc2aa42d666d48b0c7e9a324386e"
+    },
+    {
+      "file": "parts/part-000004.parquet",
+      "rows": 15,
+      "sha256": "7e824e8658ce1997b073486b9abe5ae14de3259373c611c5aec9b5083397d5fa"
+    },
+    {
+      "file": "parts/part-000005.parquet",
+      "rows": 15,
+      "sha256": "81f4c7f9547fc75951aa7af1c5bc2153c7bd44759e516fa61b9372e95f2ed9d1"
+    },
+    {
+      "file": "parts/part-000006.parquet",
+      "rows": 15,
+      "sha256": "8b8eed0c3134eb328113ac6a92a0aa23cddce9335316e1c026ab252e41fb7117"
+    },
+    {
+      "file": "parts/part-000007.parquet",
+      "rows": 15,
+      "sha256": "d98779f45e04ea4c585a36df03a90a9aad3432c6e28fb33d7becf09f330ddc81"
+    },
+    {
+      "file": "parts/part-000008.parquet",
+      "rows": 15,
+      "sha256": "df8adf8f0d680ecff6f7f44a0f9198bf918849b627bb12f5e2a3cb38d3758e7f"
+    },
+    {
+      "file": "parts/part-000009.parquet",
+      "rows": 15,
+      "sha256": "9dea8c3a8d777092406585cadaee6755d3ef1b4b504bc77d92d2e4da3a248d63"
+    },
+    {
+      "file": "parts/part-000010.parquet",
+      "rows": 15,
+      "sha256": "5bd097cae14ccd5a17bbc31100e749a3ad84f3d3107703ecbb25c5691f631310"
+    },
+    {
+      "file": "parts/part-000011.parquet",
+      "rows": 15,
+      "sha256": "10be68772eed2c8abb28a53fccdc5d4e0f0e93c6123fbcbd5442495608740212"
+    },
+    {
+      "file": "parts/part-000012.parquet",
+      "rows": 15,
+      "sha256": "17f88de38c992166af3af98375a9940d6c00702e917e2d23e9f87c1b32be513c"
+    },
+    {
+      "file": "parts/part-000013.parquet",
+      "rows": 15,
+      "sha256": "6c861a0d17ac8bec7dc09ce67b71f04200b15959f28a3d99860e9e9780d4ec77"
+    },
+    {
+      "file": "parts/part-000014.parquet",
+      "rows": 15,
+      "sha256": "fc20a6fa6f0871ac18ede3a9bd9be8dfb706fcab68c7e6b846edbfb7e449c504"
+    },
+    {
+      "file": "parts/part-000015.parquet",
+      "rows": 15,
+      "sha256": "5ca3798e02e1e2a42f2e2f15adced7218a02aefa20b73d81c08622962dde919e"
+    }
+  ],
+  "provenance": {
+    "catalog_sha256": "352278cba5ecf24a6fa9a76a96d91364c468b33a497805e276237354284227fe",
+    "code_sha256": {
+      "__init__.py": "91543f14c63156814532760c89c341afe043ca92267222ccedf9a2fffcb8054c",
+      "__main__.py": "62cbd93f396239f81c300703a79a626cd088f5b8b9dd19e22e25fc5120b81cfd",
+      "metrics.py": "937058dab26028afadd5446664c5e0a5bf3843b2c96b7f96e561afde10346903",
+      "report.py": "dccde4f4073bb7b52755661a48c3a9a28ba5597168e9290f447d909e9e550965",
+      "runner.py": "4baa87292d27972a793d4157d9b0c95a4658de04a270373f52623fecfbf96245"
+    },
+    "git_commit": "186c5352989aaec4ac35e13ae786d67da6365cc0",
+    "git_dirty": true,
+    "method_version": "cas_discrete_v2",
+    "parameters": {
+      "aperture_factor": 1.5,
+      "center_search": 2.0,
+      "petrosian_eta": 0.2,
+      "skybox_size": 32
+    },
+    "versions": {
+      "astropy": "8.0.2",
+      "matplotlib": "3.11.2",
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "pyarrow": "26.0.0",
+      "scipy": "1.17.1"
+    }
+  },
+  "report": "report__20261020T173805630133Z_b5f7d0d3.html",
+  "run_id": "20261020T173805630133Z_b5f7d0d3",
+  "status": "complete_with_errors",
+  "table": "measurements__20261020T173805630133Z_b5f7d0d3.parquet",
+  "table_sha256": "11e4eeb76b92a11447281dad217098d0280d98c27db60c1d99b1471cc1e6fbc9"
+}

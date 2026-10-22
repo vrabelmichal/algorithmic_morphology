@@ -1,0 +1,10 @@
+{
+  "full_table": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/full_catalog/20261020T181011149128Z_48a36fe9/measurements__20261020T181011149128Z_48a36fe9.parquet",
+  "full_table_sha256": "4505526fbb05f410dcba1a3ac0063e684191eea19a40b376a77b21f774c3d9c7",
+  "compact_table": "measurements_metrics.parquet",
+  "compact_table_sha256": "c94e33086298e793bb3fa1978403bd5894079f50b38a61e972ea3f29bc397424",
+  "requested_rows": 252600,
+  "unique_objects": 84200,
+  "matched_upstream_ids": true,
+  "source_sha256": "2f5ac1e7c45bc9cef490bba81a1c2758b81d9f8a34424cc0b997b77a256825e1"
+}
