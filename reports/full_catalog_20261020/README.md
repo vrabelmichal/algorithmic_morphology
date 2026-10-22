@@ -36,3 +36,18 @@ source fingerprints, correlations, binned trends and plot limits are in
 `validation.json` and its HTML digest describe preserved `report_v1.html`.
 The current revision has its own `report_v2_manifest.json` and
 `report_v2_validation.json`; `report_history.json` maps revision files and hashes.
+
+## Classification and embedding report revision 3
+
+`index.html` now defaults to [revision 3](report_v3.html), preserving revision 2
+and its scientific content. The extension includes 25 class/probability figures,
+exact labels/provenance/statistics under `paper_v3_data/`, and 63 clustering-owned
+morphology panels copied into `paper_v3_assets/`. Keep the asset folder beside the
+HTML when sharing this portable report directory.
+
+Sources include 33,164 human-labeled objects from the latest completed human
+products and the newer 84,104-vector compatible Nano DECaLS10 predictions.
+Every one of the 21 requested current PCA/UMAP spaces is shown across g/r/i.
+See `report_v3_manifest.json` and `report_v3_validation.json`. The immutable
+morphology table is unchanged; earlier per-revision digests remain valid for
+those revision files, rather than the newly promoted index.

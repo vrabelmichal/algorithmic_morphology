@@ -1,0 +1,279 @@
+{
+  "built_utc": "2026-10-22T10:28:44.264592+00:00",
+  "sources": {
+    "human_mixtures": {
+      "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/label-mixtures/20261022T100624Z/tables/galaxy_label_mixtures.parquet",
+      "sha256": "aa098f8fa357d7609720bf6309757a2dd146a15fba25a8d60a1ccbc24d001e1e"
+    },
+    "human_metadata": {
+      "path": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/classification_analysis/20261022_v1/source_metadata/human_run_info.json",
+      "sha256": "acee7ecc4eaf43358ab32feee6ffc08fa8f28b25c5ef744e8d5896b52574c7c0",
+      "original_path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/label-mixtures/20261022T100624Z/metadata/run_info.json",
+      "sha256_at_initial_inventory": "57c7657247fe4f56d3784f9c9fad38bd200f749f227df8406d4a4a53c7da216c",
+      "note": "Adjacent producer metadata changed while this analysis was running. Frozen current copy; all human feature/membership tables retain their original SHA-256 and were verified unchanged. Metadata does not supply analysis values."
+    },
+    "human_records": {
+      "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/classification-analysis/20261014T170523/tables/galaxy_records.parquet",
+      "sha256": "61c88e3bd78f8c60fc65d8257cd4a2f6ab2e808f5a6c82c9860dd5b174d7f253"
+    },
+    "human_membership": {
+      "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/classification-analysis/20261014T170523/tables/human_label_query_membership_min2.parquet",
+      "sha256": "76b6d54a0350c99a9a289fb9373b71c5063d51bc9470b492ec357fd706c4d283"
+    },
+    "human_mapping": {
+      "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/docs/human_label_query_mapping_min2.json",
+      "sha256": "4e285a31d6a822ccd221079e6bd1e11bf2438a7c4fa6720092adb030073c5e50"
+    },
+    "zoobot_predictions": {
+      "path": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/predictions_zoobot_finetuned_decals10.parquet",
+      "sha256": "6c31bace39c499e557d812d8497ebf0bd4c33611c8cc8aa4f76ae2e0a656c0cf"
+    },
+    "zoobot_metadata": {
+      "path": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+      "sha256": "2d79f1d2abe41d78d1bb306be07b1b1bfe5a5956e79c98869f387864531156cf"
+    }
+  },
+  "zoobot_candidates": [
+    {
+      "run": "aplpy_irg_linear_20260605",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_20260605/classification_run_metadata.json",
+      "prediction_exists": true,
+      "objects": 83775,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": false,
+      "metadata_sha256": "03088800db17f3dbe90e4b99845e0cb1edbf12f147c76c84c954b4f78dd87aa5"
+    },
+    {
+      "run": "aplpy_irg_linear_20260605_curated",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_20260605_curated/classification_run_metadata.json",
+      "prediction_exists": false,
+      "objects": 59597,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": false,
+      "metadata_sha256": "67f8af54ea6f6d62449b0e3281341a8ff7ba98a0f13147858aab4578a2175673"
+    },
+    {
+      "run": "aplpy_irg_linear_bgsub_masked_20260615",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_bgsub_masked_20260615/classification_run_metadata.json",
+      "prediction_exists": true,
+      "objects": 26209,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": false,
+      "metadata_sha256": "3491beb4428357a5c5ad444e5b28e9cb2ae90030196b1873231be6f2b495e779"
+    },
+    {
+      "run": "aplpy_irg_linear_bgsub_masked_20260615_curated",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_bgsub_masked_20260615_curated/classification_run_metadata.json",
+      "prediction_exists": false,
+      "objects": 17506,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": false,
+      "metadata_sha256": "ff64fc07636954ae46b29f88c36c883a1c8aa6a6500aed2990bdabcc35950682"
+    },
+    {
+      "run": "aplpy_irg_linear_masked_20260605",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_masked_20260605/classification_run_metadata.json",
+      "prediction_exists": true,
+      "objects": 84080,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": false,
+      "metadata_sha256": "345c2972979f157a6972cd0d45bcc67226eb6c088ab66a8ca4b15d2292d31683"
+    },
+    {
+      "run": "aplpy_irg_linear_masked_20260605_curated",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_masked_20260605_curated/classification_run_metadata.json",
+      "prediction_exists": false,
+      "objects": 59803,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": false,
+      "metadata_sha256": "3557545bbe060d0215ffcdc29dba771308f54aeaf72e07dc8b349e2827206b04"
+    },
+    {
+      "run": "convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+      "prediction_exists": true,
+      "objects": 84104,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": true,
+      "selected": false,
+      "metadata_sha256": "ad83e84d96bf0d064e1a2e5201ee646713ecb4fb88719ba0301da35e75c4721b"
+    },
+    {
+      "run": "convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated/classification_run_metadata.json",
+      "prediction_exists": false,
+      "objects": 59819,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": true,
+      "selected": false,
+      "metadata_sha256": "b0b880911868e0b58c3ced27abba1f7b6d4734085a3347559b35fcffe1b8c70c"
+    },
+    {
+      "run": "convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+      "prediction_exists": true,
+      "objects": 84104,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": true,
+      "metadata_sha256": "2d79f1d2abe41d78d1bb306be07b1b1bfe5a5956e79c98869f387864531156cf"
+    },
+    {
+      "run": "convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated/classification_run_metadata.json",
+      "prediction_exists": false,
+      "objects": 59819,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": false,
+      "selected": false,
+      "metadata_sha256": "3f1ddc754ae89e928797af0d92a4096fedc795f528e510f7a56cd73de5007f57"
+    },
+    {
+      "run": "convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+      "prediction_exists": true,
+      "objects": 84104,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": true,
+      "selected": false,
+      "metadata_sha256": "28877b83e26588047981b0f3a56824e1efaced559b44c34f887dab3f4bd142f6"
+    },
+    {
+      "run": "convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated",
+      "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated/classification_run_metadata.json",
+      "prediction_exists": false,
+      "objects": 59819,
+      "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+      "encoder_mismatch": true,
+      "selected": false,
+      "metadata_sha256": "d0f7e80ee86cef6401e54c063eda63536e6c51ff4199e856c93cc888171570fa"
+    }
+  ],
+  "zoobot_metadata": {
+    "checkpoint_spec": "mwalmsley/zoobot-finetuned-decals10",
+    "checkpoint_encoder_name": "hf_hub:mwalmsley/zoobot-encoder-convnext_nano",
+    "checkpoint_encoder_tag": "convnext_nano",
+    "config_encoder_name": "convnext_nano",
+    "config_encoder_tag": "convnext_nano",
+    "checkpoint_encoder_mismatch_allowed": false,
+    "task": "classify",
+    "n_objects": 84104,
+    "prediction_columns": [
+      "class_0",
+      "class_1",
+      "class_2",
+      "class_3",
+      "class_4",
+      "class_5",
+      "class_6",
+      "class_7",
+      "class_8",
+      "class_9"
+    ],
+    "class_label_map": {
+      "class_0": "Disturbed Galaxies",
+      "class_1": "Merging Galaxies",
+      "class_2": "Round Smooth Galaxies",
+      "class_3": "In-between Round Smooth Galaxies",
+      "class_4": "Cigar-shaped Smooth Galaxies",
+      "class_5": "Barred Spiral Galaxies",
+      "class_6": "Unbarred Tight Spiral Galaxies",
+      "class_7": "Unbarred Loose Spiral Galaxies",
+      "class_8": "Edge-on Galaxies without a Bulge",
+      "class_9": "Edge-on Galaxies with a Bulge"
+    },
+    "predict_catalog": "/media/vrabel/DATA_KIN4TB/lsbg/analysis/zoobot_classification/outputs/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/predict_catalog_intersection.parquet",
+    "embedding_export": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/embedding_artifacts/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/all_processed/embeddings_export.csv",
+    "data_quality_status": "OK",
+    "checkpoint_config_encoder_mismatch": false
+  },
+  "rows": 252600,
+  "objects": 84200,
+  "zoobot_input_rows": 84104,
+  "zoobot_invalid": 0,
+  "morphology_sha256": "c94e33086298e793bb3fa1978403bd5894079f50b38a61e972ea3f29bc397424",
+  "feature_contract": {
+    "version": "algorithmic_morphology_overlay_v1",
+    "metrics": [
+      "C",
+      "A_raw",
+      "A_corrected",
+      "S_lotz2004_statmorph_like_v1_raw",
+      "S_lotz2004_statmorph_like_v1_corrected",
+      "S_conselice2003_like_v1_raw",
+      "S_conselice2003_like_v1_corrected",
+      "Gini_aperture_v1",
+      "M20_aperture_v1",
+      "axis_ratio_positive_aperture_v1"
+    ],
+    "labels": {
+      "C": "Concentration $C=5\\log_{10}(r_{80}/r_{20})$",
+      "A_raw": "Raw asymmetry $A_{\\rm raw}$",
+      "A_corrected": "Sky-corrected asymmetry $A_{\\rm corr}$",
+      "S_lotz2004_statmorph_like_v1_raw": "Lotz-like clumpiness $S_{\\rm L,raw}$",
+      "S_lotz2004_statmorph_like_v1_corrected": "Lotz-like clumpiness $S_{\\rm L,corr}$",
+      "S_conselice2003_like_v1_raw": "Conselice-like clumpiness $S_{\\rm C,raw}$",
+      "S_conselice2003_like_v1_corrected": "Conselice-like clumpiness $S_{\\rm C,corr}$",
+      "Gini_aperture_v1": "Aperture Gini coefficient $G$",
+      "M20_aperture_v1": "Brightest-20% moment $M_{20}$",
+      "axis_ratio_positive_aperture_v1": "Positive-flux axis ratio $q_{+}$"
+    },
+    "limits": {
+      "C": [
+        1.4835479843700063,
+        3.6468968321639084
+      ],
+      "A_raw": [
+        0.17205754122683026,
+        1.2143995173598348
+      ],
+      "A_corrected": [
+        -0.49485371116319576,
+        0.972242260944455
+      ],
+      "S_lotz2004_statmorph_like_v1_raw": [
+        0.03188100712778501,
+        2.456315713133582
+      ],
+      "S_lotz2004_statmorph_like_v1_corrected": [
+        -0.2445898162892352,
+        0.6343615703268819
+      ],
+      "S_conselice2003_like_v1_raw": [
+        0.3188100712778501,
+        24.56315713133582
+      ],
+      "S_conselice2003_like_v1_corrected": [
+        -2.445898162892352,
+        6.343615703268819
+      ],
+      "Gini_aperture_v1": [
+        0.39783878727127103,
+        0.6839888048537991
+      ],
+      "M20_aperture_v1": [
+        -2.1541344334261665,
+        -0.33516702139285104
+      ],
+      "axis_ratio_positive_aperture_v1": [
+        0,
+        1
+      ]
+    },
+    "table": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/classification_analysis/20261022_v1/joined.parquet",
+    "table_sha256": "a684fe30750c69f47bb0071718ad660f063fa761575d1fed2d227fd344194e19",
+    "range_policy": "Pooled g/r/i 0.5\u201399.5% with 3.5% padding; corresponding Conselice S axes x10; q [0,1]. Values unchanged."
+  },
+  "selection": "Latest completed human runs; newest compatible Nano DECaLS10 bgsub/masked obj302317964 run, full predictions not curated subset.",
+  "older_mixture_zoobot_ignored": true,
+  "source_code": {
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/prepare_classification_analysis.py": "b03efce1f725859a994bfb10897088b19658e125f73ab22bcbbf2d7fff4a691e",
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/algorithmic_morphology/classification_data.py": "8a54898784016c6bf9882c43cc078680fdea19869dfc173c1fa04b9848aa0b5c"
+  }
+}

@@ -1,0 +1,70 @@
+column,meaning,definition
+p_featureless,Featureless,Raw equal-weight answer fraction; question-specific denominator ≥2. Missing means insufficient/no responses; not zero.
+p_irregular_or_unsure,Not sure (Irr/other),Raw equal-weight answer fraction; question-specific denominator ≥2. Missing means insufficient/no responses; not zero.
+p_ltg,LTG / spiral,Raw equal-weight answer fraction; question-specific denominator ≥2. Missing means insufficient/no responses; not zero.
+p_etg,ETG / elliptical,Raw equal-weight answer fraction; question-specific denominator ≥2. Missing means insufficient/no responses; not zero.
+p_lsb,Is LSB: yes,Raw equal-weight answer fraction; question-specific denominator ≥2. Missing means insufficient/no responses; not zero.
+p_visible_nucleus,Visible nucleus: yes,Raw equal-weight answer fraction; question-specific denominator ≥2. Missing means insufficient/no responses; not zero.
+p_failed_fitting,Failed fitting: yes,Raw equal-weight answer fraction; question-specific denominator ≥2. Missing means insufficient/no responses; not zero.
+class_0,DECaLS10: Disturbed,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_1,DECaLS10: Merging,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_2,DECaLS10: Round smooth,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_3,DECaLS10: Intermediate round smooth,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_4,DECaLS10: Cigar-shaped smooth,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_5,DECaLS10: Barred spiral,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_6,DECaLS10: Unbarred tight spiral,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_7,DECaLS10: Unbarred loose spiral,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_8,DECaLS10: Edge-on without bulge,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+class_9,DECaLS10: Edge-on with bulge,"Supplied ten-way model probability; finite, within [0,1], vector sum within 1e-4 of one. Invalid vectors are null; no renormalization."
+human_vote_count,Human morphology responses,Latest named reviewer vote per object; anonymous rows separately retained by producer.
+top_morphology,Raw vote plurality with explicit ties,Label-mixture producer output; not the seniority-weighted consensus used for class distributions.
+zoobot_top,Largest supplied class probability,0–9 class index; maximum probability is not a human vote or proof of class membership.
+zoobot_valid,Probability-vector validation,"All ten entries finite and in [0,1], sum≈1; missing for absent predictions."
+normalized_entropy,Human vote-mixture entropy,"−Σp ln p / ln4. A discrete vote-disagreement summary, not calibration error."
+zoobot_top_probability,Maximum supplied model probability,Confidence sensitivity at ≥0.5 is exported separately; no such cut in the main analysis.
+count_featureless,Raw per-category human morphology count,Numerator for the matching p_ fraction; not seniority-weighted.
+count_irregular_or_unsure,Raw per-category human morphology count,Numerator for the matching p_ fraction; not seniority-weighted.
+count_ltg,Raw per-category human morphology count,Numerator for the matching p_ fraction; not seniority-weighted.
+count_etg,Raw per-category human morphology count,Numerator for the matching p_ fraction; not seniority-weighted.
+p_lsb_count,Question-specific answer denominator,Number of comparable human responses; fraction is null when fewer than two.
+p_visible_nucleus_count,Question-specific answer denominator,Number of comparable human responses; fraction is null when fewer than two.
+p_failed_fitting_count,Question-specific answer denominator,Number of comparable human responses; fraction is null when fewer than two.
+analysis-is-lsb-yes-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-lsb-no-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-undecidable-is-lsb,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-lsb-no-comparable-votes,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-lsb-combined-yes-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-lsb-combined-no-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-lsb-combined-split-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-lsb-combined-no-comparable-votes,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-lsb-combined-lsb-successful-fits,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-etg-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-ltg-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-featureless-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-featureless-or-etg-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-irregular-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-undecidable-morphology,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-no-classifications,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-successful-fits-etg-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-successful-fits-ltg-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-successful-fits-featureless-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-successful-fits-featureless-or-etg-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-successful-fits-irregular-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-successful-fits-split-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-morphology-successful-fits-no-classifications,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-visible-nucleus-visible-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-visible-nucleus-not-visible-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-undecidable-visible-nucleus,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-visible-nucleus-no-responses,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-failed-fitting-flagged-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-failed-fitting-good-fit-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-undecidable-failed-fitting,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-awesome-at-least-1,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-awesome-none,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-awesome-split,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-nucleated-yes,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-is-nucleated-no,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-visible-nucleus-confirmed-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-visible-nucleus-maybe-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-visible-nucleus-unconfirmed-min2,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.
+analysis-nucleus-confirmation-no-data,Published human query membership,Boolean copied unchanged from classification_analysis. Exact expression and min-response requirement in human_query_mapping.json.

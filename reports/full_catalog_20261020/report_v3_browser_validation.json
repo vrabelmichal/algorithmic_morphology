@@ -1,0 +1,19 @@
+{
+  "validated_utc": "2026-10-22T14:41:23.381610+00:00",
+  "html_sha256": "14240ea5305e8d625351f7cd8602e8b3dcaad6ff190f2bda6a8aaeba9e2cec5b",
+  "collaborative_browser_ready": true,
+  "desktop_width": 1280,
+  "gallery_dom_checks": {
+    "class_matrices": 5,
+    "human_distributions": 3,
+    "class_probability_trends": 17,
+    "embedding_panels": 63
+  },
+  "all_gallery_image_caption_and_full_resolution_links_match": true,
+  "initial_gallery_images_loaded": 4,
+  "new_sections_mobile_preview_width": 390,
+  "new_sections_mobile_console_errors": 0,
+  "interactive_summary_records": 2040,
+  "interactive_summary_console_errors": 0,
+  "image_integrity_and_embedding_values": "Independently verified without visual inspection of clustering output images."
+}

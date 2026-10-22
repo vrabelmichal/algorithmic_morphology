@@ -1,0 +1,38 @@
+{
+  "checkpoint_spec": "mwalmsley/zoobot-finetuned-decals10",
+  "checkpoint_encoder_name": "hf_hub:mwalmsley/zoobot-encoder-convnext_nano",
+  "checkpoint_encoder_tag": "convnext_nano",
+  "config_encoder_name": "convnext_nano",
+  "config_encoder_tag": "convnext_nano",
+  "checkpoint_encoder_mismatch_allowed": false,
+  "task": "classify",
+  "n_objects": 84104,
+  "prediction_columns": [
+    "class_0",
+    "class_1",
+    "class_2",
+    "class_3",
+    "class_4",
+    "class_5",
+    "class_6",
+    "class_7",
+    "class_8",
+    "class_9"
+  ],
+  "class_label_map": {
+    "class_0": "Disturbed Galaxies",
+    "class_1": "Merging Galaxies",
+    "class_2": "Round Smooth Galaxies",
+    "class_3": "In-between Round Smooth Galaxies",
+    "class_4": "Cigar-shaped Smooth Galaxies",
+    "class_5": "Barred Spiral Galaxies",
+    "class_6": "Unbarred Tight Spiral Galaxies",
+    "class_7": "Unbarred Loose Spiral Galaxies",
+    "class_8": "Edge-on Galaxies without a Bulge",
+    "class_9": "Edge-on Galaxies with a Bulge"
+  },
+  "predict_catalog": "/media/vrabel/DATA_KIN4TB/lsbg/analysis/zoobot_classification/outputs/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/predict_catalog_intersection.parquet",
+  "embedding_export": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/embedding_artifacts/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/all_processed/embeddings_export.csv",
+  "data_quality_status": "OK",
+  "checkpoint_config_encoder_mismatch": false
+}

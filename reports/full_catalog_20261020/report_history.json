@@ -10,5 +10,10 @@
     "validation": "report_v2_validation.json"
   },
   "default": "index.html",
-  "measurement_table_unchanged": true
+  "measurement_table_unchanged": true,
+  "v3": {
+    "html": "report_v3.html",
+    "sha256": "14240ea5305e8d625351f7cd8602e8b3dcaad6ff190f2bda6a8aaeba9e2cec5b",
+    "validation": "report_v3_validation.json"
+  }
 }

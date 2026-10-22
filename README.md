@@ -126,3 +126,45 @@ For architecture and remaining work see [project design](docs/PROJECT_DESIGN.md)
 ## Contributing
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md).
+
+## Human and DECaLS10 context and embedding atlas
+
+The [current HTML report](reports/full_catalog_20261020/index.html) is revision 3.
+It preserves the full scientific report and adds 25 classification figures and
+an interactive selector for 63 morphology panels on 21 saved PCA/UMAP spaces.
+The report directory is portable: keep `paper_v3_assets/` beside the HTML.
+Earlier v1/v2 HTML and validation records remain available.
+
+The latest completed human products use the 14 October export: 33,164 labeled
+objects, 32,288 with at least two morphology responses. Continuous comparisons
+use raw equal-weight answer fractions; selected classes use the producer's
+published consensus queries unchanged. The primary machine input is the newer
+84,104-object, background-subtracted/masked, compatible Nano DECaLS10 run,
+separate from the older 26,209-object table and human-label fine-tuned models.
+Sources, vocabularies, denominators, counts and SHA-256 fingerprints are explicit.
+
+All ten DECaLS10 probabilities and selected human morphology, LSB, visible-nucleus
+and fit-quality answers are compared with C, both A outputs, both S profiles,
+aperture Gini/M20 and positive-flux shape. The analysis includes matched cohorts,
+≥3-vote sensitivity, class effect sizes and rank adjustment for fitted mean
+surface brightness, radius and axis ratio. These are descriptive associations,
+not calibrated morphology classes or classifier accuracy measurements.
+
+Embedding figures are implemented and produced in `clustering_lsbg`; this project
+copies its products and provenance. Saved coordinates remain unchanged. Exact
+ID joins, all finite raw feature values, missing measurements and color tails
+are independently audited in `report_v3_validation.json`.
+
+Reproduction is staged so figures do not require rerunning image measurements:
+
+```bash
+python scripts/prepare_classification_analysis.py --sources /path/to/sources.json --output /new/frozen/input
+python scripts/plot_classification_analysis.py --input /new/frozen/input
+# In clustering_lsbg, run its render_algorithmic_morphology_overlays module.
+python scripts/build_classification_report.py --input /new/frozen/input --embedding-manifest /path/to/clustering/manifest.json
+python scripts/validate_classification_report.py --report-dir reports/full_catalog_20261020
+```
+
+The source JSON keys and current paths are recorded in
+`paper_v3_data/manifest.json`. Use new output directories/revisions; builders
+refuse to overwrite existing revisions. See [the analysis protocol](docs/CLASSIFICATION_CONTEXT.md).
