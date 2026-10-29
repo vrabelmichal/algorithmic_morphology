@@ -242,6 +242,14 @@ def binned_trends(joined,metric):
     return pd.DataFrame(rows)
 
 
+def embedding_cell_medians(task):
+    """Worker (revision 6): the finite per-cell medians that embedding_panel colours, without drawing."""
+    coords,values=task;x,y=coords;ok=np.isfinite(values);extent=(x.min(),x.max(),y.min(),y.max())
+    fig,ax=plt.subplots()
+    h=ax.hexbin(x[ok],y[ok],C=values[ok],reduce_C_function=np.median,gridsize=70,mincnt=3,extent=extent)
+    cells=np.asarray(h.get_array(),dtype=float);plt.close(fig);return cells[np.isfinite(cells)]
+
+
 def embedding_panel(task):
     """Worker: one median-colour hexbin map of one metric on one saved embedding."""
     path,coords,values,limits,label,title,dpi=task
