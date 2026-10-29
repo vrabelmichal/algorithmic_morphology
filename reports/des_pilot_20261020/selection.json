@@ -1,0 +1,11 @@
+{
+  "source_catalog": "/mnt/data_sm870qvo/lsbg/analysis/clustering_lsbg/.outputs/rejected_lsb_datasets/LSBG_DETR_and_ViT_candidates/v3/concatenated-detr-vit-all.fits",
+  "source_catalog_sha256": "2f5ac1e7c45bc9cef490bba81a1c2758b81d9f8a34424cc0b997b77a256825e1",
+  "selected_catalog_sha256": "352278cba5ecf24a6fa9a76a96d91364c468b33a497805e276237354284227fe",
+  "objects": 75,
+  "rows": 225,
+  "selection": "Union of available precomputed sky-subtracted g/r/i product IDs; sorted by ID; no morphology selection",
+  "product_root": "/mnt/data_sm870qvo/lsbg/analysis/nucleated_lsbg/.outputs/sia/sky_subtracted_multiband_1024_wide_legacy_fliplr_object_centered/reff_mul_2_0/circ_upper_0_8/reff_mul_for_source_1_5/circ_upper_for_source_0_8/init_sep_2_0/final_sep_high_2_0/final_sep_low_2_0/initial_dilation_9/outside_dilation_9/object_non_masked_radius_2_0",
+  "orientation": "Upstream legacy fliplr object-centered products; no additional flip",
+  "upstream_git": "65f791b2a00ca934e026eba69c7fe96f5fe66c3b"
+}

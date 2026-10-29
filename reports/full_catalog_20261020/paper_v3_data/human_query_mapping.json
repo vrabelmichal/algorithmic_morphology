@@ -1,0 +1,515 @@
+{
+  "description": "Maps each human-label category to its possible values (most queries require at least 2 classifications; Awesome Flag is an exception with 1).",
+  "output_root": "tables/query_galaxy_ids",
+  "parquet_path": "tables/human_label_query_membership_min2.parquet",
+  "parquet_key_column": "galaxyId",
+  "notes": [
+    "Is LSB, Morphology, Visible Nucleus, Failed Fitting, and Nucleus Confirmation require at least 2 classifications to ensure statistical significance.",
+    "Awesome Flag is an exception: one vote is sufficient since it records individual classifier enthusiasm.",
+    "Split queries identify tied votes among answered classifications (min 2).",
+    "Not enough data queries identify galaxies where there are insufficient classifications for that category."
+  ],
+  "report": {
+    "description": "Human-label queries are integrated into the main report's topic-specific pages alongside related queries. Each query appears on the most relevant page based on its subject: Is-LSB queries join the Is LSB pages, morphology queries join the Morphology pages, flag queries join the Flags pages, etc.",
+    "index_page": "index.html",
+    "galaxy_queries_index": "galaxy-queries.html"
+  },
+  "categories": [
+    {
+      "category": "Is LSB",
+      "column": "dominantLsbState",
+      "queries": [
+        {
+          "value": "LSB",
+          "query_id": "analysis-is-lsb-yes-min2",
+          "parquet_column": "analysis-is-lsb-yes-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-yes-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantLsbState == 'lsb' AND lsbComparableVotes >= 2",
+          "report_page_id": "is-lsb-yes",
+          "report_page_stem": "galaxy-queries-is-lsb-yes",
+          "report_page_label": "Is LSB: Yes"
+        },
+        {
+          "value": "Non-LSB",
+          "query_id": "analysis-is-lsb-no-min2",
+          "parquet_column": "analysis-is-lsb-no-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-no-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantLsbState == 'nonLsb' AND lsbComparableVotes >= 2",
+          "report_page_id": "is-lsb-no",
+          "report_page_stem": "galaxy-queries-is-lsb-no",
+          "report_page_label": "Is LSB: No"
+        },
+        {
+          "value": "Split",
+          "query_id": "analysis-undecidable-is-lsb",
+          "parquet_column": "analysis-undecidable-is-lsb",
+          "file_path": "tables/query_galaxy_ids/analysis-undecidable-is-lsb.parquet",
+          "min_classifications": 2,
+          "condition": "dominantLsbState == 'split' AND lsbComparableVotes >= 2",
+          "note": "Existing query reused",
+          "report_page_id": "is-lsb-undecidable",
+          "report_page_stem": "galaxy-queries-is-lsb-undecidable",
+          "report_page_label": "Is LSB: Unable to decide"
+        },
+        {
+          "value": "Not enough data",
+          "query_id": "analysis-is-lsb-no-comparable-votes",
+          "parquet_column": "analysis-is-lsb-no-comparable-votes",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-no-comparable-votes.parquet",
+          "min_classifications": 0,
+          "condition": "lsbComparableVotes < 2 OR dominantLsbState == 'noComparableVotes'",
+          "report_page_id": "is-lsb-undecidable",
+          "report_page_stem": "galaxy-queries-is-lsb-undecidable",
+          "report_page_label": "Is LSB: Unable to decide"
+        }
+      ]
+    },
+    {
+      "category": "Is LSB (combined)",
+      "column": "dominantLsbState",
+      "note": "Same queries as Is LSB, but the LSB value also includes galaxies from the 'old' and 'new' papers (published LSB/LBG galaxies).",
+      "queries": [
+        {
+          "value": "LSB",
+          "query_id": "analysis-is-lsb-combined-yes-min2",
+          "parquet_column": "analysis-is-lsb-combined-yes-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-combined-yes-min2.parquet",
+          "min_classifications": 0,
+          "condition": "(dominantLsbState == 'lsb' AND lsbComparableVotes >= 2) OR paper == 'old' OR paper == 'new'",
+          "note": "Includes old/new paper galaxies as LSB regardless of classification consensus.",
+          "report_page_id": "is-lsb-combined",
+          "report_page_stem": "galaxy-queries-is-lsb-combined",
+          "report_page_label": "Is LSB (combined)"
+        },
+        {
+          "value": "Non-LSB",
+          "query_id": "analysis-is-lsb-combined-no-min2",
+          "parquet_column": "analysis-is-lsb-combined-no-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-combined-no-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantLsbState == 'nonLsb' AND lsbComparableVotes >= 2",
+          "report_page_id": "is-lsb-combined",
+          "report_page_stem": "galaxy-queries-is-lsb-combined",
+          "report_page_label": "Is LSB (combined)"
+        },
+        {
+          "value": "Split",
+          "query_id": "analysis-is-lsb-combined-split-min2",
+          "parquet_column": "analysis-is-lsb-combined-split-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-combined-split-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantLsbState == 'split' AND lsbComparableVotes >= 2",
+          "report_page_id": "is-lsb-combined",
+          "report_page_stem": "galaxy-queries-is-lsb-combined",
+          "report_page_label": "Is LSB (combined)"
+        },
+        {
+          "value": "Not enough data",
+          "query_id": "analysis-is-lsb-combined-no-comparable-votes",
+          "parquet_column": "analysis-is-lsb-combined-no-comparable-votes",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-combined-no-comparable-votes.parquet",
+          "min_classifications": 0,
+          "condition": "(lsbComparableVotes < 2 OR dominantLsbState == 'noComparableVotes') AND paper != 'old' AND paper != 'new'",
+          "note": "Excludes old/new paper galaxies; those are already classified as LSB.",
+          "report_page_id": "is-lsb-combined",
+          "report_page_stem": "galaxy-queries-is-lsb-combined",
+          "report_page_label": "Is LSB (combined)"
+        },
+        {
+          "value": "LSB (successful fits)",
+          "query_id": "analysis-is-lsb-combined-lsb-successful-fits",
+          "parquet_column": "analysis-is-lsb-combined-lsb-successful-fits",
+          "file_path": "tables/query_galaxy_ids/analysis-is-lsb-combined-lsb-successful-fits.parquet",
+          "min_classifications": 2,
+          "condition": "((dominantLsbState == 'lsb' AND lsbComparableVotes >= 2) OR paper == 'old' OR paper == 'new') AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "is-lsb-combined",
+          "report_page_stem": "galaxy-queries-is-lsb-combined",
+          "report_page_label": "Is LSB (combined)"
+        }
+      ]
+    },
+    {
+      "category": "Morphology",
+      "column": "dominantMorphologyState",
+      "queries": [
+        {
+          "value": "ETG (Ell)",
+          "query_id": "analysis-morphology-etg-min2",
+          "parquet_column": "analysis-morphology-etg-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-etg-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'etg' AND totalClassifications >= 2",
+          "report_page_id": "morphology-decided",
+          "report_page_stem": "galaxy-queries-morphology-decided",
+          "report_page_label": "Morphology: Decided"
+        },
+        {
+          "value": "LTG (Sp)",
+          "query_id": "analysis-morphology-ltg-min2",
+          "parquet_column": "analysis-morphology-ltg-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-ltg-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'ltg' AND totalClassifications >= 2",
+          "report_page_id": "morphology-decided",
+          "report_page_stem": "galaxy-queries-morphology-decided",
+          "report_page_label": "Morphology: Decided"
+        },
+        {
+          "value": "Featureless",
+          "query_id": "analysis-morphology-featureless-min2",
+          "parquet_column": "analysis-morphology-featureless-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-featureless-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'featureless' AND totalClassifications >= 2",
+          "report_page_id": "morphology-decided",
+          "report_page_stem": "galaxy-queries-morphology-decided",
+          "report_page_label": "Morphology: Decided"
+        },
+        {
+          "value": "Featureless \u222a ETG (Ell)",
+          "query_id": "analysis-morphology-featureless-or-etg-min2",
+          "parquet_column": "analysis-morphology-featureless-or-etg-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-featureless-or-etg-min2.parquet",
+          "min_classifications": 2,
+          "condition": "(dominantMorphologyState == 'featureless' OR dominantMorphologyState == 'etg') AND totalClassifications >= 2",
+          "report_page_id": "morphology-decided",
+          "report_page_stem": "galaxy-queries-morphology-decided",
+          "report_page_label": "Morphology: Decided"
+        },
+        {
+          "value": "Irr/Other",
+          "query_id": "analysis-morphology-irregular-min2",
+          "parquet_column": "analysis-morphology-irregular-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-irregular-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'irregular' AND totalClassifications >= 2",
+          "report_page_id": "morphology-decided",
+          "report_page_stem": "galaxy-queries-morphology-decided",
+          "report_page_label": "Morphology: Decided"
+        },
+        {
+          "value": "Split",
+          "query_id": "analysis-undecidable-morphology",
+          "parquet_column": "analysis-undecidable-morphology",
+          "file_path": "tables/query_galaxy_ids/analysis-undecidable-morphology.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'split' AND totalClassifications >= 2",
+          "note": "Existing query reused",
+          "report_page_id": "morphology-undecidable",
+          "report_page_stem": "galaxy-queries-morphology-undecidable",
+          "report_page_label": "Morphology: Undecidable"
+        },
+        {
+          "value": "Not enough data",
+          "query_id": "analysis-morphology-no-classifications",
+          "parquet_column": "analysis-morphology-no-classifications",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-no-classifications.parquet",
+          "min_classifications": 0,
+          "condition": "totalClassifications < 2 OR dominantMorphologyState == 'noClassifications'",
+          "report_page_id": "morphology-decided",
+          "report_page_stem": "galaxy-queries-morphology-decided",
+          "report_page_label": "Morphology: Decided"
+        }
+      ]
+    },
+    {
+      "category": "Morphology (successful fits)",
+      "column": "dominantMorphologyState",
+      "note": "Copies of all Morphology selections intersected with Failed Fitting: No (at least 2 comparable failed-fitting votes).",
+      "queries": [
+        {
+          "value": "ETG (Ell)",
+          "query_id": "analysis-morphology-successful-fits-etg-min2",
+          "parquet_column": "analysis-morphology-successful-fits-etg-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-successful-fits-etg-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'etg' AND totalClassifications >= 2 AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "morphology-successful-fits",
+          "report_page_stem": "galaxy-queries-morphology-successful-fits",
+          "report_page_label": "Morphology: Successful fits"
+        },
+        {
+          "value": "LTG (Sp)",
+          "query_id": "analysis-morphology-successful-fits-ltg-min2",
+          "parquet_column": "analysis-morphology-successful-fits-ltg-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-successful-fits-ltg-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'ltg' AND totalClassifications >= 2 AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "morphology-successful-fits",
+          "report_page_stem": "galaxy-queries-morphology-successful-fits",
+          "report_page_label": "Morphology: Successful fits"
+        },
+        {
+          "value": "Featureless",
+          "query_id": "analysis-morphology-successful-fits-featureless-min2",
+          "parquet_column": "analysis-morphology-successful-fits-featureless-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-successful-fits-featureless-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'featureless' AND totalClassifications >= 2 AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "morphology-successful-fits",
+          "report_page_stem": "galaxy-queries-morphology-successful-fits",
+          "report_page_label": "Morphology: Successful fits"
+        },
+        {
+          "value": "Featureless \u222a ETG (Ell)",
+          "query_id": "analysis-morphology-successful-fits-featureless-or-etg-min2",
+          "parquet_column": "analysis-morphology-successful-fits-featureless-or-etg-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-successful-fits-featureless-or-etg-min2.parquet",
+          "min_classifications": 2,
+          "condition": "(dominantMorphologyState == 'featureless' OR dominantMorphologyState == 'etg') AND totalClassifications >= 2 AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "morphology-successful-fits",
+          "report_page_stem": "galaxy-queries-morphology-successful-fits",
+          "report_page_label": "Morphology: Successful fits"
+        },
+        {
+          "value": "Irr/Other",
+          "query_id": "analysis-morphology-successful-fits-irregular-min2",
+          "parquet_column": "analysis-morphology-successful-fits-irregular-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-successful-fits-irregular-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'irregular' AND totalClassifications >= 2 AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "morphology-successful-fits",
+          "report_page_stem": "galaxy-queries-morphology-successful-fits",
+          "report_page_label": "Morphology: Successful fits"
+        },
+        {
+          "value": "Split",
+          "query_id": "analysis-morphology-successful-fits-split-min2",
+          "parquet_column": "analysis-morphology-successful-fits-split-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-successful-fits-split-min2.parquet",
+          "min_classifications": 2,
+          "condition": "dominantMorphologyState == 'split' AND totalClassifications >= 2 AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "morphology-successful-fits",
+          "report_page_stem": "galaxy-queries-morphology-successful-fits",
+          "report_page_label": "Morphology: Successful fits"
+        },
+        {
+          "value": "Not enough data",
+          "query_id": "analysis-morphology-successful-fits-no-classifications",
+          "parquet_column": "analysis-morphology-successful-fits-no-classifications",
+          "file_path": "tables/query_galaxy_ids/analysis-morphology-successful-fits-no-classifications.parquet",
+          "min_classifications": 0,
+          "condition": "(totalClassifications < 2 OR dominantMorphologyState == 'noClassifications') AND failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "morphology-successful-fits",
+          "report_page_stem": "galaxy-queries-morphology-successful-fits",
+          "report_page_label": "Morphology: Successful fits"
+        }
+      ]
+    },
+    {
+      "category": "Visible Nucleus",
+      "column": "visibleNucleusState",
+      "queries": [
+        {
+          "value": "Yes",
+          "query_id": "analysis-visible-nucleus-visible-min2",
+          "parquet_column": "analysis-visible-nucleus-visible-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-visible-nucleus-visible-min2.parquet",
+          "min_classifications": 2,
+          "condition": "visibleNucleusState == 'yes' AND visibleNucleusComparableVotes >= 2",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        },
+        {
+          "value": "No",
+          "query_id": "analysis-visible-nucleus-not-visible-min2",
+          "parquet_column": "analysis-visible-nucleus-not-visible-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-visible-nucleus-not-visible-min2.parquet",
+          "min_classifications": 2,
+          "condition": "visibleNucleusState == 'no' AND visibleNucleusComparableVotes >= 2",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        },
+        {
+          "value": "Split",
+          "query_id": "analysis-undecidable-visible-nucleus",
+          "parquet_column": "analysis-undecidable-visible-nucleus",
+          "file_path": "tables/query_galaxy_ids/analysis-undecidable-visible-nucleus.parquet",
+          "min_classifications": 2,
+          "condition": "visibleNucleusState == 'split' AND visibleNucleusComparableVotes >= 2",
+          "note": "Existing query reused",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        },
+        {
+          "value": "Not enough data",
+          "query_id": "analysis-visible-nucleus-no-responses",
+          "parquet_column": "analysis-visible-nucleus-no-responses",
+          "file_path": "tables/query_galaxy_ids/analysis-visible-nucleus-no-responses.parquet",
+          "min_classifications": 0,
+          "condition": "visibleNucleusComparableVotes < 2 OR visibleNucleusState == 'noResponses'",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        }
+      ]
+    },
+    {
+      "category": "Failed Fitting",
+      "column": "failedFittingState",
+      "queries": [
+        {
+          "value": "Yes",
+          "query_id": "analysis-failed-fitting-flagged-min2",
+          "parquet_column": "analysis-failed-fitting-flagged-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-failed-fitting-flagged-min2.parquet",
+          "min_classifications": 2,
+          "condition": "failedFittingState == 'yes' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "flags-failed-fitting",
+          "report_page_stem": "galaxy-queries-flags-failed-fitting",
+          "report_page_label": "Flags: Failed fitting"
+        },
+        {
+          "value": "No",
+          "query_id": "analysis-failed-fitting-good-fit-min2",
+          "parquet_column": "analysis-failed-fitting-good-fit-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-failed-fitting-good-fit-min2.parquet",
+          "min_classifications": 2,
+          "condition": "failedFittingState == 'no' AND failedFittingComparableVotes >= 2",
+          "report_page_id": "flags-failed-fitting",
+          "report_page_stem": "galaxy-queries-flags-failed-fitting",
+          "report_page_label": "Flags: Failed fitting"
+        },
+        {
+          "value": "Split",
+          "query_id": "analysis-undecidable-failed-fitting",
+          "parquet_column": "analysis-undecidable-failed-fitting",
+          "file_path": "tables/query_galaxy_ids/analysis-undecidable-failed-fitting.parquet",
+          "min_classifications": 2,
+          "condition": "failedFittingState == 'split' AND failedFittingComparableVotes >= 2",
+          "note": "Existing query reused",
+          "report_page_id": "flags-failed-fitting",
+          "report_page_stem": "galaxy-queries-flags-failed-fitting",
+          "report_page_label": "Flags: Failed fitting"
+        }
+      ]
+    },
+    {
+      "category": "Awesome Flag",
+      "column": "awesomeVotes",
+      "queries": [
+        {
+          "value": "Yes",
+          "query_id": "analysis-awesome-at-least-1",
+          "parquet_column": "analysis-awesome-at-least-1",
+          "file_path": "tables/query_galaxy_ids/analysis-awesome-at-least-1.parquet",
+          "min_classifications": 1,
+          "condition": "awesomeVotes >= 1",
+          "note": "One vote sufficient; uses original query ID (no -min2 suffix).",
+          "report_page_id": "flags-awesome",
+          "report_page_stem": "galaxy-queries-flags-awesome",
+          "report_page_label": "Flags: Awesome"
+        },
+        {
+          "value": "No",
+          "query_id": "analysis-awesome-none",
+          "parquet_column": "analysis-awesome-none",
+          "file_path": "tables/query_galaxy_ids/analysis-awesome-none.parquet",
+          "min_classifications": 1,
+          "condition": "awesomeVotes == 0 AND totalClassifications >= 1",
+          "note": "One vote sufficient; uses original query ID (no -min2 suffix).",
+          "report_page_id": "flags-awesome",
+          "report_page_stem": "galaxy-queries-flags-awesome",
+          "report_page_label": "Flags: Awesome"
+        },
+        {
+          "value": "Split",
+          "query_id": "analysis-awesome-split",
+          "parquet_column": "analysis-awesome-split",
+          "file_path": "tables/query_galaxy_ids/analysis-awesome-split.parquet",
+          "min_classifications": 0,
+          "condition": "Not applicable; awesome flag is a vote count, not a dominant state",
+          "note": "Awesome Flag does not have a computed dominant state. Split is included for schema consistency but is not meaningful for a count-based flag.",
+          "report_page_id": "flags-awesome",
+          "report_page_stem": "galaxy-queries-flags-awesome",
+          "report_page_label": "Flags: Awesome"
+        }
+      ]
+    },
+    {
+      "category": "Is Nucleated",
+      "column": "catalogNucleus",
+      "queries": [
+        {
+          "value": "Yes",
+          "query_id": "analysis-is-nucleated-yes",
+          "parquet_column": "analysis-is-nucleated-yes",
+          "file_path": "tables/query_galaxy_ids/analysis-is-nucleated-yes.parquet",
+          "min_classifications": 0,
+          "condition": "catalogNucleus == True",
+          "note": "Catalog-level property; no classification minimum applies.",
+          "report_page_id": "flags-is-nucleated",
+          "report_page_stem": "galaxy-queries-flags-is-nucleated",
+          "report_page_label": "Flags: Is Nucleated"
+        },
+        {
+          "value": "No",
+          "query_id": "analysis-is-nucleated-no",
+          "parquet_column": "analysis-is-nucleated-no",
+          "file_path": "tables/query_galaxy_ids/analysis-is-nucleated-no.parquet",
+          "min_classifications": 0,
+          "condition": "catalogNucleus == False",
+          "note": "Catalog-level property; no classification minimum applies.",
+          "report_page_id": "flags-is-nucleated",
+          "report_page_stem": "galaxy-queries-flags-is-nucleated",
+          "report_page_label": "Flags: Is Nucleated"
+        }
+      ]
+    },
+    {
+      "category": "Nucleus Confirmation",
+      "column": "visibleNucleusState",
+      "queries": [
+        {
+          "value": "Confirmed",
+          "query_id": "analysis-visible-nucleus-confirmed-min2",
+          "parquet_column": "analysis-visible-nucleus-confirmed-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-visible-nucleus-confirmed-min2.parquet",
+          "min_classifications": 2,
+          "condition": "visibleNucleusState == 'yes' AND catalogNucleus >= 1 AND visibleNucleusComparableVotes >= 2",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        },
+        {
+          "value": "Maybe",
+          "query_id": "analysis-visible-nucleus-maybe-min2",
+          "parquet_column": "analysis-visible-nucleus-maybe-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-visible-nucleus-maybe-min2.parquet",
+          "min_classifications": 2,
+          "condition": "visibleNucleusVotes >= 1 AND catalogNucleus >= 1 AND visibleNucleusComparableVotes >= 2",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        },
+        {
+          "value": "Unconfirmed",
+          "query_id": "analysis-visible-nucleus-unconfirmed-min2",
+          "parquet_column": "analysis-visible-nucleus-unconfirmed-min2",
+          "file_path": "tables/query_galaxy_ids/analysis-visible-nucleus-unconfirmed-min2.parquet",
+          "min_classifications": 2,
+          "condition": "visibleNucleusVotes == 0 AND catalogNucleus >= 1 AND visibleNucleusComparableVotes >= 2",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        },
+        {
+          "value": "Not enough data",
+          "query_id": "analysis-nucleus-confirmation-no-data",
+          "parquet_column": "analysis-nucleus-confirmation-no-data",
+          "file_path": "tables/query_galaxy_ids/analysis-nucleus-confirmation-no-data.parquet",
+          "min_classifications": 0,
+          "condition": "visibleNucleusComparableVotes < 2 OR visibleNucleusState == 'noResponses' OR catalogNucleus == False",
+          "report_page_id": "flags-visible-nucleus",
+          "report_page_stem": "galaxy-queries-flags-visible-nucleus",
+          "report_page_label": "Flags: Visible nucleus"
+        }
+      ]
+    }
+  ]
+}

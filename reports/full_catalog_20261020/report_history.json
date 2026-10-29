@@ -1,0 +1,34 @@
+{
+  "v1": {
+    "html": "report_v1.html",
+    "sha256": "17b753900d2e08c00a7d0ef8d5437e1a77a798c4c3c47c2f951806b3a45a9b1a",
+    "validation": "validation.json"
+  },
+  "v2": {
+    "html": "report_v2.html",
+    "sha256": "a2f6a33293c92b763403a25f342ce652659fa27bfd004f1973146e31f775fd26",
+    "validation": "report_v2_validation.json"
+  },
+  "default": "index.html",
+  "measurement_table_unchanged": true,
+  "v3": {
+    "html": "report_v3.html",
+    "sha256": "14240ea5305e8d625351f7cd8602e8b3dcaad6ff190f2bda6a8aaeba9e2cec5b",
+    "validation": "report_v3_validation.json"
+  },
+  "v4": {
+    "html": "report_v4.html",
+    "sha256": "2fb9c1b17824847a39d98788f0aa223323d1aa38d5e8dd041aa08ee5888e0e71",
+    "validation": "report_v4_validation.json"
+  },
+  "v5": {
+    "html": "report_v5.html",
+    "sha256": "5197f690fe451fbc80c80e4c2bffd6eb2964cf8143406f6fb515b396fff08003",
+    "validation": "report_v5_validation.json"
+  },
+  "v6": {
+    "html": "report_v6.html",
+    "sha256": "561c18f4d1a3ea5cca3920c226e510c2c28f18a949c1ef6e6eac2a33275013bc",
+    "validation": "report_v6_validation.json"
+  }
+}

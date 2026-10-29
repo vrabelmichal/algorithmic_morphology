@@ -1,0 +1,286 @@
+panel,series,band,axis,finite,lower,upper,below,above,shown
+rpetro_dist,rpetro,g,x,83848,6.134207839206782,66.08841651064861,187,366,83295
+rpetro_dist,rpetro,r,x,83844,6.134207839206782,66.08841651064861,121,354,83369
+rpetro_dist,rpetro,i,x,83854,6.134207839206782,66.08841651064861,193,317,83344
+rpetro_vs_re_g,gf_re_pixels,g,x,83722,4.026639464999992,61.586755535000236,105,438,83179
+rpetro_vs_re_g,rpetro,g,y,83722,6.235538163872409,66.02098189511868,184,364,83174
+rpetro_vs_re_r,gf_re_pixels,r,x,83737,4.026639464999992,61.586755535000236,99,309,83329
+rpetro_vs_re_r,rpetro,r,y,83737,6.235538163872409,66.02098189511868,119,356,83262
+rpetro_vs_re_i,gf_re_pixels,i,x,83783,4.026639464999992,61.586755535000236,202,289,83292
+rpetro_vs_re_i,rpetro,i,y,83783,6.235538163872409,66.02098189511868,201,320,83262
+rpetro_dist_full,rpetro,g,x,83848,0.19740565177466785,85.9083464536315,0,0,83848
+rpetro_dist_full,rpetro,r,x,83844,0.19740565177466785,85.9083464536315,0,0,83844
+rpetro_dist_full,rpetro,i,x,83854,0.19740565177466785,85.9083464536315,0,0,83854
+C_dist,C,g,x,82619,1.4835479843700063,3.6468968321639084,493,159,81967
+C_dist,C,r,x,82869,1.4835479843700063,3.6468968321639084,376,349,82144
+C_dist,C,i,x,82406,1.4835479843700063,3.6468968321639084,296,494,81616
+C_dist_full,C,g,x,82619,-0.08357741520875106,7.0973565526492655,0,0,82619
+C_dist_full,C,r,x,82869,-0.08357741520875106,7.0973565526492655,0,0,82869
+C_dist_full,C,i,x,82406,-0.08357741520875106,7.0973565526492655,0,0,82406
+C__human_r,C | ETG / elliptical,r,x,7902,1.4835479843700063,3.6468968321639084,26,24,7852
+C__human_r,C | LTG / spiral,r,x,3124,1.4835479843700063,3.6468968321639084,10,44,3070
+C__human_r,C | Featureless,r,x,2594,1.4835479843700063,3.6468968321639084,6,3,2585
+C__human_r,C | Not sure (Irr/other),r,x,10832,1.4835479843700063,3.6468968321639084,44,91,10697
+C__human_r,C | Split (no consensus),r,x,7767,1.4835479843700063,3.6468968321639084,21,75,7671
+C__human_g,C | ETG / elliptical,g,x,7901,1.4835479843700063,3.6468968321639084,50,19,7832
+C__human_g,C | LTG / spiral,g,x,3123,1.4835479843700063,3.6468968321639084,20,21,3082
+C__human_g,C | Featureless,g,x,2596,1.4835479843700063,3.6468968321639084,4,1,2591
+C__human_g,C | Not sure (Irr/other),g,x,10832,1.4835479843700063,3.6468968321639084,56,38,10738
+C__human_g,C | Split (no consensus),g,x,7761,1.4835479843700063,3.6468968321639084,33,33,7695
+C__human_i,C | ETG / elliptical,i,x,7904,1.4835479843700063,3.6468968321639084,18,45,7841
+C__human_i,C | LTG / spiral,i,x,3128,1.4835479843700063,3.6468968321639084,7,74,3047
+C__human_i,C | Featureless,i,x,2581,1.4835479843700063,3.6468968321639084,9,1,2571
+C__human_i,C | Not sure (Irr/other),i,x,10811,1.4835479843700063,3.6468968321639084,46,98,10667
+C__human_i,C | Split (no consensus),i,x,7750,1.4835479843700063,3.6468968321639084,16,112,7622
+A_raw_dist,A_raw,g,x,83629,0.17205754122683026,1.2143995173598348,69,496,83064
+A_raw_dist,A_raw,r,x,83614,0.17205754122683026,1.2143995173598348,314,357,82943
+A_raw_dist,A_raw,i,x,83639,0.17205754122683026,1.2143995173598348,210,284,83145
+A_raw_dist_full,A_raw,g,x,83629,-0.04113439457330917,2.120464886674791,0,0,83629
+A_raw_dist_full,A_raw,r,x,83614,-0.04113439457330917,2.120464886674791,0,0,83614
+A_raw_dist_full,A_raw,i,x,83639,-0.04113439457330917,2.120464886674791,0,0,83639
+A_corrected_dist,A_corrected,g,x,82177,-0.49485371116319576,0.972242260944455,197,494,81486
+A_corrected_dist,A_corrected,r,x,79828,-0.49485371116319576,0.972242260944455,235,325,79268
+A_corrected_dist,A_corrected,i,x,80330,-0.49485371116319576,0.972242260944455,396,291,79643
+A_corrected_dist_full,A_corrected,g,x,82177,-4.606121855748507,2.202983570943432,0,0,82177
+A_corrected_dist_full,A_corrected,r,x,79828,-4.606121855748507,2.202983570943432,0,0,79828
+A_corrected_dist_full,A_corrected,i,x,80330,-4.606121855748507,2.202983570943432,0,0,80330
+A_sky_dist,A_sky,g,x,82368,-0.04695206805284367,1.4708550961429279,0,253,82115
+A_sky_dist,A_sky,r,x,80004,-0.04695206805284367,1.4708550961429279,0,174,79830
+A_sky_dist,A_sky,i,x,80496,-0.04695206805284367,1.4708550961429279,0,369,80127
+A_sky_dist_full,A_sky,g,x,82368,-0.19492119715911085,5.7640982588479925,0,0,82368
+A_sky_dist_full,A_sky,r,x,80004,-0.19492119715911085,5.7640982588479925,0,0,80004
+A_sky_dist_full,A_sky,i,x,80496,-0.19492119715911085,5.7640982588479925,0,0,80496
+A_overlay_g,A_raw,g,x,83629,-0.42586901260945254,1.1931440156365698,0,524,83105
+A_overlay_g,A_corrected,g,x,82177,-0.42586901260945254,1.1931440156365698,383,380,81414
+A_overlay_r,A_raw,r,x,83614,-0.42586901260945254,1.1931440156365698,0,382,83232
+A_overlay_r,A_corrected,r,x,79828,-0.42586901260945254,1.1931440156365698,396,257,79175
+A_overlay_i,A_raw,i,x,83639,-0.42586901260945254,1.1931440156365698,0,301,83338
+A_overlay_i,A_corrected,i,x,80330,-0.42586901260945254,1.1931440156365698,704,199,79427
+A_paired_g,A_raw,g,x,82177,0.17205754122683026,1.2143995173598348,68,489,81620
+A_paired_g,A_corrected,g,y,82177,-0.49485371116319576,0.972242260944455,197,494,81486
+A_paired_r,A_raw,r,x,79828,0.17205754122683026,1.2143995173598348,291,343,79194
+A_paired_r,A_corrected,r,y,79828,-0.49485371116319576,0.972242260944455,235,325,79268
+A_paired_i,A_raw,i,x,80330,0.17205754122683026,1.2143995173598348,196,272,79862
+A_paired_i,A_corrected,i,y,80330,-0.49485371116319576,0.972242260944455,396,291,79643
+A_raw__human_r,A_raw | ETG / elliptical,r,x,7901,0.17205754122683026,1.2143995173598348,42,26,7833
+A_raw__human_r,A_raw | LTG / spiral,r,x,3124,0.17205754122683026,1.2143995173598348,12,9,3103
+A_raw__human_r,A_raw | Featureless,r,x,2593,0.17205754122683026,1.2143995173598348,1,3,2589
+A_raw__human_r,A_raw | Not sure (Irr/other),r,x,10832,0.17205754122683026,1.2143995173598348,34,45,10753
+A_raw__human_r,A_raw | Split (no consensus),r,x,7767,0.17205754122683026,1.2143995173598348,45,20,7702
+A_corrected__human_r,A_corrected | ETG / elliptical,r,x,7547,-0.49485371116319576,0.972242260944455,18,25,7504
+A_corrected__human_r,A_corrected | LTG / spiral,r,x,2964,-0.49485371116319576,0.972242260944455,0,8,2956
+A_corrected__human_r,A_corrected | Featureless,r,x,2474,-0.49485371116319576,0.972242260944455,27,5,2442
+A_corrected__human_r,A_corrected | Not sure (Irr/other),r,x,10360,-0.49485371116319576,0.972242260944455,31,35,10294
+A_corrected__human_r,A_corrected | Split (no consensus),r,x,7394,-0.49485371116319576,0.972242260944455,19,17,7358
+A_raw__human_g,A_raw | ETG / elliptical,g,x,7902,0.17205754122683026,1.2143995173598348,3,47,7852
+A_raw__human_g,A_raw | LTG / spiral,g,x,3125,0.17205754122683026,1.2143995173598348,4,20,3101
+A_raw__human_g,A_raw | Featureless,g,x,2596,0.17205754122683026,1.2143995173598348,0,4,2592
+A_raw__human_g,A_raw | Not sure (Irr/other),g,x,10835,0.17205754122683026,1.2143995173598348,5,55,10775
+A_raw__human_g,A_raw | Split (no consensus),g,x,7765,0.17205754122683026,1.2143995173598348,5,34,7726
+A_corrected__human_g,A_corrected | ETG / elliptical,g,x,7759,-0.49485371116319576,0.972242260944455,11,42,7706
+A_corrected__human_g,A_corrected | LTG / spiral,g,x,3067,-0.49485371116319576,0.972242260944455,0,18,3049
+A_corrected__human_g,A_corrected | Featureless,g,x,2562,-0.49485371116319576,0.972242260944455,19,4,2539
+A_corrected__human_g,A_corrected | Not sure (Irr/other),g,x,10637,-0.49485371116319576,0.972242260944455,26,53,10558
+A_corrected__human_g,A_corrected | Split (no consensus),g,x,7633,-0.49485371116319576,0.972242260944455,20,38,7575
+A_raw__human_i,A_raw | ETG / elliptical,i,x,7909,0.17205754122683026,1.2143995173598348,28,16,7865
+A_raw__human_i,A_raw | LTG / spiral,i,x,3128,0.17205754122683026,1.2143995173598348,20,6,3102
+A_raw__human_i,A_raw | Featureless,i,x,2595,0.17205754122683026,1.2143995173598348,0,4,2591
+A_raw__human_i,A_raw | Not sure (Irr/other),i,x,10837,0.17205754122683026,1.2143995173598348,18,34,10785
+A_raw__human_i,A_raw | Split (no consensus),i,x,7765,0.17205754122683026,1.2143995173598348,35,15,7715
+A_corrected__human_i,A_corrected | ETG / elliptical,i,x,7589,-0.49485371116319576,0.972242260944455,26,17,7546
+A_corrected__human_i,A_corrected | LTG / spiral,i,x,2982,-0.49485371116319576,0.972242260944455,4,6,2972
+A_corrected__human_i,A_corrected | Featureless,i,x,2501,-0.49485371116319576,0.972242260944455,37,8,2456
+A_corrected__human_i,A_corrected | Not sure (Irr/other),i,x,10414,-0.49485371116319576,0.972242260944455,53,28,10333
+A_corrected__human_i,A_corrected | Split (no consensus),i,x,7443,-0.49485371116319576,0.972242260944455,34,16,7393
+S_lotz2004_statmorph_like_v1_raw_dist,S_lotz2004_statmorph_like_v1_raw,g,x,83476,0.03188100712778501,2.456315713133582,1,553,82922
+S_lotz2004_statmorph_like_v1_raw_dist,S_lotz2004_statmorph_like_v1_raw,r,x,83456,0.03188100712778501,2.456315713133582,3,321,83132
+S_lotz2004_statmorph_like_v1_raw_dist,S_lotz2004_statmorph_like_v1_raw,i,x,83255,0.03188100712778501,2.456315713133582,1,479,82775
+S_lotz2004_statmorph_like_v1_raw_dist_full,S_lotz2004_statmorph_like_v1_raw,g,x,83476,-52.951756081827156,1566.2318110655203,0,0,83476
+S_lotz2004_statmorph_like_v1_raw_dist_full,S_lotz2004_statmorph_like_v1_raw,r,x,83456,-52.951756081827156,1566.2318110655203,0,0,83456
+S_lotz2004_statmorph_like_v1_raw_dist_full,S_lotz2004_statmorph_like_v1_raw,i,x,83255,-52.951756081827156,1566.2318110655203,0,0,83255
+S_lotz2004_statmorph_like_v1_corrected_dist,S_lotz2004_statmorph_like_v1_corrected,g,x,82007,-0.2445898162892352,0.6343615703268819,291,516,81200
+S_lotz2004_statmorph_like_v1_corrected_dist,S_lotz2004_statmorph_like_v1_corrected,r,x,79636,-0.2445898162892352,0.6343615703268819,299,282,79055
+S_lotz2004_statmorph_like_v1_corrected_dist,S_lotz2004_statmorph_like_v1_corrected,i,x,79930,-0.2445898162892352,0.6343615703268819,525,465,78940
+S_lotz2004_statmorph_like_v1_corrected_dist_full,S_lotz2004_statmorph_like_v1_corrected,g,x,82007,-20.34669652537645,73.7746284137865,0,0,82007
+S_lotz2004_statmorph_like_v1_corrected_dist_full,S_lotz2004_statmorph_like_v1_corrected,r,x,79636,-20.34669652537645,73.7746284137865,0,0,79636
+S_lotz2004_statmorph_like_v1_corrected_dist_full,S_lotz2004_statmorph_like_v1_corrected,i,x,79930,-20.34669652537645,73.7746284137865,0,0,79930
+S_conselice2003_like_v1_raw_dist,S_conselice2003_like_v1_raw,g,x,83581,0.3188100712778501,24.56315713133582,4,374,83203
+S_conselice2003_like_v1_raw_dist,S_conselice2003_like_v1_raw,r,x,83643,0.3188100712778501,24.56315713133582,2,225,83416
+S_conselice2003_like_v1_raw_dist,S_conselice2003_like_v1_raw,i,x,83540,0.3188100712778501,24.56315713133582,3,304,83233
+S_conselice2003_like_v1_raw_dist_full,S_conselice2003_like_v1_raw,g,x,83581,-529.5175608182716,15662.318110655204,0,0,83581
+S_conselice2003_like_v1_raw_dist_full,S_conselice2003_like_v1_raw,r,x,83643,-529.5175608182716,15662.318110655204,0,0,83643
+S_conselice2003_like_v1_raw_dist_full,S_conselice2003_like_v1_raw,i,x,83540,-529.5175608182716,15662.318110655204,0,0,83540
+S_conselice2003_like_v1_corrected_dist,S_conselice2003_like_v1_corrected,g,x,82107,-2.445898162892352,6.343615703268819,229,389,81489
+S_conselice2003_like_v1_corrected_dist,S_conselice2003_like_v1_corrected,r,x,79817,-2.445898162892352,6.343615703268819,201,188,79428
+S_conselice2003_like_v1_corrected_dist,S_conselice2003_like_v1_corrected,i,x,80209,-2.445898162892352,6.343615703268819,381,345,79483
+S_conselice2003_like_v1_corrected_dist_full,S_conselice2003_like_v1_corrected,g,x,82107,-203.4669652537645,737.746284137865,0,0,82107
+S_conselice2003_like_v1_corrected_dist_full,S_conselice2003_like_v1_corrected,r,x,79817,-203.4669652537645,737.746284137865,0,0,79817
+S_conselice2003_like_v1_corrected_dist_full,S_conselice2003_like_v1_corrected,i,x,80209,-203.4669652537645,737.746284137865,0,0,80209
+S_overlay_raw_g,S_lotz2004_statmorph_like_v1_raw,g,x,83476,0.03188100712778501,2.456315713133582,1,553,82922
+S_overlay_raw_g,S_conselice2003_like_v1_raw/10,g,x,83581,0.03188100712778501,2.456315713133582,4,374,83203
+S_overlay_raw_r,S_lotz2004_statmorph_like_v1_raw,r,x,83456,0.03188100712778501,2.456315713133582,3,321,83132
+S_overlay_raw_r,S_conselice2003_like_v1_raw/10,r,x,83643,0.03188100712778501,2.456315713133582,2,225,83416
+S_overlay_raw_i,S_lotz2004_statmorph_like_v1_raw,i,x,83255,0.03188100712778501,2.456315713133582,1,479,82775
+S_overlay_raw_i,S_conselice2003_like_v1_raw/10,i,x,83540,0.03188100712778501,2.456315713133582,3,304,83233
+S_paired_raw_g,S_lotz2004_statmorph_like_v1_raw,g,x,83475,0.03188100712778501,2.456315713133582,1,552,82922
+S_paired_raw_g,S_conselice2003_like_v1_raw/10,g,y,83475,0.03188100712778501,2.456315713133582,4,370,83101
+S_paired_raw_r,S_lotz2004_statmorph_like_v1_raw,r,x,83456,0.03188100712778501,2.456315713133582,3,321,83132
+S_paired_raw_r,S_conselice2003_like_v1_raw/10,r,y,83456,0.03188100712778501,2.456315713133582,2,221,83233
+S_paired_raw_i,S_lotz2004_statmorph_like_v1_raw,i,x,83253,0.03188100712778501,2.456315713133582,1,477,82775
+S_paired_raw_i,S_conselice2003_like_v1_raw/10,i,y,83253,0.03188100712778501,2.456315713133582,3,290,82960
+S_overlay_corrected_g,S_lotz2004_statmorph_like_v1_corrected,g,x,82007,-0.2445898162892352,0.6343615703268819,291,516,81200
+S_overlay_corrected_g,S_conselice2003_like_v1_corrected/10,g,x,82107,-0.2445898162892352,0.6343615703268819,229,389,81489
+S_overlay_corrected_r,S_lotz2004_statmorph_like_v1_corrected,r,x,79636,-0.2445898162892352,0.6343615703268819,299,282,79055
+S_overlay_corrected_r,S_conselice2003_like_v1_corrected/10,r,x,79817,-0.2445898162892352,0.6343615703268819,201,188,79428
+S_overlay_corrected_i,S_lotz2004_statmorph_like_v1_corrected,i,x,79930,-0.2445898162892352,0.6343615703268819,525,465,78940
+S_overlay_corrected_i,S_conselice2003_like_v1_corrected/10,i,x,80209,-0.2445898162892352,0.6343615703268819,381,345,79483
+S_paired_corrected_g,S_lotz2004_statmorph_like_v1_corrected,g,x,82006,-0.2445898162892352,0.6343615703268819,291,515,81200
+S_paired_corrected_g,S_conselice2003_like_v1_corrected/10,g,y,82006,-0.2445898162892352,0.6343615703268819,228,386,81392
+S_paired_corrected_r,S_lotz2004_statmorph_like_v1_corrected,r,x,79636,-0.2445898162892352,0.6343615703268819,299,282,79055
+S_paired_corrected_r,S_conselice2003_like_v1_corrected/10,r,y,79636,-0.2445898162892352,0.6343615703268819,199,185,79252
+S_paired_corrected_i,S_lotz2004_statmorph_like_v1_corrected,i,x,79929,-0.2445898162892352,0.6343615703268819,524,465,78940
+S_paired_corrected_i,S_conselice2003_like_v1_corrected/10,i,y,79929,-0.2445898162892352,0.6343615703268819,371,340,79218
+S_lotz2004_statmorph_like_v1_raw__human_r,S_lotz2004_statmorph_like_v1_raw | ETG / elliptical,r,x,7902,0.03188100712778501,2.456315713133582,0,1,7901
+S_lotz2004_statmorph_like_v1_raw__human_r,S_lotz2004_statmorph_like_v1_raw | LTG / spiral,r,x,3124,0.03188100712778501,2.456315713133582,0,1,3123
+S_lotz2004_statmorph_like_v1_raw__human_r,S_lotz2004_statmorph_like_v1_raw | Featureless,r,x,2594,0.03188100712778501,2.456315713133582,0,17,2577
+S_lotz2004_statmorph_like_v1_raw__human_r,S_lotz2004_statmorph_like_v1_raw | Not sure (Irr/other),r,x,10834,0.03188100712778501,2.456315713133582,1,24,10809
+S_lotz2004_statmorph_like_v1_raw__human_r,S_lotz2004_statmorph_like_v1_raw | Split (no consensus),r,x,7767,0.03188100712778501,2.456315713133582,0,14,7753
+S_lotz2004_statmorph_like_v1_corrected__human_r,S_lotz2004_statmorph_like_v1_corrected | ETG / elliptical,r,x,7547,-0.2445898162892352,0.6343615703268819,18,14,7515
+S_lotz2004_statmorph_like_v1_corrected__human_r,S_lotz2004_statmorph_like_v1_corrected | LTG / spiral,r,x,2964,-0.2445898162892352,0.6343615703268819,1,1,2962
+S_lotz2004_statmorph_like_v1_corrected__human_r,S_lotz2004_statmorph_like_v1_corrected | Featureless,r,x,2475,-0.2445898162892352,0.6343615703268819,26,14,2435
+S_lotz2004_statmorph_like_v1_corrected__human_r,S_lotz2004_statmorph_like_v1_corrected | Not sure (Irr/other),r,x,10361,-0.2445898162892352,0.6343615703268819,45,20,10296
+S_lotz2004_statmorph_like_v1_corrected__human_r,S_lotz2004_statmorph_like_v1_corrected | Split (no consensus),r,x,7394,-0.2445898162892352,0.6343615703268819,29,18,7347
+S_conselice2003_like_v1_raw__human_r,S_conselice2003_like_v1_raw | ETG / elliptical,r,x,7902,0.3188100712778501,24.56315713133582,0,0,7902
+S_conselice2003_like_v1_raw__human_r,S_conselice2003_like_v1_raw | LTG / spiral,r,x,3124,0.3188100712778501,24.56315713133582,0,0,3124
+S_conselice2003_like_v1_raw__human_r,S_conselice2003_like_v1_raw | Featureless,r,x,2594,0.3188100712778501,24.56315713133582,0,5,2589
+S_conselice2003_like_v1_raw__human_r,S_conselice2003_like_v1_raw | Not sure (Irr/other),r,x,10837,0.3188100712778501,24.56315713133582,0,8,10829
+S_conselice2003_like_v1_raw__human_r,S_conselice2003_like_v1_raw | Split (no consensus),r,x,7767,0.3188100712778501,24.56315713133582,0,3,7764
+S_conselice2003_like_v1_corrected__human_r,S_conselice2003_like_v1_corrected | ETG / elliptical,r,x,7547,-2.445898162892352,6.343615703268819,11,7,7529
+S_conselice2003_like_v1_corrected__human_r,S_conselice2003_like_v1_corrected | LTG / spiral,r,x,2964,-2.445898162892352,6.343615703268819,0,1,2963
+S_conselice2003_like_v1_corrected__human_r,S_conselice2003_like_v1_corrected | Featureless,r,x,2475,-2.445898162892352,6.343615703268819,18,8,2449
+S_conselice2003_like_v1_corrected__human_r,S_conselice2003_like_v1_corrected | Not sure (Irr/other),r,x,10364,-2.445898162892352,6.343615703268819,20,10,10334
+S_conselice2003_like_v1_corrected__human_r,S_conselice2003_like_v1_corrected | Split (no consensus),r,x,7394,-2.445898162892352,6.343615703268819,18,8,7368
+S_lotz2004_statmorph_like_v1_raw__human_g,S_lotz2004_statmorph_like_v1_raw | ETG / elliptical,g,x,7904,0.03188100712778501,2.456315713133582,0,13,7891
+S_lotz2004_statmorph_like_v1_raw__human_g,S_lotz2004_statmorph_like_v1_raw | LTG / spiral,g,x,3125,0.03188100712778501,2.456315713133582,0,0,3125
+S_lotz2004_statmorph_like_v1_raw__human_g,S_lotz2004_statmorph_like_v1_raw | Featureless,g,x,2597,0.03188100712778501,2.456315713133582,0,47,2550
+S_lotz2004_statmorph_like_v1_raw__human_g,S_lotz2004_statmorph_like_v1_raw | Not sure (Irr/other),g,x,10834,0.03188100712778501,2.456315713133582,0,33,10801
+S_lotz2004_statmorph_like_v1_raw__human_g,S_lotz2004_statmorph_like_v1_raw | Split (no consensus),g,x,7766,0.03188100712778501,2.456315713133582,0,26,7740
+S_lotz2004_statmorph_like_v1_corrected__human_g,S_lotz2004_statmorph_like_v1_corrected | ETG / elliptical,g,x,7761,-0.2445898162892352,0.6343615703268819,15,30,7716
+S_lotz2004_statmorph_like_v1_corrected__human_g,S_lotz2004_statmorph_like_v1_corrected | LTG / spiral,g,x,3067,-0.2445898162892352,0.6343615703268819,2,1,3064
+S_lotz2004_statmorph_like_v1_corrected__human_g,S_lotz2004_statmorph_like_v1_corrected | Featureless,g,x,2563,-0.2445898162892352,0.6343615703268819,23,27,2513
+S_lotz2004_statmorph_like_v1_corrected__human_g,S_lotz2004_statmorph_like_v1_corrected | Not sure (Irr/other),g,x,10636,-0.2445898162892352,0.6343615703268819,42,46,10548
+S_lotz2004_statmorph_like_v1_corrected__human_g,S_lotz2004_statmorph_like_v1_corrected | Split (no consensus),g,x,7634,-0.2445898162892352,0.6343615703268819,30,35,7569
+S_conselice2003_like_v1_raw__human_g,S_conselice2003_like_v1_raw | ETG / elliptical,g,x,7904,0.3188100712778501,24.56315713133582,0,4,7900
+S_conselice2003_like_v1_raw__human_g,S_conselice2003_like_v1_raw | LTG / spiral,g,x,3125,0.3188100712778501,24.56315713133582,0,0,3125
+S_conselice2003_like_v1_raw__human_g,S_conselice2003_like_v1_raw | Featureless,g,x,2597,0.3188100712778501,24.56315713133582,0,15,2582
+S_conselice2003_like_v1_raw__human_g,S_conselice2003_like_v1_raw | Not sure (Irr/other),g,x,10837,0.3188100712778501,24.56315713133582,0,16,10821
+S_conselice2003_like_v1_raw__human_g,S_conselice2003_like_v1_raw | Split (no consensus),g,x,7766,0.3188100712778501,24.56315713133582,0,9,7757
+S_conselice2003_like_v1_corrected__human_g,S_conselice2003_like_v1_corrected | ETG / elliptical,g,x,7761,-2.445898162892352,6.343615703268819,10,18,7733
+S_conselice2003_like_v1_corrected__human_g,S_conselice2003_like_v1_corrected | LTG / spiral,g,x,3067,-2.445898162892352,6.343615703268819,1,0,3066
+S_conselice2003_like_v1_corrected__human_g,S_conselice2003_like_v1_corrected | Featureless,g,x,2563,-2.445898162892352,6.343615703268819,19,19,2525
+S_conselice2003_like_v1_corrected__human_g,S_conselice2003_like_v1_corrected | Not sure (Irr/other),g,x,10639,-2.445898162892352,6.343615703268819,30,32,10577
+S_conselice2003_like_v1_corrected__human_g,S_conselice2003_like_v1_corrected | Split (no consensus),g,x,7634,-2.445898162892352,6.343615703268819,22,20,7592
+S_lotz2004_statmorph_like_v1_raw__human_i,S_lotz2004_statmorph_like_v1_raw | ETG / elliptical,i,x,7908,0.03188100712778501,2.456315713133582,0,5,7903
+S_lotz2004_statmorph_like_v1_raw__human_i,S_lotz2004_statmorph_like_v1_raw | LTG / spiral,i,x,3127,0.03188100712778501,2.456315713133582,0,0,3127
+S_lotz2004_statmorph_like_v1_raw__human_i,S_lotz2004_statmorph_like_v1_raw | Featureless,i,x,2592,0.03188100712778501,2.456315713133582,0,58,2534
+S_lotz2004_statmorph_like_v1_raw__human_i,S_lotz2004_statmorph_like_v1_raw | Not sure (Irr/other),i,x,10838,0.03188100712778501,2.456315713133582,0,28,10810
+S_lotz2004_statmorph_like_v1_raw__human_i,S_lotz2004_statmorph_like_v1_raw | Split (no consensus),i,x,7765,0.03188100712778501,2.456315713133582,0,31,7734
+S_lotz2004_statmorph_like_v1_corrected__human_i,S_lotz2004_statmorph_like_v1_corrected | ETG / elliptical,i,x,7588,-0.2445898162892352,0.6343615703268819,25,21,7542
+S_lotz2004_statmorph_like_v1_corrected__human_i,S_lotz2004_statmorph_like_v1_corrected | LTG / spiral,i,x,2981,-0.2445898162892352,0.6343615703268819,5,4,2972
+S_lotz2004_statmorph_like_v1_corrected__human_i,S_lotz2004_statmorph_like_v1_corrected | Featureless,i,x,2498,-0.2445898162892352,0.6343615703268819,48,27,2423
+S_lotz2004_statmorph_like_v1_corrected__human_i,S_lotz2004_statmorph_like_v1_corrected | Not sure (Irr/other),i,x,10415,-0.2445898162892352,0.6343615703268819,79,48,10288
+S_lotz2004_statmorph_like_v1_corrected__human_i,S_lotz2004_statmorph_like_v1_corrected | Split (no consensus),i,x,7442,-0.2445898162892352,0.6343615703268819,47,42,7353
+S_conselice2003_like_v1_raw__human_i,S_conselice2003_like_v1_raw | ETG / elliptical,i,x,7909,0.3188100712778501,24.56315713133582,0,1,7908
+S_conselice2003_like_v1_raw__human_i,S_conselice2003_like_v1_raw | LTG / spiral,i,x,3128,0.3188100712778501,24.56315713133582,1,0,3127
+S_conselice2003_like_v1_raw__human_i,S_conselice2003_like_v1_raw | Featureless,i,x,2596,0.3188100712778501,24.56315713133582,0,24,2572
+S_conselice2003_like_v1_raw__human_i,S_conselice2003_like_v1_raw | Not sure (Irr/other),i,x,10840,0.3188100712778501,24.56315713133582,0,12,10828
+S_conselice2003_like_v1_raw__human_i,S_conselice2003_like_v1_raw | Split (no consensus),i,x,7768,0.3188100712778501,24.56315713133582,0,13,7755
+S_conselice2003_like_v1_corrected__human_i,S_conselice2003_like_v1_corrected | ETG / elliptical,i,x,7589,-2.445898162892352,6.343615703268819,17,17,7555
+S_conselice2003_like_v1_corrected__human_i,S_conselice2003_like_v1_corrected | LTG / spiral,i,x,2982,-2.445898162892352,6.343615703268819,3,2,2977
+S_conselice2003_like_v1_corrected__human_i,S_conselice2003_like_v1_corrected | Featureless,i,x,2502,-2.445898162892352,6.343615703268819,39,18,2445
+S_conselice2003_like_v1_corrected__human_i,S_conselice2003_like_v1_corrected | Not sure (Irr/other),i,x,10417,-2.445898162892352,6.343615703268819,48,33,10336
+S_conselice2003_like_v1_corrected__human_i,S_conselice2003_like_v1_corrected | Split (no consensus),i,x,7445,-2.445898162892352,6.343615703268819,28,26,7391
+Gini_aperture_v1_dist,Gini_aperture_v1,g,x,83848,0.39783878727127103,0.6839888048537991,118,478,83252
+Gini_aperture_v1_dist,Gini_aperture_v1,r,x,83844,0.39783878727127103,0.6839888048537991,96,399,83349
+Gini_aperture_v1_dist,Gini_aperture_v1,i,x,83854,0.39783878727127103,0.6839888048537991,90,314,83450
+Gini_aperture_v1_dist_full,Gini_aperture_v1,g,x,83848,0.3195516219573632,1.0004344920948933,0,0,83848
+Gini_aperture_v1_dist_full,Gini_aperture_v1,r,x,83844,0.3195516219573632,1.0004344920948933,0,0,83844
+Gini_aperture_v1_dist_full,Gini_aperture_v1,i,x,83854,0.3195516219573632,1.0004344920948933,0,0,83854
+M20_aperture_v1_dist,M20_aperture_v1,g,x,83614,-2.1541344334261665,-0.33516702139285104,134,384,83096
+M20_aperture_v1_dist,M20_aperture_v1,r,x,83657,-2.1541344334261665,-0.33516702139285104,267,158,83232
+M20_aperture_v1_dist,M20_aperture_v1,i,x,83617,-2.1541344334261665,-0.33516702139285104,343,299,82975
+M20_aperture_v1_dist_full,M20_aperture_v1,g,x,83614,-2.937449891656708,3.257824957171705,0,0,83614
+M20_aperture_v1_dist_full,M20_aperture_v1,r,x,83657,-2.937449891656708,3.257824957171705,0,0,83657
+M20_aperture_v1_dist_full,M20_aperture_v1,i,x,83617,-2.937449891656708,3.257824957171705,0,0,83617
+axis_ratio_positive_aperture_v1_dist,axis_ratio_positive_aperture_v1,g,x,83848,0.0,1.0,0,0,83848
+axis_ratio_positive_aperture_v1_dist,axis_ratio_positive_aperture_v1,r,x,83844,0.0,1.0,0,0,83844
+axis_ratio_positive_aperture_v1_dist,axis_ratio_positive_aperture_v1,i,x,83854,0.0,1.0,0,0,83854
+ellipticity_positive_aperture_v1_dist,ellipticity_positive_aperture_v1,g,x,83848,0.0,1.0,0,0,83848
+ellipticity_positive_aperture_v1_dist,ellipticity_positive_aperture_v1,r,x,83844,0.0,1.0,0,0,83844
+ellipticity_positive_aperture_v1_dist,ellipticity_positive_aperture_v1,i,x,83854,0.0,1.0,0,0,83854
+position_angle_positive_aperture_v1_dist,position_angle_positive_aperture_v1,g,x,83848,0.0,180.0,0,0,83848
+position_angle_positive_aperture_v1_dist,position_angle_positive_aperture_v1,r,x,83844,0.0,180.0,0,0,83844
+position_angle_positive_aperture_v1_dist,position_angle_positive_aperture_v1,i,x,83854,0.0,180.0,0,0,83854
+gini_m20_g,Gini_aperture_v1,g,x,83614,0.39783878727127103,0.6839888048537991,104,473,83037
+gini_m20_g,M20_aperture_v1,g,y,83614,-2.1541344334261665,-0.33516702139285104,134,384,83096
+gini_m20_r,Gini_aperture_v1,r,x,83657,0.39783878727127103,0.6839888048537991,87,398,83172
+gini_m20_r,M20_aperture_v1,r,y,83657,-2.1541344334261665,-0.33516702139285104,267,158,83232
+gini_m20_i,Gini_aperture_v1,i,x,83617,0.39783878727127103,0.6839888048537991,80,314,83223
+gini_m20_i,M20_aperture_v1,i,y,83617,-2.1541344334261665,-0.33516702139285104,343,299,82975
+q_compare_g,gf_q,g,x,83722,0.3,1.0,0,0,83722
+q_compare_g,axis_ratio_positive_aperture_v1,g,y,83722,0.0,1.0,0,0,83722
+q_compare_r,gf_q,r,x,83737,0.3,1.0,0,0,83737
+q_compare_r,axis_ratio_positive_aperture_v1,r,y,83737,0.0,1.0,0,0,83737
+q_compare_i,gf_q,i,x,83783,0.3,1.0,0,0,83783
+q_compare_i,axis_ratio_positive_aperture_v1,i,y,83783,0.0,1.0,0,0,83783
+C_vs_gini_g,C,g,x,82619,1.4835479843700063,3.6468968321639084,493,159,81967
+C_vs_gini_g,Gini_aperture_v1,g,y,82619,0.39783878727127103,0.6839888048537991,48,463,82108
+C_vs_gini_r,C,r,x,82869,1.4835479843700063,3.6468968321639084,376,349,82144
+C_vs_gini_r,Gini_aperture_v1,r,y,82869,0.39783878727127103,0.6839888048537991,39,398,82432
+C_vs_gini_i,C,i,x,82406,1.4835479843700063,3.6468968321639084,296,494,81616
+C_vs_gini_i,Gini_aperture_v1,i,y,82406,0.39783878727127103,0.6839888048537991,36,305,82065
+Gini_aperture_v1__human_r,Gini_aperture_v1 | ETG / elliptical,r,x,7902,0.39783878727127103,0.6839888048537991,3,32,7867
+Gini_aperture_v1__human_r,Gini_aperture_v1 | LTG / spiral,r,x,3124,0.39783878727127103,0.6839888048537991,1,10,3113
+Gini_aperture_v1__human_r,Gini_aperture_v1 | Featureless,r,x,2594,0.39783878727127103,0.6839888048537991,1,3,2590
+Gini_aperture_v1__human_r,Gini_aperture_v1 | Not sure (Irr/other),r,x,10837,0.39783878727127103,0.6839888048537991,7,41,10789
+Gini_aperture_v1__human_r,Gini_aperture_v1 | Split (no consensus),r,x,7767,0.39783878727127103,0.6839888048537991,1,24,7742
+M20_aperture_v1__human_r,M20_aperture_v1 | ETG / elliptical,r,x,7902,-2.1541344334261665,-0.33516702139285104,25,0,7877
+M20_aperture_v1__human_r,M20_aperture_v1 | LTG / spiral,r,x,3124,-2.1541344334261665,-0.33516702139285104,46,0,3078
+M20_aperture_v1__human_r,M20_aperture_v1 | Featureless,r,x,2593,-2.1541344334261665,-0.33516702139285104,1,21,2571
+M20_aperture_v1__human_r,M20_aperture_v1 | Not sure (Irr/other),r,x,10834,-2.1541344334261665,-0.33516702139285104,29,14,10791
+M20_aperture_v1__human_r,M20_aperture_v1 | Split (no consensus),r,x,7767,-2.1541344334261665,-0.33516702139285104,73,7,7687
+axis_ratio_positive_aperture_v1__human_r,axis_ratio_positive_aperture_v1 | ETG / elliptical,r,x,7902,0.0,1.0,0,0,7902
+axis_ratio_positive_aperture_v1__human_r,axis_ratio_positive_aperture_v1 | LTG / spiral,r,x,3124,0.0,1.0,0,0,3124
+axis_ratio_positive_aperture_v1__human_r,axis_ratio_positive_aperture_v1 | Featureless,r,x,2594,0.0,1.0,0,0,2594
+axis_ratio_positive_aperture_v1__human_r,axis_ratio_positive_aperture_v1 | Not sure (Irr/other),r,x,10837,0.0,1.0,0,0,10837
+axis_ratio_positive_aperture_v1__human_r,axis_ratio_positive_aperture_v1 | Split (no consensus),r,x,7767,0.0,1.0,0,0,7767
+Gini_aperture_v1__human_g,Gini_aperture_v1 | ETG / elliptical,g,x,7904,0.39783878727127103,0.6839888048537991,5,45,7854
+Gini_aperture_v1__human_g,Gini_aperture_v1 | LTG / spiral,g,x,3125,0.39783878727127103,0.6839888048537991,1,20,3104
+Gini_aperture_v1__human_g,Gini_aperture_v1 | Featureless,g,x,2597,0.39783878727127103,0.6839888048537991,4,2,2591
+Gini_aperture_v1__human_g,Gini_aperture_v1 | Not sure (Irr/other),g,x,10838,0.39783878727127103,0.6839888048537991,12,47,10779
+Gini_aperture_v1__human_g,Gini_aperture_v1 | Split (no consensus),g,x,7766,0.39783878727127103,0.6839888048537991,2,35,7729
+M20_aperture_v1__human_g,M20_aperture_v1 | ETG / elliptical,g,x,7903,-2.1541344334261665,-0.33516702139285104,15,9,7879
+M20_aperture_v1__human_g,M20_aperture_v1 | LTG / spiral,g,x,3125,-2.1541344334261665,-0.33516702139285104,16,1,3108
+M20_aperture_v1__human_g,M20_aperture_v1 | Featureless,g,x,2597,-2.1541344334261665,-0.33516702139285104,1,36,2560
+M20_aperture_v1__human_g,M20_aperture_v1 | Not sure (Irr/other),g,x,10832,-2.1541344334261665,-0.33516702139285104,13,28,10791
+M20_aperture_v1__human_g,M20_aperture_v1 | Split (no consensus),g,x,7765,-2.1541344334261665,-0.33516702139285104,20,15,7730
+axis_ratio_positive_aperture_v1__human_g,axis_ratio_positive_aperture_v1 | ETG / elliptical,g,x,7904,0.0,1.0,0,0,7904
+axis_ratio_positive_aperture_v1__human_g,axis_ratio_positive_aperture_v1 | LTG / spiral,g,x,3125,0.0,1.0,0,0,3125
+axis_ratio_positive_aperture_v1__human_g,axis_ratio_positive_aperture_v1 | Featureless,g,x,2597,0.0,1.0,0,0,2597
+axis_ratio_positive_aperture_v1__human_g,axis_ratio_positive_aperture_v1 | Not sure (Irr/other),g,x,10838,0.0,1.0,0,0,10838
+axis_ratio_positive_aperture_v1__human_g,axis_ratio_positive_aperture_v1 | Split (no consensus),g,x,7766,0.0,1.0,0,0,7766
+Gini_aperture_v1__human_i,Gini_aperture_v1 | ETG / elliptical,i,x,7909,0.39783878727127103,0.6839888048537991,2,23,7884
+Gini_aperture_v1__human_i,Gini_aperture_v1 | LTG / spiral,i,x,3128,0.39783878727127103,0.6839888048537991,0,6,3122
+Gini_aperture_v1__human_i,Gini_aperture_v1 | Featureless,i,x,2596,0.39783878727127103,0.6839888048537991,4,4,2588
+Gini_aperture_v1__human_i,Gini_aperture_v1 | Not sure (Irr/other),i,x,10842,0.39783878727127103,0.6839888048537991,8,34,10800
+Gini_aperture_v1__human_i,Gini_aperture_v1 | Split (no consensus),i,x,7768,0.39783878727127103,0.6839888048537991,1,20,7747
+M20_aperture_v1__human_i,M20_aperture_v1 | ETG / elliptical,i,x,7909,-2.1541344334261665,-0.33516702139285104,40,3,7866
+M20_aperture_v1__human_i,M20_aperture_v1 | LTG / spiral,i,x,3127,-2.1541344334261665,-0.33516702139285104,71,0,3056
+M20_aperture_v1__human_i,M20_aperture_v1 | Featureless,i,x,2595,-2.1541344334261665,-0.33516702139285104,1,43,2551
+M20_aperture_v1__human_i,M20_aperture_v1 | Not sure (Irr/other),i,x,10837,-2.1541344334261665,-0.33516702139285104,29,23,10785
+M20_aperture_v1__human_i,M20_aperture_v1 | Split (no consensus),i,x,7766,-2.1541344334261665,-0.33516702139285104,85,18,7663
+axis_ratio_positive_aperture_v1__human_i,axis_ratio_positive_aperture_v1 | ETG / elliptical,i,x,7909,0.0,1.0,0,0,7909
+axis_ratio_positive_aperture_v1__human_i,axis_ratio_positive_aperture_v1 | LTG / spiral,i,x,3128,0.0,1.0,0,0,3128
+axis_ratio_positive_aperture_v1__human_i,axis_ratio_positive_aperture_v1 | Featureless,i,x,2596,0.0,1.0,0,0,2596
+axis_ratio_positive_aperture_v1__human_i,axis_ratio_positive_aperture_v1 | Not sure (Irr/other),i,x,10842,0.0,1.0,0,0,10842
+axis_ratio_positive_aperture_v1__human_i,axis_ratio_positive_aperture_v1 | Split (no consensus),i,x,7768,0.0,1.0,0,0,7768

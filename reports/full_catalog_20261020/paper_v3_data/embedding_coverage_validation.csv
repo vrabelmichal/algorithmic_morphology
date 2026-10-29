@@ -1,0 +1,64 @@
+title,projection,band,rows,matched
+GALFIT + DECaLS10 probabilities,PCA,g,59780,59780
+GALFIT + DECaLS10 probabilities,PCA,r,59780,59780
+GALFIT + DECaLS10 probabilities,PCA,i,59780,59780
+GALFIT + DECaLS10 probabilities,UMAP (120 neighbors),g,59780,59780
+GALFIT + DECaLS10 probabilities,UMAP (120 neighbors),r,59780,59780
+GALFIT + DECaLS10 probabilities,UMAP (120 neighbors),i,59780,59780
+GALFIT + DECaLS10 probabilities,UMAP (15 neighbors),g,59780,59780
+GALFIT + DECaLS10 probabilities,UMAP (15 neighbors),r,59780,59780
+GALFIT + DECaLS10 probabilities,UMAP (15 neighbors),i,59780,59780
+GALFIT + DECaLS10 representation,PCA,g,59780,59780
+GALFIT + DECaLS10 representation,PCA,r,59780,59780
+GALFIT + DECaLS10 representation,PCA,i,59780,59780
+GALFIT + DECaLS10 representation,UMAP (120 neighbors),g,59780,59780
+GALFIT + DECaLS10 representation,UMAP (120 neighbors),r,59780,59780
+GALFIT + DECaLS10 representation,UMAP (120 neighbors),i,59780,59780
+GALFIT + DECaLS10 representation,UMAP (15 neighbors),g,59780,59780
+GALFIT + DECaLS10 representation,UMAP (15 neighbors),r,59780,59780
+GALFIT + DECaLS10 representation,UMAP (15 neighbors),i,59780,59780
+GALFIT + human-trained v3 probabilities,PCA,g,59780,59780
+GALFIT + human-trained v3 probabilities,PCA,r,59780,59780
+GALFIT + human-trained v3 probabilities,PCA,i,59780,59780
+GALFIT + human-trained v3 probabilities,UMAP (120 neighbors),g,59780,59780
+GALFIT + human-trained v3 probabilities,UMAP (120 neighbors),r,59780,59780
+GALFIT + human-trained v3 probabilities,UMAP (120 neighbors),i,59780,59780
+GALFIT + human-trained v3 probabilities,UMAP (15 neighbors),g,59780,59780
+GALFIT + human-trained v3 probabilities,UMAP (15 neighbors),r,59780,59780
+GALFIT + human-trained v3 probabilities,UMAP (15 neighbors),i,59780,59780
+GALFIT + human-trained v3 representation,PCA,g,59780,59780
+GALFIT + human-trained v3 representation,PCA,r,59780,59780
+GALFIT + human-trained v3 representation,PCA,i,59780,59780
+GALFIT + human-trained v3 representation,UMAP (120 neighbors),g,59780,59780
+GALFIT + human-trained v3 representation,UMAP (120 neighbors),r,59780,59780
+GALFIT + human-trained v3 representation,UMAP (120 neighbors),i,59780,59780
+GALFIT + human-trained v3 representation,UMAP (15 neighbors),g,59780,59780
+GALFIT + human-trained v3 representation,UMAP (15 neighbors),r,59780,59780
+GALFIT + human-trained v3 representation,UMAP (15 neighbors),i,59780,59780
+GALFIT + human-trained v4 morphology representation,PCA,g,59780,59780
+GALFIT + human-trained v4 morphology representation,PCA,r,59780,59780
+GALFIT + human-trained v4 morphology representation,PCA,i,59780,59780
+GALFIT + human-trained v4 morphology representation,UMAP (120 neighbors),g,59780,59780
+GALFIT + human-trained v4 morphology representation,UMAP (120 neighbors),r,59780,59780
+GALFIT + human-trained v4 morphology representation,UMAP (120 neighbors),i,59780,59780
+GALFIT + human-trained v4 morphology representation,UMAP (15 neighbors),g,59780,59780
+GALFIT + human-trained v4 morphology representation,UMAP (15 neighbors),r,59780,59780
+GALFIT + human-trained v4 morphology representation,UMAP (15 neighbors),i,59780,59780
+GALFIT + human-trained v4 probabilities,PCA,g,59780,59780
+GALFIT + human-trained v4 probabilities,PCA,r,59780,59780
+GALFIT + human-trained v4 probabilities,PCA,i,59780,59780
+GALFIT + human-trained v4 probabilities,UMAP (120 neighbors),g,59780,59780
+GALFIT + human-trained v4 probabilities,UMAP (120 neighbors),r,59780,59780
+GALFIT + human-trained v4 probabilities,UMAP (120 neighbors),i,59780,59780
+GALFIT + human-trained v4 probabilities,UMAP (15 neighbors),g,59780,59780
+GALFIT + human-trained v4 probabilities,UMAP (15 neighbors),r,59780,59780
+GALFIT + human-trained v4 probabilities,UMAP (15 neighbors),i,59780,59780
+GALFIT g+i fitted properties,PCA,g,59780,59780
+GALFIT g+i fitted properties,PCA,r,59780,59780
+GALFIT g+i fitted properties,PCA,i,59780,59780
+GALFIT g+i fitted properties,UMAP (120 neighbors),g,59780,59780
+GALFIT g+i fitted properties,UMAP (120 neighbors),r,59780,59780
+GALFIT g+i fitted properties,UMAP (120 neighbors),i,59780,59780
+GALFIT g+i fitted properties,UMAP (15 neighbors),g,59780,59780
+GALFIT g+i fitted properties,UMAP (15 neighbors),r,59780,59780
+GALFIT g+i fitted properties,UMAP (15 neighbors),i,59780,59780

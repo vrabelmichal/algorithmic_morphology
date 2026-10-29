@@ -1,0 +1,430 @@
+{
+  "report_version": "scientific_report_v3",
+  "built_utc": "2026-10-22T14:28:19.708420+00:00",
+  "previous_report_sha256": "a2f6a33293c92b763403a25f342ce652659fa27bfd004f1973146e31f775fd26",
+  "morphology_sha256": "c94e33086298e793bb3fa1978403bd5894079f50b38a61e972ea3f29bc397424",
+  "classification_source_manifest": {
+    "built_utc": "2026-10-22T10:28:44.264592+00:00",
+    "sources": {
+      "human_mixtures": {
+        "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/label-mixtures/20261022T100624Z/tables/galaxy_label_mixtures.parquet",
+        "sha256": "aa098f8fa357d7609720bf6309757a2dd146a15fba25a8d60a1ccbc24d001e1e"
+      },
+      "human_metadata": {
+        "path": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/classification_analysis/20261022_v1/source_metadata/human_run_info.json",
+        "sha256": "acee7ecc4eaf43358ab32feee6ffc08fa8f28b25c5ef744e8d5896b52574c7c0",
+        "original_path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/label-mixtures/20261022T100624Z/metadata/run_info.json",
+        "sha256_at_initial_inventory": "57c7657247fe4f56d3784f9c9fad38bd200f749f227df8406d4a4a53c7da216c",
+        "note": "Adjacent producer metadata changed while this analysis was running. Frozen current copy; all human feature/membership tables retain their original SHA-256 and were verified unchanged. Metadata does not supply analysis values."
+      },
+      "human_records": {
+        "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/classification-analysis/20261014T170523/tables/galaxy_records.parquet",
+        "sha256": "61c88e3bd78f8c60fc65d8257cd4a2f6ab2e808f5a6c82c9860dd5b174d7f253"
+      },
+      "human_membership": {
+        "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/outputs/classification-analysis/20261014T170523/tables/human_label_query_membership_min2.parquet",
+        "sha256": "76b6d54a0350c99a9a289fb9373b71c5063d51bc9470b492ec357fd706c4d283"
+      },
+      "human_mapping": {
+        "path": "/mnt/data_xpg1/lsbg/analysis/classification_analysis/docs/human_label_query_mapping_min2.json",
+        "sha256": "4e285a31d6a822ccd221079e6bd1e11bf2438a7c4fa6720092adb030073c5e50"
+      },
+      "zoobot_predictions": {
+        "path": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/predictions_zoobot_finetuned_decals10.parquet",
+        "sha256": "6c31bace39c499e557d812d8497ebf0bd4c33611c8cc8aa4f76ae2e0a656c0cf"
+      },
+      "zoobot_metadata": {
+        "path": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+        "sha256": "2d79f1d2abe41d78d1bb306be07b1b1bfe5a5956e79c98869f387864531156cf"
+      }
+    },
+    "zoobot_candidates": [
+      {
+        "run": "aplpy_irg_linear_20260605",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_20260605/classification_run_metadata.json",
+        "prediction_exists": true,
+        "objects": 83775,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": false,
+        "metadata_sha256": "03088800db17f3dbe90e4b99845e0cb1edbf12f147c76c84c954b4f78dd87aa5"
+      },
+      {
+        "run": "aplpy_irg_linear_20260605_curated",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_20260605_curated/classification_run_metadata.json",
+        "prediction_exists": false,
+        "objects": 59597,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": false,
+        "metadata_sha256": "67f8af54ea6f6d62449b0e3281341a8ff7ba98a0f13147858aab4578a2175673"
+      },
+      {
+        "run": "aplpy_irg_linear_bgsub_masked_20260615",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_bgsub_masked_20260615/classification_run_metadata.json",
+        "prediction_exists": true,
+        "objects": 26209,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": false,
+        "metadata_sha256": "3491beb4428357a5c5ad444e5b28e9cb2ae90030196b1873231be6f2b495e779"
+      },
+      {
+        "run": "aplpy_irg_linear_bgsub_masked_20260615_curated",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_bgsub_masked_20260615_curated/classification_run_metadata.json",
+        "prediction_exists": false,
+        "objects": 17506,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": false,
+        "metadata_sha256": "ff64fc07636954ae46b29f88c36c883a1c8aa6a6500aed2990bdabcc35950682"
+      },
+      {
+        "run": "aplpy_irg_linear_masked_20260605",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_masked_20260605/classification_run_metadata.json",
+        "prediction_exists": true,
+        "objects": 84080,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": false,
+        "metadata_sha256": "345c2972979f157a6972cd0d45bcc67226eb6c088ab66a8ca4b15d2292d31683"
+      },
+      {
+        "run": "aplpy_irg_linear_masked_20260605_curated",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/aplpy_irg_linear_masked_20260605_curated/classification_run_metadata.json",
+        "prediction_exists": false,
+        "objects": 59803,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": false,
+        "metadata_sha256": "3557545bbe060d0215ffcdc29dba771308f54aeaf72e07dc8b349e2827206b04"
+      },
+      {
+        "run": "convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+        "prediction_exists": true,
+        "objects": 84104,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": true,
+        "selected": false,
+        "metadata_sha256": "ad83e84d96bf0d064e1a2e5201ee646713ecb4fb88719ba0301da35e75c4721b"
+      },
+      {
+        "run": "convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_base_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated/classification_run_metadata.json",
+        "prediction_exists": false,
+        "objects": 59819,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": true,
+        "selected": false,
+        "metadata_sha256": "b0b880911868e0b58c3ced27abba1f7b6d4734085a3347559b35fcffe1b8c70c"
+      },
+      {
+        "run": "convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+        "prediction_exists": true,
+        "objects": 84104,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": true,
+        "metadata_sha256": "2d79f1d2abe41d78d1bb306be07b1b1bfe5a5956e79c98869f387864531156cf"
+      },
+      {
+        "run": "convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated/classification_run_metadata.json",
+        "prediction_exists": false,
+        "objects": 59819,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": false,
+        "selected": false,
+        "metadata_sha256": "3f1ddc754ae89e928797af0d92a4096fedc795f528e510f7a56cd73de5007f57"
+      },
+      {
+        "run": "convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/classification_run_metadata.json",
+        "prediction_exists": true,
+        "objects": 84104,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": true,
+        "selected": false,
+        "metadata_sha256": "28877b83e26588047981b0f3a56824e1efaced559b44c34f887dab3f4bd142f6"
+      },
+      {
+        "run": "convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated",
+        "metadata": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/classification/convnext_tiny_aplpy_irg_linear_bgsub_masked_obj302317964_20260617_curated/classification_run_metadata.json",
+        "prediction_exists": false,
+        "objects": 59819,
+        "checkpoint": "mwalmsley/zoobot-finetuned-decals10",
+        "encoder_mismatch": true,
+        "selected": false,
+        "metadata_sha256": "d0f7e80ee86cef6401e54c063eda63536e6c51ff4199e856c93cc888171570fa"
+      }
+    ],
+    "zoobot_metadata": {
+      "checkpoint_spec": "mwalmsley/zoobot-finetuned-decals10",
+      "checkpoint_encoder_name": "hf_hub:mwalmsley/zoobot-encoder-convnext_nano",
+      "checkpoint_encoder_tag": "convnext_nano",
+      "config_encoder_name": "convnext_nano",
+      "config_encoder_tag": "convnext_nano",
+      "checkpoint_encoder_mismatch_allowed": false,
+      "task": "classify",
+      "n_objects": 84104,
+      "prediction_columns": [
+        "class_0",
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5",
+        "class_6",
+        "class_7",
+        "class_8",
+        "class_9"
+      ],
+      "class_label_map": {
+        "class_0": "Disturbed Galaxies",
+        "class_1": "Merging Galaxies",
+        "class_2": "Round Smooth Galaxies",
+        "class_3": "In-between Round Smooth Galaxies",
+        "class_4": "Cigar-shaped Smooth Galaxies",
+        "class_5": "Barred Spiral Galaxies",
+        "class_6": "Unbarred Tight Spiral Galaxies",
+        "class_7": "Unbarred Loose Spiral Galaxies",
+        "class_8": "Edge-on Galaxies without a Bulge",
+        "class_9": "Edge-on Galaxies with a Bulge"
+      },
+      "predict_catalog": "/media/vrabel/DATA_KIN4TB/lsbg/analysis/zoobot_classification/outputs/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/predict_catalog_intersection.parquet",
+      "embedding_export": "/mnt/data_xpg1/lsbg/analysis/zoobot_classification/.outputs/embedding_artifacts/convnext_nano_aplpy_irg_linear_bgsub_masked_obj302317964_20260617/all_processed/embeddings_export.csv",
+      "data_quality_status": "OK",
+      "checkpoint_config_encoder_mismatch": false
+    },
+    "rows": 252600,
+    "objects": 84200,
+    "zoobot_input_rows": 84104,
+    "zoobot_invalid": 0,
+    "morphology_sha256": "c94e33086298e793bb3fa1978403bd5894079f50b38a61e972ea3f29bc397424",
+    "feature_contract": {
+      "version": "algorithmic_morphology_overlay_v1",
+      "metrics": [
+        "C",
+        "A_raw",
+        "A_corrected",
+        "S_lotz2004_statmorph_like_v1_raw",
+        "S_lotz2004_statmorph_like_v1_corrected",
+        "S_conselice2003_like_v1_raw",
+        "S_conselice2003_like_v1_corrected",
+        "Gini_aperture_v1",
+        "M20_aperture_v1",
+        "axis_ratio_positive_aperture_v1"
+      ],
+      "labels": {
+        "C": "Concentration $C=5\\log_{10}(r_{80}/r_{20})$",
+        "A_raw": "Raw asymmetry $A_{\\rm raw}$",
+        "A_corrected": "Sky-corrected asymmetry $A_{\\rm corr}$",
+        "S_lotz2004_statmorph_like_v1_raw": "Lotz-like clumpiness $S_{\\rm L,raw}$",
+        "S_lotz2004_statmorph_like_v1_corrected": "Lotz-like clumpiness $S_{\\rm L,corr}$",
+        "S_conselice2003_like_v1_raw": "Conselice-like clumpiness $S_{\\rm C,raw}$",
+        "S_conselice2003_like_v1_corrected": "Conselice-like clumpiness $S_{\\rm C,corr}$",
+        "Gini_aperture_v1": "Aperture Gini coefficient $G$",
+        "M20_aperture_v1": "Brightest-20% moment $M_{20}$",
+        "axis_ratio_positive_aperture_v1": "Positive-flux axis ratio $q_{+}$"
+      },
+      "limits": {
+        "C": [
+          1.4835479843700063,
+          3.6468968321639084
+        ],
+        "A_raw": [
+          0.17205754122683026,
+          1.2143995173598348
+        ],
+        "A_corrected": [
+          -0.49485371116319576,
+          0.972242260944455
+        ],
+        "S_lotz2004_statmorph_like_v1_raw": [
+          0.03188100712778501,
+          2.456315713133582
+        ],
+        "S_lotz2004_statmorph_like_v1_corrected": [
+          -0.2445898162892352,
+          0.6343615703268819
+        ],
+        "S_conselice2003_like_v1_raw": [
+          0.3188100712778501,
+          24.56315713133582
+        ],
+        "S_conselice2003_like_v1_corrected": [
+          -2.445898162892352,
+          6.343615703268819
+        ],
+        "Gini_aperture_v1": [
+          0.39783878727127103,
+          0.6839888048537991
+        ],
+        "M20_aperture_v1": [
+          -2.1541344334261665,
+          -0.33516702139285104
+        ],
+        "axis_ratio_positive_aperture_v1": [
+          0,
+          1
+        ]
+      },
+      "table": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/classification_analysis/20261022_v1/joined.parquet",
+      "table_sha256": "a684fe30750c69f47bb0071718ad660f063fa761575d1fed2d227fd344194e19",
+      "range_policy": "Pooled g/r/i 0.5\u201399.5% with 3.5% padding; corresponding Conselice S axes x10; q [0,1]. Values unchanged."
+    },
+    "selection": "Latest completed human runs; newest compatible Nano DECaLS10 bgsub/masked obj302317964 run, full predictions not curated subset.",
+    "older_mixture_zoobot_ignored": true,
+    "source_code": {
+      "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/prepare_classification_analysis.py": "b03efce1f725859a994bfb10897088b19658e125f73ab22bcbbf2d7fff4a691e",
+      "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/algorithmic_morphology/classification_data.py": "8a54898784016c6bf9882c43cc078680fdea19869dfc173c1fa04b9848aa0b5c"
+    }
+  },
+  "clustering_manifest": "/mnt/data_sm870qvo/lsbg/analysis/clustering_lsbg/.outputs/algorithmic_morphology/20261022_v2/manifest.json",
+  "classification_figures": 25,
+  "embedding_figures": 63,
+  "analysis_protocol": {
+    "probability_sum_tolerance": 0.0001,
+    "human_min_answers": 2,
+    "vote_sensitivity_min_answers": 3,
+    "correlation": "Spearman midranks; per-band pairwise finite values",
+    "partial_rank_controls": [
+      "gf_mu_mean",
+      "gf_re_arcsec",
+      "gf_q"
+    ],
+    "partial_rank_cohort": "gf_unflagged with all controls finite",
+    "class_effect": "2*U/(n_class*n_other)-1",
+    "probability_bins": 10,
+    "minimum_bin_pairs": 20,
+    "spread_percentiles": [
+      16,
+      84
+    ],
+    "significance_testing": false,
+    "position_angle": "Axial/image-coordinate quantity excluded from ordinary scalar correlations",
+    "ellipticity": "Exactly 1-q_positive; rank correlations reverse sign"
+  },
+  "files_sha256": {
+    "paper_v3_data/associations.csv": "76b8f06c9cd8df592ba873357def61ae593103932f401cb1d10d25da0a948375",
+    "paper_v3_data/class_distribution_range_audit.csv": "86d10d2bcd26b8a5514d531e2a0f1ff8c6f054f09249a93adf9d980bb8b4f8be",
+    "paper_v3_data/class_effects.csv": "f16dfebf651845cb5370bc764fb98951dba3660d5b6a358ec36cdc9e48d6d583",
+    "paper_v3_data/classification_column_dictionary.csv": "b42c5ef93e16139befd0c17972ac5fe5b7d98fcc36629dbbe9215eb22bd28307",
+    "paper_v3_data/classification_labels.parquet": "55b1e4d907f82766c58a54e35adeab2b19497bfc510c18345b35257dc8ad2c0f",
+    "paper_v3_data/clustering_overlay_manifest.json": "58e1fd663c8c1bf702cf1e3a6a7d90489ffa7ae79bff3f27fcb7d3f7961fd21b",
+    "paper_v3_data/coverage.csv": "18eeecf922d6869ac7d9523044828709e2c128453eb806b154f86ccb16a8d512",
+    "paper_v3_data/feature_contract.json": "4020640634cee8e26d989b3bcf09159f10e7cccae2e4b61f182f8b6629ab3921",
+    "paper_v3_data/figure_index.json": "5221c2f38d9ade00319f51aaa8a46d5c40d77cbf92073e8b28c6126f2d00b428",
+    "paper_v3_data/human_query_mapping.json": "71a6bada3dd8cc640337e1ddf759d900ee93afef46908823e0d670a885d8c34a",
+    "paper_v3_data/manifest.json": "6413e0c15d99415d52358bcf488706214d304d9401e54abf2214f1ea2eaff006",
+    "paper_v3_data/probability_trends.csv": "012fcf69f442210fabd5f8bf776319150f3058baa12c0a1f48cab299c53aeb51",
+    "paper_v3_assets/class_effects.png": "f7da11e75498323abaa687efe85d113546201883c30dea4b1d344d3c64df246d",
+    "paper_v3_assets/correlations_available.png": "7f60a9e184fae2fe4579b9efa8f138b5c40c258c1ff78b59c181668cf5cbf2c4",
+    "paper_v3_assets/correlations_galfit_adjusted.png": "46728b411b021826d83604e8c9e53c61c46c16a97d1133b4608c973ac37bb1b6",
+    "paper_v3_assets/correlations_human_zoobot_matched.png": "6c3bb31e65ae181153e4d54d418aea227670eb53a9cc69015ad8d2d149347b4e",
+    "paper_v3_assets/correlations_three_plus_human_votes.png": "cc3ecac9148f2f7c3603d21754c3bc52fcd3f97c2047ed2fe72e35688157f506",
+    "paper_v3_assets/embedding_00_g.png": "f3e934b988991feef464bce8637f4ad4f76a777b3fdaa55c33a0bfe8fea03c33",
+    "paper_v3_assets/embedding_01_r.png": "4a31775eb4cabee7ac65fac7e3218c7cabf07e23d7b1154312a0bd3d25ad7b1e",
+    "paper_v3_assets/embedding_02_i.png": "ae4debc424b3327c78c6d1df4eab1c09677d00d1f72b293aad80db2c990def17",
+    "paper_v3_assets/embedding_03_g.png": "a5eca6c7648309fef1e290bacb891013245d4747803d91d08bdf164291704fd3",
+    "paper_v3_assets/embedding_04_r.png": "a90589e3c3e37949bb5377c60274f8aa110a9799d03a694f10e69903979a1bf2",
+    "paper_v3_assets/embedding_05_i.png": "686b88bafca0de9499a01cb640e1020ee797885316cbd05f97603b62482be04e",
+    "paper_v3_assets/embedding_06_g.png": "b31de83ca02f9454bfe00372d4163d2d27f8ab3918d32c902e24ba90196fb010",
+    "paper_v3_assets/embedding_07_r.png": "1e7f3417e5d84bce1aedeb0dbb5646a52d559bfc91ad1e108eb9b95a1ff83380",
+    "paper_v3_assets/embedding_08_i.png": "c13addb7de39f4d929f416ab686c0d0a135084bea0ea9b90a2c20d3ffb7420b0",
+    "paper_v3_assets/embedding_09_g.png": "f8421b3fac19cc61466fb469fa9bade5079d99be69500cd77dcea315821663bf",
+    "paper_v3_assets/embedding_10_r.png": "3177bc1600cd050b920684c46e594549c4c10ba241ae4656681e7da5a4aadb93",
+    "paper_v3_assets/embedding_11_i.png": "c039bda0dbf67d783e4544a146b8f05388f7ad7b052d7c6c7c33982a309ce4ac",
+    "paper_v3_assets/embedding_12_g.png": "c122a14b6915b520176a87c0213a4fe712185ad1839722f8a1a75fadd70c54ef",
+    "paper_v3_assets/embedding_13_r.png": "0a386d03ed3e268e9ddf355b8b7b7195c6d85dc111686916924da658db717cdc",
+    "paper_v3_assets/embedding_14_i.png": "82b3bee682702f72f735e6bb49ddc63f407df309413b5c00626e71558026593a",
+    "paper_v3_assets/embedding_15_g.png": "10a3c32c8feb21dcfe13b047b2ca2d22214d65d59827ec164f39838fd9a8e351",
+    "paper_v3_assets/embedding_16_r.png": "9ebe450393bb96c1c8b5d36214c4365e40616ce1bd860984e75c55005349964b",
+    "paper_v3_assets/embedding_17_i.png": "55a06037db0196b28c8f4aa5efaa1cc36fe5351b324d98dcc3b0e1ec08e45882",
+    "paper_v3_assets/embedding_18_g.png": "925724357c6e4dc1cdca665be98ffce337e30fd64eaa1033ca86d9f0413a70d0",
+    "paper_v3_assets/embedding_19_r.png": "4536dc92d416a869b3e08f3dde10bd3ad77132e70aa7c2eb525ebc220e259ac2",
+    "paper_v3_assets/embedding_20_i.png": "4d90d404e155c485cacf67042063fa4bad840061c2ae08d1061fdda07c20ac65",
+    "paper_v3_assets/embedding_21_g.png": "e619d2b3631c316eee4e7da7a95ab9c6d5589fbf1496ce593f00e8fdfd84ee54",
+    "paper_v3_assets/embedding_22_r.png": "0ff6a4a1c4d8215e5418778fdf56530724540b40dec4a556628a1d1b46a72ddd",
+    "paper_v3_assets/embedding_23_i.png": "137166789f934cc3611472af5c18a53ab47e18cd8eab74887d5f5842016d26bc",
+    "paper_v3_assets/embedding_24_g.png": "41e98f36906f04e51386ffbd847692021c4e0457d42ed11d90884c18ac5db055",
+    "paper_v3_assets/embedding_25_r.png": "7e5bee1ffa524327554039507c6d3fc84604a8ed2cd3c8c37a5be4895bf5184c",
+    "paper_v3_assets/embedding_26_i.png": "6b818a4397e3145552baed1472d3f55557433071ad57302da1a1c3524debdd68",
+    "paper_v3_assets/embedding_27_g.png": "0e96e4c84aded290f24c4a6239a02ab0d89feecc2afeb6e25d714515216b8712",
+    "paper_v3_assets/embedding_28_r.png": "99710e068462ec00c9ec039fd877304a94c6602b7f04c6798278be957bafad1e",
+    "paper_v3_assets/embedding_29_i.png": "8def9b6d34549f450ba1adb758fec7d0e4e7342757df26cce66dd7c29c07052d",
+    "paper_v3_assets/embedding_30_g.png": "b708fd599bc333b3470b3815044402ab9eba85cad1f21b8bbbd3f0371fea6cc7",
+    "paper_v3_assets/embedding_31_r.png": "27b41de42b7136f9d3ac475d3cc886d572ac6831fe6ca13dde45b2444b43abb7",
+    "paper_v3_assets/embedding_32_i.png": "aaef290fa7d86ebe70e91f393c257a943379a9a988b66cce7e306e785bfd1646",
+    "paper_v3_assets/embedding_33_g.png": "76f38636322f2ac7efcdd61c82a73479a8592b1ffa1a64ffa93d2d6fbdd563f7",
+    "paper_v3_assets/embedding_34_r.png": "dbe53cf62750e85fdfb7aaf5b1f51f0fa35a99d754d579d6bd6ebb300c5a9243",
+    "paper_v3_assets/embedding_35_i.png": "3ca8a0e73f6b930bd8588abbde5b3b2042564ccba4528549f7aef499a1224fe0",
+    "paper_v3_assets/embedding_36_g.png": "15f5bbac4a79a4a4a1921b54a999a61c2250eeaa4c4f043e274acc829420952e",
+    "paper_v3_assets/embedding_37_r.png": "236ae1c423b2be9bf7af57b4f762830c2c79ee077a18a2766c08096f00d2c529",
+    "paper_v3_assets/embedding_38_i.png": "e5e68875963eacef78a2a03fa322dd69229401af2dcf39d596977d65d3761f63",
+    "paper_v3_assets/embedding_39_g.png": "6d5aea34cb0db9ae8c487cda15613bd315460447c8b857519f356f0e0594570f",
+    "paper_v3_assets/embedding_40_r.png": "94439c640ecbabad752ba9ec50bafb25a78b3a893c6ceed6cb3c75cdd84b282a",
+    "paper_v3_assets/embedding_41_i.png": "c655ccde17b49d07dcdbbd863c1e9ce73ef9d1c202f9599009162d4f6cc6271c",
+    "paper_v3_assets/embedding_42_g.png": "54f1d9400f24b85050813a719aeae71b3cae7bae10a3d82e2175a07f02628a51",
+    "paper_v3_assets/embedding_43_r.png": "7e5f336daca5cbff2d4984843722a269a010f7fc4f5bccfdcb03fb9a9d7a581c",
+    "paper_v3_assets/embedding_44_i.png": "bc41e635ab3629074f873cb51c47b093b8638171b6bf9d30bbe1ab3d8ae0fcf3",
+    "paper_v3_assets/embedding_45_g.png": "161809c9a4900b4e8bad0af1a914701b58880d80232cf80b3c88537298a81185",
+    "paper_v3_assets/embedding_46_r.png": "b6f6585e9c68814185937424891f0546ba1f6221ae7f4cc1dc409e9f0bd901d8",
+    "paper_v3_assets/embedding_47_i.png": "1cd47a760dd9c86476c2bd74128ff5777edf141cc10d78290ec3465b314c87e0",
+    "paper_v3_assets/embedding_48_g.png": "45ccbf028333fd94d6104e8328b445b59bdd0b2e44fa1d38f09bd95d0d451654",
+    "paper_v3_assets/embedding_49_r.png": "0469ce6044d7d043a603b6f89b34cf1875b38c2bd81330af3ee6cf562836cb1d",
+    "paper_v3_assets/embedding_50_i.png": "87c013d5786549607af32558ddbf31f35ba3b5e875d12b776d6474fa9d66a999",
+    "paper_v3_assets/embedding_51_g.png": "9a3e448e9f2f08103f80f7078aec0198f38a965add45f32bac4518ef17210428",
+    "paper_v3_assets/embedding_52_r.png": "6d8cb8770ad37f6de8e126e67ceebe44ba2a185925c622974fcd1fcbd34e9b37",
+    "paper_v3_assets/embedding_53_i.png": "e07c89428c45164ab3b2643e33be91e87f9c88067ef4ccc2a8e1498a07ea05af",
+    "paper_v3_assets/embedding_54_g.png": "5b0cf1265ddc3ed87b78aedf955c424777d76a87dc096d4d5d98b54ae30ec49e",
+    "paper_v3_assets/embedding_55_r.png": "9d99dead2c663c6655fb6e7d163774895eab166867db2235eeeb2bd759fc92b5",
+    "paper_v3_assets/embedding_56_i.png": "78b34e209c16188fc7fcd94fcbb40e5796ac0e186d59cb757bf60e9fc92bbac6",
+    "paper_v3_assets/embedding_57_g.png": "570715023e2628a308d9935ad1b82f7613ba158a9215e3103119690a1d6ead2a",
+    "paper_v3_assets/embedding_58_r.png": "191e8bec3f9f6b3ac41bed43fa5de68b8593a3695d19c0c60d4dd1a05b241fcc",
+    "paper_v3_assets/embedding_59_i.png": "d915b0037c739a54e4aecad6e46bebe54760ad0bb26e33968848033479ee5f83",
+    "paper_v3_assets/embedding_60_g.png": "f2f8bfb01eab8c5f426255d1fb9f65a614b9f5967a7d9ef79f7cdb91a95eae0c",
+    "paper_v3_assets/embedding_61_r.png": "d8d61b9b5d3770053b456b4f4e48e5504c86ed83a108dd15e9888255d6f96ee0",
+    "paper_v3_assets/embedding_62_i.png": "94b4fb5b5bb1733b9a56036d4ab1659ea6c4410317deb485674cc12cb04d34c6",
+    "paper_v3_assets/human_distributions_g.png": "8644e69141792e2d7b44df70631ab3d6299aba59aaff1188425dac8888ff7719",
+    "paper_v3_assets/human_distributions_i.png": "629770a3bc2de2a526b61f3463f92e75ed0d50d88f7690fee435fd5e922aba51",
+    "paper_v3_assets/human_distributions_r.png": "94260a0a9e48dd2f6164a0129338e7a0b1f1f4e7208cc53960426079cb630369",
+    "paper_v3_assets/trend_class_0.png": "ceae5851b5b2829981b337d81ebd0a0836a38cd8350a59b8fdb78c039d65ae4d",
+    "paper_v3_assets/trend_class_1.png": "ebaed7b14ff1b7b18c47e1b3438905f490858b2cfd4990d13c97ae5415f2c275",
+    "paper_v3_assets/trend_class_2.png": "fab85ddee4ce1ffb190e9e7bface2a14e73629d48b7a7994c1058bcd658fc76f",
+    "paper_v3_assets/trend_class_3.png": "6cfeaae460afc3aa910bfea088bd98611f2a447ee4117c4784a861995c1e4e1d",
+    "paper_v3_assets/trend_class_4.png": "1e80f4dd557f1daba8f277637f886389d601ea0b8584448ea0bb960fe8ad7cf2",
+    "paper_v3_assets/trend_class_5.png": "6727daa2c55fb315170f9e4fcee13d4104dfe6edf45912cb38412fa767414ce9",
+    "paper_v3_assets/trend_class_6.png": "db9b5f02a386dc94414f3a08f487c1cfc2771c19478bc8c67911850fbba91707",
+    "paper_v3_assets/trend_class_7.png": "42ee086c00b552754f4ea2c652c12b09ce16e6da631e102302b8bf17d4586012",
+    "paper_v3_assets/trend_class_8.png": "f7cc74f4771b067668d71cdab125a1e162eef9248aeef81f772aaf01b3bcc617",
+    "paper_v3_assets/trend_class_9.png": "eee040523fcc00a84e52ed1ed6e9963a239d6973c5a2ba626dabe100ddcf67bc",
+    "paper_v3_assets/trend_p_etg.png": "4e870c0d4294505aeee71c71475c1f886b38c48944384f1ee432e84d83b5297f",
+    "paper_v3_assets/trend_p_failed_fitting.png": "0c53cf8f665638f187825c1d9cbae2ee20a04639be514be68d8fd787f6a44efc",
+    "paper_v3_assets/trend_p_featureless.png": "18e6727c7d3ed93609154ff0c6a628415c3782f69a3f55838e9a76fb662089cd",
+    "paper_v3_assets/trend_p_irregular_or_unsure.png": "d0fa928973845e72d2b706594353d733045733b0bdaa9d57aba041085e0ae532",
+    "paper_v3_assets/trend_p_lsb.png": "eab669c511d9504264d234709a12b88305da372774c4f72eadc0f9dfca7b3bee",
+    "paper_v3_assets/trend_p_ltg.png": "34170e351b9bb8d42e8522fb6ed334bd7447a8eb233873df81c716863c5d8d3a",
+    "paper_v3_assets/trend_p_visible_nucleus.png": "7b20a79a7abfd1b9a3dc5e8bed23c78eeffa8c1fcae921fffede2b2b18b36b37",
+    "paper_v3_data/source_support/human_metadata.json": "acee7ecc4eaf43358ab32feee6ffc08fa8f28b25c5ef744e8d5896b52574c7c0",
+    "paper_v3_data/source_support/zoobot_metadata.json": "2d79f1d2abe41d78d1bb306be07b1b1bfe5a5956e79c98869f387864531156cf",
+    "paper_v3_data/source_support/human_mapping.json": "4e285a31d6a822ccd221079e6bd1e11bf2438a7c4fa6720092adb030073c5e50",
+    "paper_v3_data/run_source/build_classification_report.py": "b1a780308088b3d920ab8838a3b2b9a19149835e63485de3b9b5c61dc18dda03",
+    "paper_v3_data/run_source/classification_data.py": "8a54898784016c6bf9882c43cc078680fdea19869dfc173c1fa04b9848aa0b5c",
+    "paper_v3_data/run_source/classification_plots.py": "58562959fdf81e2eb7c6f63d9ce294451289cebb318fdc9df2f9bb321352b684",
+    "paper_v3_data/run_source/prepare_classification_analysis.py": "b03efce1f725859a994bfb10897088b19658e125f73ab22bcbbf2d7fff4a691e",
+    "paper_v3_data/run_source/plot_classification_analysis.py": "56deca539bf19cf95ec939e11b119b23566152ce9aa2e55c63709f0d97c12495",
+    "paper_v3_data/run_source/validate_classification_report.py": "cb0075e71c687e17bef3daceee6c6b2bd80311b7c5ae61fc7bc07bfcddb121fd"
+  },
+  "source_code": {
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/build_classification_report.py": "b1a780308088b3d920ab8838a3b2b9a19149835e63485de3b9b5c61dc18dda03",
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/algorithmic_morphology/classification_data.py": "8a54898784016c6bf9882c43cc078680fdea19869dfc173c1fa04b9848aa0b5c",
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/algorithmic_morphology/classification_plots.py": "58562959fdf81e2eb7c6f63d9ce294451289cebb318fdc9df2f9bb321352b684",
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/prepare_classification_analysis.py": "b03efce1f725859a994bfb10897088b19658e125f73ab22bcbbf2d7fff4a691e",
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/plot_classification_analysis.py": "56deca539bf19cf95ec939e11b119b23566152ce9aa2e55c63709f0d97c12495",
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/validate_classification_report.py": "cb0075e71c687e17bef3daceee6c6b2bd80311b7c5ae61fc7bc07bfcddb121fd"
+  },
+  "html_sha256": "14240ea5305e8d625351f7cd8602e8b3dcaad6ff190f2bda6a8aaeba9e2cec5b"
+}

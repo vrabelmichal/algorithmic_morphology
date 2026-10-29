@@ -1,0 +1,19 @@
+{
+  "validated_utc": "2026-10-20T21:14:03.248377+00:00",
+  "report_version": "scientific_report_v2",
+  "morphology_rows": 252600,
+  "morphology_objects": 84200,
+  "morphology_hash_unchanged": true,
+  "source_digests_match": true,
+  "galfit_rows": 84061,
+  "join_unique_and_complete": true,
+  "galfit_values_equal_to_source_with_verified_band_suffixes": true,
+  "range_audit_rows": 450,
+  "histogram_tails_independently_verified": true,
+  "main_figures": 19,
+  "embedded_images": 27,
+  "complete_column_dictionary": true,
+  "internal_anchors_resolve": true,
+  "previous_report_preserved": true,
+  "html_sha256": "a2f6a33293c92b763403a25f342ce652659fa27bfd004f1973146e31f775fd26"
+}

@@ -1,0 +1,14 @@
+{
+  "report_version": "scientific_report_v4",
+  "built_utc": "2026-10-22T15:20:26.378413+00:00",
+  "html_sha256": "2fb9c1b17824847a39d98788f0aa223323d1aa38d5e8dd041aa08ee5888e0e71",
+  "previous_report_sha256": "14240ea5305e8d625351f7cd8602e8b3dcaad6ff190f2bda6a8aaeba9e2cec5b",
+  "explorer_sha256": "b89c66754e21dff2806e9f4b4610241172ea50e764c4fc92e4b360920246e22c",
+  "association_table_sha256": "76b8f06c9cd8df592ba873357def61ae593103932f401cb1d10d25da0a948375",
+  "morphology_sha256": "c94e33086298e793bb3fa1978403bd5894079f50b38a61e972ea3f29bc397424",
+  "source_code": {
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/integrate_association_explorer.py": "4065261173348c35b26973f010ba04ff34cb902810947e2e058d2e55a93c1c6b",
+    "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/scripts/build_association_explorer.py": "4e3f57df0fd24fa0038162de6d3ec796fe7209fce15adc54fc6779869346bd35"
+  },
+  "note": "Presentation-only addition; report v3 data, figures and validation are preserved."
+}

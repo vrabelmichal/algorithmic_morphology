@@ -1,0 +1,72 @@
+{
+  "version": "algorithmic_morphology_overlay_v1",
+  "metrics": [
+    "C",
+    "A_raw",
+    "A_corrected",
+    "S_lotz2004_statmorph_like_v1_raw",
+    "S_lotz2004_statmorph_like_v1_corrected",
+    "S_conselice2003_like_v1_raw",
+    "S_conselice2003_like_v1_corrected",
+    "Gini_aperture_v1",
+    "M20_aperture_v1",
+    "axis_ratio_positive_aperture_v1"
+  ],
+  "labels": {
+    "C": "Concentration $C=5\\log_{10}(r_{80}/r_{20})$",
+    "A_raw": "Raw asymmetry $A_{\\rm raw}$",
+    "A_corrected": "Sky-corrected asymmetry $A_{\\rm corr}$",
+    "S_lotz2004_statmorph_like_v1_raw": "Lotz-like clumpiness $S_{\\rm L,raw}$",
+    "S_lotz2004_statmorph_like_v1_corrected": "Lotz-like clumpiness $S_{\\rm L,corr}$",
+    "S_conselice2003_like_v1_raw": "Conselice-like clumpiness $S_{\\rm C,raw}$",
+    "S_conselice2003_like_v1_corrected": "Conselice-like clumpiness $S_{\\rm C,corr}$",
+    "Gini_aperture_v1": "Aperture Gini coefficient $G$",
+    "M20_aperture_v1": "Brightest-20% moment $M_{20}$",
+    "axis_ratio_positive_aperture_v1": "Positive-flux axis ratio $q_{+}$"
+  },
+  "limits": {
+    "C": [
+      1.4835479843700063,
+      3.6468968321639084
+    ],
+    "A_raw": [
+      0.17205754122683026,
+      1.2143995173598348
+    ],
+    "A_corrected": [
+      -0.49485371116319576,
+      0.972242260944455
+    ],
+    "S_lotz2004_statmorph_like_v1_raw": [
+      0.03188100712778501,
+      2.456315713133582
+    ],
+    "S_lotz2004_statmorph_like_v1_corrected": [
+      -0.2445898162892352,
+      0.6343615703268819
+    ],
+    "S_conselice2003_like_v1_raw": [
+      0.3188100712778501,
+      24.56315713133582
+    ],
+    "S_conselice2003_like_v1_corrected": [
+      -2.445898162892352,
+      6.343615703268819
+    ],
+    "Gini_aperture_v1": [
+      0.39783878727127103,
+      0.6839888048537991
+    ],
+    "M20_aperture_v1": [
+      -2.1541344334261665,
+      -0.33516702139285104
+    ],
+    "axis_ratio_positive_aperture_v1": [
+      0,
+      1
+    ]
+  },
+  "table": "/mnt/data_sm870qvo/lsbg/analysis/algorithmic_morphology/.outputs/classification_analysis/20261022_v1/joined.parquet",
+  "table_sha256": "a684fe30750c69f47bb0071718ad660f063fa761575d1fed2d227fd344194e19",
+  "range_policy": "Pooled g/r/i 0.5\u201399.5% with 3.5% padding; corresponding Conselice S axes x10; q [0,1]. Values unchanged."
+}

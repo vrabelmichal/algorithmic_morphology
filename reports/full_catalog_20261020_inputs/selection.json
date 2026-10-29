@@ -1,0 +1,37 @@
+{
+  "catalog": "/mnt/data_sm870qvo/lsbg/analysis/clustering_lsbg/.outputs/rejected_lsb_datasets/LSBG_DETR_and_ViT_candidates/v3/concatenated-detr-vit-all.fits",
+  "catalog_sha256": "2f5ac1e7c45bc9cef490bba81a1c2758b81d9f8a34424cc0b997b77a256825e1",
+  "objects": 84200,
+  "requested_rows": 252600,
+  "selection": "Complete upstream catalog in original order; no availability or metric filter",
+  "catalog_config": "sky_subtracted_2_onmr2__detr_and_vit_all_multiband_1024_wide_legacy_fliplr_object_centered__galfit_1024_sanitized__per_band_mag_reff__xy_2_5arcsec",
+  "product_config": "sky_subtracted_2_onmr2__detr_and_vit_all_multiband_256__per_band_magnitude_optimization__r_constant_offset",
+  "product_root": "/media/vrabel/DATA_KIN4TB/lsbg/analysis/nucleated_lsbg/.outputs/sia/sky_subtracted_multiband_256/reff_mul_2_0/circ_upper_0_8/reff_mul_for_source_1_5/circ_upper_for_source_0_8/init_sep_2_0/final_sep_high_2_0/final_sep_low_2_0/initial_dilation_9/outside_dilation_9/object_non_masked_radius_2_0",
+  "coverage": [
+    {
+      "band": "r",
+      "requested": 84200,
+      "images": 84188,
+      "masks": 84188,
+      "paired": 84188
+    },
+    {
+      "band": "g",
+      "requested": 84200,
+      "images": 84172,
+      "masks": 84172,
+      "paired": 84172
+    },
+    {
+      "band": "i",
+      "requested": 84200,
+      "images": 84144,
+      "masks": 84144,
+      "paired": 84144
+    }
+  ],
+  "source_configs": {
+    "/mnt/data_sm870qvo/lsbg/analysis/nucleated_lsbg/configs/sky_subtracted_2_onmr2__detr_and_vit_all_multiband_1024_wide_legacy_fliplr_object_centered__galfit_1024_sanitized__per_band_mag_reff__xy_2_5arcsec.py": "62e110ca87d6abf6e781c199a27b2f95c8bc6a06e8eb7f3971f8dade31bc00f7",
+    "/mnt/data_sm870qvo/lsbg/analysis/nucleated_lsbg/configs/sky_subtracted_2_onmr2__detr_and_vit_all_multiband_256__per_band_magnitude_optimization__r_constant_offset.py": "06f6094c3bba3a5a711be4ad4234e7753845de3fe98d691a38ca1d4f7100e1b3"
+  }
+}

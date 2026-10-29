@@ -1,0 +1,559 @@
+{
+  "statistics": [
+    {
+      "band": "g",
+      "metric": "Gini_aperture_v1",
+      "total": 84200,
+      "valid": 83848,
+      "negative": 0,
+      "median": 0.49771175005017054,
+      "p16": 0.43964523169285197,
+      "p84": 0.5433372683279127
+    },
+    {
+      "band": "g",
+      "metric": "M20_aperture_v1",
+      "total": 84200,
+      "valid": 83614,
+      "negative": 83512,
+      "median": -1.506093430529533,
+      "p16": -1.7020122776426483,
+      "p84": -1.0917012209566261
+    },
+    {
+      "band": "g",
+      "metric": "ellipticity_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83848,
+      "negative": 0,
+      "median": 0.10387498363501474,
+      "p16": 0.04598674918462874,
+      "p84": 0.18788779233101086
+    },
+    {
+      "band": "g",
+      "metric": "axis_ratio_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83848,
+      "negative": 0,
+      "median": 0.8961250163649852,
+      "p16": 0.8121122076689892,
+      "p84": 0.9540132508153712
+    },
+    {
+      "band": "g",
+      "metric": "position_angle_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83848,
+      "negative": 0,
+      "median": 89.74219851402896,
+      "p16": 28.234482925421027,
+      "p84": 151.59657026667966
+    },
+    {
+      "band": "g",
+      "metric": "aperture_mask_fraction",
+      "total": 84200,
+      "valid": 83848,
+      "negative": 0,
+      "median": 0.06424741633257064,
+      "p16": 0.0,
+      "p84": 0.19588206814652415
+    },
+    {
+      "band": "g",
+      "metric": "C",
+      "total": 84200,
+      "valid": 82619,
+      "negative": 0,
+      "median": 2.4778128320249704,
+      "p16": 2.2676124285885115,
+      "p84": 2.7168018844028845
+    },
+    {
+      "band": "g",
+      "metric": "rpetro",
+      "total": 84200,
+      "valid": 83848,
+      "negative": 0,
+      "median": 20.473760684195405,
+      "p16": 16.978918541077352,
+      "p84": 27.394884428982625
+    },
+    {
+      "band": "g",
+      "metric": "A_raw",
+      "total": 84200,
+      "valid": 83629,
+      "negative": 0,
+      "median": 0.6826440866609789,
+      "p16": 0.5126205305131252,
+      "p84": 0.9166980793018072
+    },
+    {
+      "band": "g",
+      "metric": "A_sky",
+      "total": 84200,
+      "valid": 82368,
+      "negative": 0,
+      "median": 0.7178863092279704,
+      "p16": 0.5112733204212235,
+      "p84": 1.008512353215125
+    },
+    {
+      "band": "g",
+      "metric": "A_corrected",
+      "total": 84200,
+      "valid": 82177,
+      "negative": 58202,
+      "median": -0.05069694585346485,
+      "p16": -0.15145455572635202,
+      "p84": 0.044657866369884607
+    },
+    {
+      "band": "g",
+      "metric": "mask_fraction",
+      "total": 84200,
+      "valid": 84172,
+      "negative": 0,
+      "median": 0.10040283203125,
+      "p16": 0.05963134765625,
+      "p84": 0.157562255859375
+    },
+    {
+      "band": "g",
+      "metric": "S_lotz2004_statmorph_like_v1_raw",
+      "total": 84200,
+      "valid": 83476,
+      "negative": 0,
+      "median": 0.4830143234144978,
+      "p16": 0.3023269234636119,
+      "p84": 0.901436086474201
+    },
+    {
+      "band": "g",
+      "metric": "S_lotz2004_statmorph_like_v1_sky",
+      "total": 84200,
+      "valid": 82007,
+      "negative": 0,
+      "median": 0.4419772269410045,
+      "p16": 0.2766649866783794,
+      "p84": 0.8224857938483606
+    },
+    {
+      "band": "g",
+      "metric": "S_lotz2004_statmorph_like_v1_corrected",
+      "total": 84200,
+      "valid": 82007,
+      "negative": 17046,
+      "median": 0.02937103838810068,
+      "p16": -0.0066511729164626145,
+      "p84": 0.10642664297249566
+    },
+    {
+      "band": "g",
+      "metric": "S_conselice2003_like_v1_raw",
+      "total": 84200,
+      "valid": 83581,
+      "negative": 0,
+      "median": 4.1874679469909655,
+      "p16": 2.6724252563752193,
+      "p84": 7.854206685119526
+    },
+    {
+      "band": "g",
+      "metric": "S_conselice2003_like_v1_sky",
+      "total": 84200,
+      "valid": 82107,
+      "negative": 0,
+      "median": 3.790330441492751,
+      "p16": 2.40128747707133,
+      "p84": 7.124589025341072
+    },
+    {
+      "band": "g",
+      "metric": "S_conselice2003_like_v1_corrected",
+      "total": 84200,
+      "valid": 82107,
+      "negative": 13591,
+      "median": 0.2983093452461838,
+      "p16": -0.007226685477356075,
+      "p84": 0.9580755543538787
+    },
+    {
+      "band": "i",
+      "metric": "Gini_aperture_v1",
+      "total": 84200,
+      "valid": 83854,
+      "negative": 0,
+      "median": 0.48495452530655864,
+      "p16": 0.4338406526757346,
+      "p84": 0.5373750976148235
+    },
+    {
+      "band": "i",
+      "metric": "M20_aperture_v1",
+      "total": 84200,
+      "valid": 83617,
+      "negative": 83557,
+      "median": -1.5643492370629446,
+      "p16": -1.7943828188701099,
+      "p84": -1.0207098496745715
+    },
+    {
+      "band": "i",
+      "metric": "ellipticity_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83854,
+      "negative": 0,
+      "median": 0.1095963547538823,
+      "p16": 0.04785965619181625,
+      "p84": 0.19434602519077745
+    },
+    {
+      "band": "i",
+      "metric": "axis_ratio_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83854,
+      "negative": 0,
+      "median": 0.8904036452461177,
+      "p16": 0.8056539748092225,
+      "p84": 0.9521403438081838
+    },
+    {
+      "band": "i",
+      "metric": "position_angle_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83854,
+      "negative": 0,
+      "median": 89.63650254978663,
+      "p16": 28.533752825181715,
+      "p84": 151.40320910528126
+    },
+    {
+      "band": "i",
+      "metric": "aperture_mask_fraction",
+      "total": 84200,
+      "valid": 83854,
+      "negative": 0,
+      "median": 0.09807590698945551,
+      "p16": 0.0,
+      "p84": 0.23322547292320284
+    },
+    {
+      "band": "i",
+      "metric": "C",
+      "total": 84200,
+      "valid": 82406,
+      "negative": 0,
+      "median": 2.607500886956819,
+      "p16": 2.3675406504878214,
+      "p84": 2.861147777661224
+    },
+    {
+      "band": "i",
+      "metric": "rpetro",
+      "total": 84200,
+      "valid": 83854,
+      "negative": 0,
+      "median": 19.094977265337953,
+      "p16": 15.650986052157084,
+      "p84": 25.85025529099075
+    },
+    {
+      "band": "i",
+      "metric": "A_raw",
+      "total": 84200,
+      "valid": 83639,
+      "negative": 0,
+      "median": 0.7153605605119903,
+      "p16": 0.5017426998124558,
+      "p84": 0.9291162527156176
+    },
+    {
+      "band": "i",
+      "metric": "A_sky",
+      "total": 84200,
+      "valid": 80496,
+      "negative": 0,
+      "median": 0.7800543092797488,
+      "p16": 0.5230704285206953,
+      "p84": 1.0568560444437962
+    },
+    {
+      "band": "i",
+      "metric": "A_corrected",
+      "total": 84200,
+      "valid": 80330,
+      "negative": 62764,
+      "median": -0.0748916605760242,
+      "p16": -0.18041156544211143,
+      "p84": 0.022374133184330826
+    },
+    {
+      "band": "i",
+      "metric": "mask_fraction",
+      "total": 84200,
+      "valid": 84144,
+      "negative": 0,
+      "median": 0.13580322265625,
+      "p16": 0.0890655517578125,
+      "p84": 0.199676513671875
+    },
+    {
+      "band": "i",
+      "metric": "S_lotz2004_statmorph_like_v1_raw",
+      "total": 84200,
+      "valid": 83255,
+      "negative": 0,
+      "median": 0.5543437673098184,
+      "p16": 0.32310988018074893,
+      "p84": 0.9837763930692558
+    },
+    {
+      "band": "i",
+      "metric": "S_lotz2004_statmorph_like_v1_sky",
+      "total": 84200,
+      "valid": 79930,
+      "negative": 0,
+      "median": 0.5158876405596245,
+      "p16": 0.2998479065753571,
+      "p84": 0.913414467091126
+    },
+    {
+      "band": "i",
+      "metric": "S_lotz2004_statmorph_like_v1_corrected",
+      "total": 84200,
+      "valid": 79930,
+      "negative": 21389,
+      "median": 0.026555910239979746,
+      "p16": -0.01688170805352667,
+      "p84": 0.11278080849829149
+    },
+    {
+      "band": "i",
+      "metric": "S_conselice2003_like_v1_raw",
+      "total": 84200,
+      "valid": 83540,
+      "negative": 0,
+      "median": 4.773006436456885,
+      "p16": 2.817073679984216,
+      "p84": 8.5420591394358
+    },
+    {
+      "band": "i",
+      "metric": "S_conselice2003_like_v1_sky",
+      "total": 84200,
+      "valid": 80209,
+      "negative": 0,
+      "median": 4.390863977752128,
+      "p16": 2.5665149331118706,
+      "p84": 7.9030501417573715
+    },
+    {
+      "band": "i",
+      "metric": "S_conselice2003_like_v1_corrected",
+      "total": 84200,
+      "valid": 80209,
+      "negative": 17566,
+      "median": 0.2765772686289534,
+      "p16": -0.08916453768579995,
+      "p84": 1.0009995827052358
+    },
+    {
+      "band": "r",
+      "metric": "Gini_aperture_v1",
+      "total": 84200,
+      "valid": 83844,
+      "negative": 0,
+      "median": 0.5180170482632718,
+      "p16": 0.45231271033844067,
+      "p84": 0.5679132836342554
+    },
+    {
+      "band": "r",
+      "metric": "M20_aperture_v1",
+      "total": 84200,
+      "valid": 83657,
+      "negative": 83611,
+      "median": -1.6188562175188093,
+      "p16": -1.797920003914769,
+      "p84": -1.2398458872687972
+    },
+    {
+      "band": "r",
+      "metric": "ellipticity_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83844,
+      "negative": 0,
+      "median": 0.11826476785539453,
+      "p16": 0.05234226714176073,
+      "p84": 0.20823985792899607
+    },
+    {
+      "band": "r",
+      "metric": "axis_ratio_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83844,
+      "negative": 0,
+      "median": 0.8817352321446055,
+      "p16": 0.791760142071004,
+      "p84": 0.9476577328582393
+    },
+    {
+      "band": "r",
+      "metric": "position_angle_positive_aperture_v1",
+      "total": 84200,
+      "valid": 83844,
+      "negative": 0,
+      "median": 90.00578631653313,
+      "p16": 28.73829042641923,
+      "p84": 151.4887752541094
+    },
+    {
+      "band": "r",
+      "metric": "aperture_mask_fraction",
+      "total": 84200,
+      "valid": 83844,
+      "negative": 0,
+      "median": 0.1030938420257449,
+      "p16": 0.0,
+      "p84": 0.24363813267669343
+    },
+    {
+      "band": "r",
+      "metric": "C",
+      "total": 84200,
+      "valid": 82869,
+      "negative": 0,
+      "median": 2.5707840498554644,
+      "p16": 2.3540015769588103,
+      "p84": 2.8110898517379836
+    },
+    {
+      "band": "r",
+      "metric": "rpetro",
+      "total": 84200,
+      "valid": 83844,
+      "negative": 0,
+      "median": 19.925646100274584,
+      "p16": 16.608368840064568,
+      "p84": 26.956637499910656
+    },
+    {
+      "band": "r",
+      "metric": "A_raw",
+      "total": 84200,
+      "valid": 83614,
+      "negative": 0,
+      "median": 0.6064721499630858,
+      "p16": 0.42060021195696284,
+      "p84": 0.8424087545042068
+    },
+    {
+      "band": "r",
+      "metric": "A_sky",
+      "total": 84200,
+      "valid": 80004,
+      "negative": 0,
+      "median": 0.6365514394767087,
+      "p16": 0.4132007210877338,
+      "p84": 0.9326518557735558
+    },
+    {
+      "band": "r",
+      "metric": "A_corrected",
+      "total": 84200,
+      "valid": 79828,
+      "negative": 54567,
+      "median": -0.04089731147652556,
+      "p16": -0.1412288178127117,
+      "p84": 0.04695917645144498
+    },
+    {
+      "band": "r",
+      "metric": "mask_fraction",
+      "total": 84200,
+      "valid": 84188,
+      "negative": 0,
+      "median": 0.14410400390625,
+      "p16": 0.094207763671875,
+      "p84": 0.2113037109375
+    },
+    {
+      "band": "r",
+      "metric": "S_lotz2004_statmorph_like_v1_raw",
+      "total": 84200,
+      "valid": 83456,
+      "negative": 0,
+      "median": 0.408634377893558,
+      "p16": 0.24404584553682834,
+      "p84": 0.7535631047501243
+    },
+    {
+      "band": "r",
+      "metric": "S_lotz2004_statmorph_like_v1_sky",
+      "total": 84200,
+      "valid": 79636,
+      "negative": 0,
+      "median": 0.3806851032300461,
+      "p16": 0.22483962955967865,
+      "p84": 0.6998884813841411
+    },
+    {
+      "band": "r",
+      "metric": "S_lotz2004_statmorph_like_v1_corrected",
+      "total": 84200,
+      "valid": 79636,
+      "negative": 20158,
+      "median": 0.02109081930722266,
+      "p16": -0.011737438508875528,
+      "p84": 0.08555183561203822
+    },
+    {
+      "band": "r",
+      "metric": "S_conselice2003_like_v1_raw",
+      "total": 84200,
+      "valid": 83643,
+      "negative": 0,
+      "median": 3.516935620542718,
+      "p16": 2.1398897403151693,
+      "p84": 6.5076083970822145
+    },
+    {
+      "band": "r",
+      "metric": "S_conselice2003_like_v1_sky",
+      "total": 84200,
+      "valid": 79817,
+      "negative": 0,
+      "median": 3.2198280420468253,
+      "p16": 1.9168197446212294,
+      "p84": 5.992506138941185
+    },
+    {
+      "band": "r",
+      "metric": "S_conselice2003_like_v1_corrected",
+      "total": 84200,
+      "valid": 79817,
+      "negative": 15448,
+      "median": 0.23474577473810632,
+      "p16": -0.03887132901625421,
+      "p84": 0.7725222112717534
+    }
+  ],
+  "quality_flags": {
+    "no_clean_sky_tile": 8678,
+    "nonmonotone_growth_curve": 3518,
+    "S_lotz2004_statmorph_like_v1_insufficient_scale_or_flux": 1359,
+    "S_conselice2003_like_v1_insufficient_scale_or_flux": 782,
+    "asymmetry_no_flux": 664,
+    "center_optimization_failed": 664,
+    "aperture_truncated": 511,
+    "petrosian_crossing_not_found": 447,
+    "center_search_boundary": 222,
+    "nonpositive_or_empty_total_flux": 134
+  },
+  "errors": {
+    "missing_cutout": 96
+  }
+}
