@@ -1,0 +1,2010 @@
+{
+  "figures": [
+    {
+      "number": 1,
+      "key": "rpetro_dist",
+      "family": "P",
+      "title": "Petrosian radius distribution in g, r and i",
+      "panels": [
+        "paper_v5_assets/rpetro_dist.png",
+        "paper_v5_assets/rpetro_dist_full.png"
+      ]
+    },
+    {
+      "number": 2,
+      "key": "rpetro_vs_re",
+      "family": "P",
+      "title": "Petrosian radius versus GALFIT effective radius, per band",
+      "panels": [
+        "paper_v5_assets/rpetro_vs_re_g.png",
+        "paper_v5_assets/rpetro_vs_re_r.png",
+        "paper_v5_assets/rpetro_vs_re_i.png"
+      ]
+    },
+    {
+      "number": 3,
+      "key": "C_dist",
+      "family": "C",
+      "title": "Distribution of concentration C in g, r and i",
+      "panels": [
+        "paper_v5_assets/C_dist.png",
+        "paper_v5_assets/C_dist_full.png"
+      ]
+    },
+    {
+      "number": 4,
+      "key": "C_galfit",
+      "family": "C",
+      "title": "Concentration C against six GALFIT properties",
+      "panels": [
+        "paper_v5_assets/C__gf_n.png",
+        "paper_v5_assets/C__gf_mu_mean.png",
+        "paper_v5_assets/C__gf_re_arcsec.png",
+        "paper_v5_assets/C__gf_mag.png",
+        "paper_v5_assets/C__gf_q.png",
+        "paper_v5_assets/C__gf_chi2red.png"
+      ]
+    },
+    {
+      "number": 5,
+      "key": "C_human",
+      "family": "C",
+      "title": "Concentration C for each human morphology consensus class",
+      "panels": [
+        "paper_v5_assets/C__human_r.png",
+        "paper_v5_assets/C__human_g.png",
+        "paper_v5_assets/C__human_i.png"
+      ]
+    },
+    {
+      "number": 6,
+      "key": "C_assoc",
+      "family": "C",
+      "title": "Concentration C: rank correlations with every human answer and DECaLS10 class",
+      "panels": [
+        "paper_v5_assets/C__assoc.png"
+      ]
+    },
+    {
+      "number": 7,
+      "key": "C_effects",
+      "family": "C",
+      "title": "Concentration C: how well each class separates from all other galaxies",
+      "panels": [
+        "paper_v5_assets/C__effects.png"
+      ]
+    },
+    {
+      "number": 8,
+      "key": "C_trends",
+      "family": "C",
+      "title": "Concentration C along human answer fractions and DECaLS10 probabilities",
+      "panels": [
+        "paper_v5_assets/C__trend_p_visible_nucleus.png",
+        "paper_v5_assets/C__trend_p_etg.png",
+        "paper_v5_assets/C__trend_class_0.png",
+        "paper_v5_assets/C__trend_p_featureless.png",
+        "paper_v5_assets/C__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/C__trend_p_ltg.png",
+        "paper_v5_assets/C__trend_p_lsb.png",
+        "paper_v5_assets/C__trend_p_failed_fitting.png",
+        "paper_v5_assets/C__trend_class_1.png",
+        "paper_v5_assets/C__trend_class_2.png",
+        "paper_v5_assets/C__trend_class_3.png",
+        "paper_v5_assets/C__trend_class_4.png",
+        "paper_v5_assets/C__trend_class_5.png",
+        "paper_v5_assets/C__trend_class_6.png",
+        "paper_v5_assets/C__trend_class_7.png",
+        "paper_v5_assets/C__trend_class_8.png",
+        "paper_v5_assets/C__trend_class_9.png"
+      ]
+    },
+    {
+      "number": 9,
+      "key": "C_embed",
+      "family": "C",
+      "title": "Concentration C across a saved clustering map",
+      "panels": [
+        "paper_v5_assets/emb_58_C.png",
+        "paper_v5_assets/emb_57_C.png",
+        "paper_v5_assets/emb_59_C.png"
+      ]
+    },
+    {
+      "number": 10,
+      "key": "A_dist",
+      "family": "A",
+      "title": "Distributions of raw asymmetry, sky-corrected asymmetry and the sky term",
+      "panels": [
+        "paper_v5_assets/A_raw_dist.png",
+        "paper_v5_assets/A_corrected_dist.png",
+        "paper_v5_assets/A_sky_dist.png",
+        "paper_v5_assets/A_raw_dist_full.png",
+        "paper_v5_assets/A_corrected_dist_full.png",
+        "paper_v5_assets/A_sky_dist_full.png"
+      ]
+    },
+    {
+      "number": 11,
+      "key": "A_overlay",
+      "family": "A",
+      "title": "Raw and sky-corrected asymmetry on a common axis, one band per panel",
+      "panels": [
+        "paper_v5_assets/A_overlay_g.png",
+        "paper_v5_assets/A_overlay_r.png",
+        "paper_v5_assets/A_overlay_i.png"
+      ]
+    },
+    {
+      "number": 12,
+      "key": "A_paired",
+      "family": "A",
+      "title": "Raw versus sky-corrected asymmetry for the same galaxies",
+      "panels": [
+        "paper_v5_assets/A_paired_g.png",
+        "paper_v5_assets/A_paired_r.png",
+        "paper_v5_assets/A_paired_i.png"
+      ]
+    },
+    {
+      "number": 13,
+      "key": "A_galfit",
+      "family": "A",
+      "title": "Raw (left) and sky-corrected (right) asymmetry against six GALFIT properties",
+      "panels": [
+        "paper_v5_assets/A_raw__gf_n.png",
+        "paper_v5_assets/A_corrected__gf_n.png",
+        "paper_v5_assets/A_raw__gf_mu_mean.png",
+        "paper_v5_assets/A_corrected__gf_mu_mean.png",
+        "paper_v5_assets/A_raw__gf_re_arcsec.png",
+        "paper_v5_assets/A_corrected__gf_re_arcsec.png",
+        "paper_v5_assets/A_raw__gf_mag.png",
+        "paper_v5_assets/A_corrected__gf_mag.png",
+        "paper_v5_assets/A_raw__gf_q.png",
+        "paper_v5_assets/A_corrected__gf_q.png",
+        "paper_v5_assets/A_raw__gf_chi2red.png",
+        "paper_v5_assets/A_corrected__gf_chi2red.png"
+      ]
+    },
+    {
+      "number": 14,
+      "key": "A_human",
+      "family": "A",
+      "title": "Raw and sky-corrected asymmetry for each human morphology consensus class",
+      "panels": [
+        "paper_v5_assets/A_raw__human_r.png",
+        "paper_v5_assets/A_corrected__human_r.png",
+        "paper_v5_assets/A_raw__human_g.png",
+        "paper_v5_assets/A_corrected__human_g.png",
+        "paper_v5_assets/A_raw__human_i.png",
+        "paper_v5_assets/A_corrected__human_i.png"
+      ]
+    },
+    {
+      "number": 15,
+      "key": "A_assoc",
+      "family": "A",
+      "title": "Raw and sky-corrected asymmetry: rank correlations with every human answer and DECaLS10 class",
+      "panels": [
+        "paper_v5_assets/A_raw__assoc.png",
+        "paper_v5_assets/A_corrected__assoc.png"
+      ]
+    },
+    {
+      "number": 16,
+      "key": "A_effects",
+      "family": "A",
+      "title": "Raw and sky-corrected asymmetry: separation of each class from all other galaxies",
+      "panels": [
+        "paper_v5_assets/A_raw__effects.png",
+        "paper_v5_assets/A_corrected__effects.png"
+      ]
+    },
+    {
+      "number": 17,
+      "key": "A_trends",
+      "family": "A",
+      "title": "Raw (left) and sky-corrected (right) asymmetry along key human fractions and DECaLS10 probabilities",
+      "panels": [
+        "paper_v5_assets/A_raw__trend_p_visible_nucleus.png",
+        "paper_v5_assets/A_corrected__trend_p_visible_nucleus.png",
+        "paper_v5_assets/A_raw__trend_p_etg.png",
+        "paper_v5_assets/A_corrected__trend_p_etg.png",
+        "paper_v5_assets/A_raw__trend_class_0.png",
+        "paper_v5_assets/A_corrected__trend_class_0.png",
+        "paper_v5_assets/A_raw__trend_p_featureless.png",
+        "paper_v5_assets/A_corrected__trend_p_featureless.png",
+        "paper_v5_assets/A_raw__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/A_corrected__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/A_raw__trend_p_ltg.png",
+        "paper_v5_assets/A_corrected__trend_p_ltg.png",
+        "paper_v5_assets/A_raw__trend_p_lsb.png",
+        "paper_v5_assets/A_corrected__trend_p_lsb.png",
+        "paper_v5_assets/A_raw__trend_p_failed_fitting.png",
+        "paper_v5_assets/A_corrected__trend_p_failed_fitting.png",
+        "paper_v5_assets/A_raw__trend_class_1.png",
+        "paper_v5_assets/A_corrected__trend_class_1.png",
+        "paper_v5_assets/A_raw__trend_class_2.png",
+        "paper_v5_assets/A_corrected__trend_class_2.png",
+        "paper_v5_assets/A_raw__trend_class_3.png",
+        "paper_v5_assets/A_corrected__trend_class_3.png",
+        "paper_v5_assets/A_raw__trend_class_4.png",
+        "paper_v5_assets/A_corrected__trend_class_4.png",
+        "paper_v5_assets/A_raw__trend_class_5.png",
+        "paper_v5_assets/A_corrected__trend_class_5.png",
+        "paper_v5_assets/A_raw__trend_class_6.png",
+        "paper_v5_assets/A_corrected__trend_class_6.png",
+        "paper_v5_assets/A_raw__trend_class_7.png",
+        "paper_v5_assets/A_corrected__trend_class_7.png",
+        "paper_v5_assets/A_raw__trend_class_8.png",
+        "paper_v5_assets/A_corrected__trend_class_8.png",
+        "paper_v5_assets/A_raw__trend_class_9.png",
+        "paper_v5_assets/A_corrected__trend_class_9.png"
+      ]
+    },
+    {
+      "number": 18,
+      "key": "A_embed",
+      "family": "A",
+      "title": "Raw and sky-corrected asymmetry across a saved clustering map",
+      "panels": [
+        "paper_v5_assets/emb_58_A_raw.png",
+        "paper_v5_assets/emb_58_A_corrected.png",
+        "paper_v5_assets/emb_57_A_raw.png",
+        "paper_v5_assets/emb_57_A_corrected.png",
+        "paper_v5_assets/emb_59_A_raw.png",
+        "paper_v5_assets/emb_59_A_corrected.png"
+      ]
+    },
+    {
+      "number": 19,
+      "key": "S_dist",
+      "family": "S",
+      "title": "Distributions of the four clumpiness outputs (two profiles \u00d7 raw/corrected)",
+      "panels": [
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw_dist.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected_dist.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw_dist.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected_dist.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw_dist_full.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected_dist_full.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw_dist_full.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected_dist_full.png"
+      ]
+    },
+    {
+      "number": 20,
+      "key": "S_overlay",
+      "family": "S",
+      "title": "Lotz-like and Conselice-like \u00f7 10 clumpiness on a common axis",
+      "panels": [
+        "paper_v5_assets/S_overlay_raw_g.png",
+        "paper_v5_assets/S_overlay_raw_r.png",
+        "paper_v5_assets/S_overlay_raw_i.png",
+        "paper_v5_assets/S_overlay_corrected_g.png",
+        "paper_v5_assets/S_overlay_corrected_r.png",
+        "paper_v5_assets/S_overlay_corrected_i.png"
+      ]
+    },
+    {
+      "number": 21,
+      "key": "S_paired",
+      "family": "S",
+      "title": "Lotz-like versus Conselice-like \u00f7 10 clumpiness for the same galaxies",
+      "panels": [
+        "paper_v5_assets/S_paired_raw_g.png",
+        "paper_v5_assets/S_paired_raw_r.png",
+        "paper_v5_assets/S_paired_raw_i.png",
+        "paper_v5_assets/S_paired_corrected_g.png",
+        "paper_v5_assets/S_paired_corrected_r.png",
+        "paper_v5_assets/S_paired_corrected_i.png"
+      ]
+    },
+    {
+      "number": 22,
+      "key": "S_galfit_L",
+      "family": "S",
+      "title": "Lotz-like clumpiness, raw (left) and corrected (right), against six GALFIT properties",
+      "panels": [
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__gf_n.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__gf_n.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__gf_mu_mean.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__gf_mu_mean.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__gf_re_arcsec.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__gf_re_arcsec.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__gf_mag.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__gf_mag.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__gf_q.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__gf_q.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__gf_chi2red.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__gf_chi2red.png"
+      ]
+    },
+    {
+      "number": 23,
+      "key": "S_galfit_K",
+      "family": "S",
+      "title": "Conselice-like clumpiness, raw (left) and corrected (right), against six GALFIT properties",
+      "panels": [
+        "paper_v5_assets/S_conselice2003_like_v1_raw__gf_n.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__gf_n.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__gf_mu_mean.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__gf_mu_mean.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__gf_re_arcsec.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__gf_re_arcsec.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__gf_mag.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__gf_mag.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__gf_q.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__gf_q.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__gf_chi2red.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__gf_chi2red.png"
+      ]
+    },
+    {
+      "number": 24,
+      "key": "S_human",
+      "family": "S",
+      "title": "Clumpiness for each human morphology consensus class (r band)",
+      "panels": [
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__human_r.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__human_r.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__human_r.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__human_r.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__human_g.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__human_g.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__human_g.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__human_g.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__human_i.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__human_i.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__human_i.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__human_i.png"
+      ]
+    },
+    {
+      "number": 25,
+      "key": "S_assoc",
+      "family": "S",
+      "title": "Clumpiness: rank correlations with every human answer and DECaLS10 class",
+      "panels": [
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__assoc.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__assoc.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__assoc.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__assoc.png"
+      ]
+    },
+    {
+      "number": 26,
+      "key": "S_effects",
+      "family": "S",
+      "title": "Clumpiness: separation of each class from all other galaxies",
+      "panels": [
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__effects.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__effects.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__effects.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__effects.png"
+      ]
+    },
+    {
+      "number": 27,
+      "key": "S_trends",
+      "family": "S",
+      "title": "Clumpiness along key human fractions and DECaLS10 probabilities",
+      "panels": [
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_p_visible_nucleus.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_p_visible_nucleus.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_p_visible_nucleus.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_p_visible_nucleus.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_p_etg.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_p_etg.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_p_etg.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_p_etg.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_0.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_0.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_0.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_0.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_p_featureless.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_p_featureless.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_p_featureless.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_p_featureless.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_p_ltg.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_p_ltg.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_p_ltg.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_p_ltg.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_p_lsb.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_p_lsb.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_p_lsb.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_p_lsb.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_p_failed_fitting.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_p_failed_fitting.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_p_failed_fitting.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_p_failed_fitting.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_1.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_1.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_1.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_1.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_2.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_2.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_2.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_2.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_3.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_3.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_3.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_3.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_4.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_4.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_4.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_4.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_5.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_5.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_5.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_5.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_6.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_6.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_6.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_6.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_7.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_7.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_7.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_7.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_8.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_8.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_8.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_8.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_raw__trend_class_9.png",
+        "paper_v5_assets/S_lotz2004_statmorph_like_v1_corrected__trend_class_9.png",
+        "paper_v5_assets/S_conselice2003_like_v1_raw__trend_class_9.png",
+        "paper_v5_assets/S_conselice2003_like_v1_corrected__trend_class_9.png"
+      ]
+    },
+    {
+      "number": 28,
+      "key": "S_embed",
+      "family": "S",
+      "title": "Clumpiness across a saved clustering map",
+      "panels": [
+        "paper_v5_assets/emb_58_S_lotz2004_statmorph_like_v1_raw.png",
+        "paper_v5_assets/emb_58_S_lotz2004_statmorph_like_v1_corrected.png",
+        "paper_v5_assets/emb_58_S_conselice2003_like_v1_raw.png",
+        "paper_v5_assets/emb_58_S_conselice2003_like_v1_corrected.png",
+        "paper_v5_assets/emb_57_S_lotz2004_statmorph_like_v1_raw.png",
+        "paper_v5_assets/emb_57_S_lotz2004_statmorph_like_v1_corrected.png",
+        "paper_v5_assets/emb_57_S_conselice2003_like_v1_raw.png",
+        "paper_v5_assets/emb_57_S_conselice2003_like_v1_corrected.png",
+        "paper_v5_assets/emb_59_S_lotz2004_statmorph_like_v1_raw.png",
+        "paper_v5_assets/emb_59_S_lotz2004_statmorph_like_v1_corrected.png",
+        "paper_v5_assets/emb_59_S_conselice2003_like_v1_raw.png",
+        "paper_v5_assets/emb_59_S_conselice2003_like_v1_corrected.png"
+      ]
+    },
+    {
+      "number": 29,
+      "key": "D_dist",
+      "family": "D",
+      "title": "Distributions of Gini, M20 and positive-flux shape",
+      "panels": [
+        "paper_v5_assets/Gini_aperture_v1_dist.png",
+        "paper_v5_assets/M20_aperture_v1_dist.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1_dist.png",
+        "paper_v5_assets/ellipticity_positive_aperture_v1_dist.png",
+        "paper_v5_assets/position_angle_positive_aperture_v1_dist.png",
+        "paper_v5_assets/Gini_aperture_v1_dist_full.png",
+        "paper_v5_assets/M20_aperture_v1_dist_full.png"
+      ]
+    },
+    {
+      "number": 30,
+      "key": "D_gm20",
+      "family": "D",
+      "title": "Gini versus M20 for the same galaxies",
+      "panels": [
+        "paper_v5_assets/gini_m20_g.png",
+        "paper_v5_assets/gini_m20_r.png",
+        "paper_v5_assets/gini_m20_i.png"
+      ]
+    },
+    {
+      "number": 31,
+      "key": "D_cgini",
+      "family": "D",
+      "title": "Concentration versus Gini for the same galaxies",
+      "panels": [
+        "paper_v5_assets/C_vs_gini_g.png",
+        "paper_v5_assets/C_vs_gini_r.png",
+        "paper_v5_assets/C_vs_gini_i.png"
+      ]
+    },
+    {
+      "number": 32,
+      "key": "D_qcompare",
+      "family": "D",
+      "title": "Positive-flux aperture axis ratio versus GALFIT axis ratio",
+      "panels": [
+        "paper_v5_assets/q_compare_g.png",
+        "paper_v5_assets/q_compare_r.png",
+        "paper_v5_assets/q_compare_i.png"
+      ]
+    },
+    {
+      "number": 33,
+      "key": "D_galfit",
+      "family": "D",
+      "title": "Gini (left), M20 (middle) and axis ratio q+ (right) against six GALFIT properties",
+      "panels": [
+        "paper_v5_assets/Gini_aperture_v1__gf_n.png",
+        "paper_v5_assets/M20_aperture_v1__gf_n.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__gf_n.png",
+        "paper_v5_assets/Gini_aperture_v1__gf_mu_mean.png",
+        "paper_v5_assets/M20_aperture_v1__gf_mu_mean.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__gf_mu_mean.png",
+        "paper_v5_assets/Gini_aperture_v1__gf_re_arcsec.png",
+        "paper_v5_assets/M20_aperture_v1__gf_re_arcsec.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__gf_re_arcsec.png",
+        "paper_v5_assets/Gini_aperture_v1__gf_mag.png",
+        "paper_v5_assets/M20_aperture_v1__gf_mag.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__gf_mag.png",
+        "paper_v5_assets/Gini_aperture_v1__gf_q.png",
+        "paper_v5_assets/M20_aperture_v1__gf_q.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__gf_q.png",
+        "paper_v5_assets/Gini_aperture_v1__gf_chi2red.png",
+        "paper_v5_assets/M20_aperture_v1__gf_chi2red.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__gf_chi2red.png"
+      ]
+    },
+    {
+      "number": 34,
+      "key": "D_human",
+      "family": "D",
+      "title": "Gini, M20 and q+ for each human morphology consensus class (r band)",
+      "panels": [
+        "paper_v5_assets/Gini_aperture_v1__human_r.png",
+        "paper_v5_assets/M20_aperture_v1__human_r.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__human_r.png",
+        "paper_v5_assets/Gini_aperture_v1__human_g.png",
+        "paper_v5_assets/M20_aperture_v1__human_g.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__human_g.png",
+        "paper_v5_assets/Gini_aperture_v1__human_i.png",
+        "paper_v5_assets/M20_aperture_v1__human_i.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__human_i.png"
+      ]
+    },
+    {
+      "number": 35,
+      "key": "D_assoc",
+      "family": "D",
+      "title": "Gini, M20 and q+: rank correlations with every human answer and DECaLS10 class",
+      "panels": [
+        "paper_v5_assets/Gini_aperture_v1__assoc.png",
+        "paper_v5_assets/M20_aperture_v1__assoc.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__assoc.png"
+      ]
+    },
+    {
+      "number": 36,
+      "key": "D_effects",
+      "family": "D",
+      "title": "Gini, M20 and q+: separation of each class from all other galaxies",
+      "panels": [
+        "paper_v5_assets/Gini_aperture_v1__effects.png",
+        "paper_v5_assets/M20_aperture_v1__effects.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__effects.png"
+      ]
+    },
+    {
+      "number": 37,
+      "key": "D_trends",
+      "family": "D",
+      "title": "Gini, M20 and q+ along key human fractions and DECaLS10 probabilities",
+      "panels": [
+        "paper_v5_assets/Gini_aperture_v1__trend_p_visible_nucleus.png",
+        "paper_v5_assets/M20_aperture_v1__trend_p_visible_nucleus.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_p_visible_nucleus.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_p_etg.png",
+        "paper_v5_assets/M20_aperture_v1__trend_p_etg.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_p_etg.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_0.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_0.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_0.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_p_featureless.png",
+        "paper_v5_assets/M20_aperture_v1__trend_p_featureless.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_p_featureless.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/M20_aperture_v1__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_p_irregular_or_unsure.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_p_ltg.png",
+        "paper_v5_assets/M20_aperture_v1__trend_p_ltg.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_p_ltg.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_p_lsb.png",
+        "paper_v5_assets/M20_aperture_v1__trend_p_lsb.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_p_lsb.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_p_failed_fitting.png",
+        "paper_v5_assets/M20_aperture_v1__trend_p_failed_fitting.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_p_failed_fitting.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_1.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_1.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_1.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_2.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_2.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_2.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_3.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_3.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_3.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_4.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_4.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_4.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_5.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_5.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_5.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_6.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_6.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_6.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_7.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_7.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_7.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_8.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_8.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_8.png",
+        "paper_v5_assets/Gini_aperture_v1__trend_class_9.png",
+        "paper_v5_assets/M20_aperture_v1__trend_class_9.png",
+        "paper_v5_assets/axis_ratio_positive_aperture_v1__trend_class_9.png"
+      ]
+    },
+    {
+      "number": 38,
+      "key": "D_embed",
+      "family": "D",
+      "title": "Gini, M20 and q+ across a saved clustering map",
+      "panels": [
+        "paper_v5_assets/emb_58_Gini_aperture_v1.png",
+        "paper_v5_assets/emb_58_M20_aperture_v1.png",
+        "paper_v5_assets/emb_58_axis_ratio_positive_aperture_v1.png",
+        "paper_v5_assets/emb_57_Gini_aperture_v1.png",
+        "paper_v5_assets/emb_57_M20_aperture_v1.png",
+        "paper_v5_assets/emb_57_axis_ratio_positive_aperture_v1.png",
+        "paper_v5_assets/emb_59_Gini_aperture_v1.png",
+        "paper_v5_assets/emb_59_M20_aperture_v1.png",
+        "paper_v5_assets/emb_59_axis_ratio_positive_aperture_v1.png"
+      ]
+    },
+    {
+      "number": 39,
+      "key": "galfit_matrix",
+      "family": "X",
+      "title": "Rank correlations of every morphology output with every GALFIT property",
+      "panels": [
+        "paper_v5_assets/galfit_matrix_g.png",
+        "paper_v5_assets/galfit_matrix_r.png",
+        "paper_v5_assets/galfit_matrix_i.png"
+      ]
+    }
+  ],
+  "embedding_maps": [
+    {
+      "index": 0,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "PCA",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "d0201f41ce72eceac7609cda481a49108472ce52f58a4b451d20ee1992957b54"
+    },
+    {
+      "index": 1,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "PCA",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "11d3998b8c5c5e2efba1ace6ba3aa7526310acfd2aca91fb1024413cdf8f08f0"
+    },
+    {
+      "index": 2,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "PCA",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "9a82e3f1356eaf70df24cf9e26c624d546d4d2259ffa5c4608a8632d7c86f629"
+    },
+    {
+      "index": 3,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "6f8237267298e8ae21a719d5f0c7c91e24c8fc9e45acc215efda9989a570385d"
+    },
+    {
+      "index": 4,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "765bc1b416a972423781bca75655be9925163a95e39283eee4bd6859f62863fc"
+    },
+    {
+      "index": 5,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "2d1ec73518e9974b4c6b8fbe15888b50dd0555f9fb3486fd0e40c461bdfaa249"
+    },
+    {
+      "index": 6,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "82293069c3d29eec2466c5fc78975ff1b7879e950c77d7ef42e14f4ebd9b5014"
+    },
+    {
+      "index": 7,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "07254408e12bf7a150a140ec52fa5162a94f804d0feb90fd9c03ab13126ff376"
+    },
+    {
+      "index": 8,
+      "title": "GALFIT + DECaLS10 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "94cca082c3a7bc50fe59f28d0733bb7d5ff75bd6e393a6b25f1977e324bca829"
+    },
+    {
+      "index": 9,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "PCA",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "04fadfa7a7b81a108ccc0271d60bda27e7a3ce14df164d133e8f32179a2c15b0"
+    },
+    {
+      "index": 10,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "PCA",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "a55e45c9fdc559a445a8a99132a200e5c0a08ef39ae2a9343cc108b447ee5b85"
+    },
+    {
+      "index": 11,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "PCA",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "0f2e23758f5a91783eabfcf622ed99c799fdc01f52641797b070cf2e418248bb"
+    },
+    {
+      "index": 12,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "40f541dcd15efdf7eb47ef01a9ee9fbc83aec1bcfb87b598bb3a652e54395b21"
+    },
+    {
+      "index": 13,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "60bb84c97cfb62957e8dc91768a44b0bda7382738da6654f3e4ae29c087bd164"
+    },
+    {
+      "index": 14,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "00d9e7aeb66a7c547946a7b7fc2054b95f690e4ae44c7d013427ce745ef6ea4c"
+    },
+    {
+      "index": 15,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "af9d7b0b7b5376a4e0fd850eebce7bd1c83ef6b7fc3bc232516253f5e7373873"
+    },
+    {
+      "index": 16,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "a60d54206f59f980b3dc853a1344b73fcbe9df035db696c4472994dd8898be39"
+    },
+    {
+      "index": 17,
+      "title": "GALFIT + DECaLS10 representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "80387d10a4aefa55fa1e9f3469dfa2b62c12bed1dc61a70e015a898f098c61ab"
+    },
+    {
+      "index": 18,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "PCA",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "b80b4e7ef250c0dd2ca5719c9fd038bed360e04f85da72ce59b2c92b7aa4e60a"
+    },
+    {
+      "index": 19,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "PCA",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "f201495c49014de5192995c995fdaae28caa6bafbd1c024b968cb180ee2daed8"
+    },
+    {
+      "index": 20,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "PCA",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "bda877a4f9194c8391dea4973616ca2157990df8b63032564dcc45299150d463"
+    },
+    {
+      "index": 21,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "203b99a4af8d4caa3a7433407b6f5b366064ce9bea4f4729530b3369552c2fbf"
+    },
+    {
+      "index": 22,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "405fff1906b352c3770ddba01a10913de8dffad91ac621a5c5e21be7797b93ed"
+    },
+    {
+      "index": 23,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "82a4397267a80d2a6f9d2f9faaf44708cb8b40ab9c9d85cc6fc520b6ae1abaed"
+    },
+    {
+      "index": 24,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "9f0632c4146cb89127fa90e1d0d00cd95fb5a388e9703f9693118a185b715ab3"
+    },
+    {
+      "index": 25,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "4e41e284528fa775329638ae68cc50f3e1458e5518c144982fc1b52d1e8c9ec3"
+    },
+    {
+      "index": 26,
+      "title": "GALFIT + human-trained v3 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "6992086012815c67c6ee5f904c2c299ef998766a2384109ac0d9d6e5d007d81f"
+    },
+    {
+      "index": 27,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "PCA",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "60426d6dab6e67ec802c88f3bfbc6573d0e3473d36ef7c6f5303cd8a1fa2f426"
+    },
+    {
+      "index": 28,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "PCA",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "f4d0ac1a178be0105b04e5d1a21833872652ed1c194506d4f52bcba31f80a3d2"
+    },
+    {
+      "index": 29,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "PCA",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "bbe1dce03a50abe73d8487a1aa2916cb016cc6f17171c0665275709ed8a1d63b"
+    },
+    {
+      "index": 30,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "f7d1d2e079b992d7b2ab512192f01a7af0c6e4c6337d4f62902a930c50643a2c"
+    },
+    {
+      "index": 31,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "2604229745b7929573b86c31753a7bf5e3c58bb3f95fa17ba1b8a8e9bf03b135"
+    },
+    {
+      "index": 32,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "a7aaef28cd170244c6bed7053ddce514493c107a27d2d4f8dc1a4a9019e41eae"
+    },
+    {
+      "index": 33,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "f925615c2b8f9368cc776f0106c6fd42c7f8652e834371f715185c5471f78175"
+    },
+    {
+      "index": 34,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "62eaf3ef9eaf27b55de93c462562141cc2d09b6776ba06e14755909f9606e9c3"
+    },
+    {
+      "index": 35,
+      "title": "GALFIT + human-trained v3 representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "43a7b2d7947271d4edc67f5b6dd2e12c1a74bec2cc0e308c92a44fe71805c899"
+    },
+    {
+      "index": 36,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "PCA",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "a2e52aac5bbb44ed651f5a9ebd0636dbbe252d755f07525f056a56b6da256f56"
+    },
+    {
+      "index": 37,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "PCA",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "0f1351145ae4218ddfd79f5e765a301ff1c0918f2631b821ca9fad1d64ca67e2"
+    },
+    {
+      "index": 38,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "PCA",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "9404de3821a503c330275e5c93cd7e97c6a01664c75dbadb98c8483fc5c3212a"
+    },
+    {
+      "index": 39,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "3ce02d8255406edd27a19eb9d25ac5613aae3c97ed3b4d3104b4ba6f689114cb"
+    },
+    {
+      "index": 40,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "69a7565e0f559e6392aadb8f18e93ae335f5227ca9ba60ce4ce43c6c47a32bd4"
+    },
+    {
+      "index": 41,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "UMAP (120 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "a8ce5aedc1c31f3f96bf501b8d2ef8d0900b6901bd1800748cb1aea8021fd1a1"
+    },
+    {
+      "index": 42,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "bb6ec680d8cd5c94da1dff1afd484646671f3cda9823c82fe5b554d864fd1ce4"
+    },
+    {
+      "index": 43,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "0b095df09352fd384e9fe16173851b098a592d4eb13f04cacabb6115e32b36aa"
+    },
+    {
+      "index": 44,
+      "title": "GALFIT + human-trained v4 morphology representation",
+      "projection": "UMAP (15 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "e18bc187cee1a56aea86bfbbdf9bae904eadef1e2eb65d3980b22fad5f904c26"
+    },
+    {
+      "index": 45,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "PCA",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "8cd1385b617a092c2990e147ce22796c52502882cb29333a819264535ef717ec"
+    },
+    {
+      "index": 46,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "PCA",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "62dd896299a5e386524727439fed0d9f057f72805a12ea743b20e15ac73d5b42"
+    },
+    {
+      "index": 47,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "PCA",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "75570a288adc43991ac06ba28f9be86f80c98d60a60e57332c5dcb92e8bd6684"
+    },
+    {
+      "index": 48,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "98c1b0094210652cd21a7eccdb73c3a826e4c3d45eaa53d9dc94993e4fdcaf3a"
+    },
+    {
+      "index": 49,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "ba8d9924d5fb3173959e80470362f71803fc2bf762f1a190dd35575cc0d3f303"
+    },
+    {
+      "index": 50,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "UMAP (120 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "ea986a9cf29994373a470f1021ab7d3d2d7d0e665e0f510922dc03a716e2ef1e"
+    },
+    {
+      "index": 51,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "84dd46393c622cb985af8d34a5620219057fd56ad2ae66aa567a21b0affc773b"
+    },
+    {
+      "index": 52,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "7c869b3849094b2c206ab797722b7c88c6930aec448b64fca535a939b531a0c8"
+    },
+    {
+      "index": 53,
+      "title": "GALFIT + human-trained v4 probabilities",
+      "projection": "UMAP (15 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "8f4db48b5e891dabb53a99842d64ad812f492cfcdf002a5e8c346547683d0187"
+    },
+    {
+      "index": 54,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "PCA",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "da62fee40b6800e172620041fc3d59058305d4be33968b1ef8ea2b8ce22e25b6"
+    },
+    {
+      "index": 55,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "PCA",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "311fdd926cac1b960da8e4e94e740084429f0f223a52771bf784a28bf69f86b6"
+    },
+    {
+      "index": 56,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "PCA",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "65ef3c87a0902bb0791aa50018cf51fff1276d5b6cd1609875421d872e8bd6ff"
+    },
+    {
+      "index": 57,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "UMAP (120 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "18a1f95f1b57b0ac35eb4a6be18725136498d64c7c35a0bc2d45bb252478d458"
+    },
+    {
+      "index": 58,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "UMAP (120 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "a5fa01e93f433c71674c953857ded4a48fa2c6e827196af96d4c32cbe472ba95"
+    },
+    {
+      "index": 59,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "UMAP (120 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "1ecddaa02cde61c608f6057eef5259a9512ecbaa05e7e4c9e9412674032f8385"
+    },
+    {
+      "index": 60,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "UMAP (15 neighbors)",
+      "band": "g",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59653,
+        "A_raw": 59657,
+        "A_corrected": 58639,
+        "S_lotz2004_statmorph_like_v1_raw": 59667,
+        "S_lotz2004_statmorph_like_v1_corrected": 58649,
+        "S_conselice2003_like_v1_raw": 59670,
+        "S_conselice2003_like_v1_corrected": 58652,
+        "Gini_aperture_v1": 59671,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59671
+      },
+      "export_sha256": "806628caa375a4ce0c4dee8ff3c7e473a4ee442250f3d454e9268fd14c5531b7"
+    },
+    {
+      "index": 61,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "UMAP (15 neighbors)",
+      "band": "r",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59660,
+        "A_raw": 59654,
+        "A_corrected": 56970,
+        "S_lotz2004_statmorph_like_v1_raw": 59665,
+        "S_lotz2004_statmorph_like_v1_corrected": 56977,
+        "S_conselice2003_like_v1_raw": 59668,
+        "S_conselice2003_like_v1_corrected": 56980,
+        "Gini_aperture_v1": 59668,
+        "M20_aperture_v1": 59663,
+        "axis_ratio_positive_aperture_v1": 59668
+      },
+      "export_sha256": "2418206d7892ed1dbc65b0735dcde959e5b87ae85be25e23587006346a3cf686"
+    },
+    {
+      "index": 62,
+      "title": "GALFIT g+i fitted properties",
+      "projection": "UMAP (15 neighbors)",
+      "band": "i",
+      "rows": 59780,
+      "matched": 59780,
+      "finite": {
+        "C": 59610,
+        "A_raw": 59678,
+        "A_corrected": 57330,
+        "S_lotz2004_statmorph_like_v1_raw": 59679,
+        "S_lotz2004_statmorph_like_v1_corrected": 57331,
+        "S_conselice2003_like_v1_raw": 59692,
+        "S_conselice2003_like_v1_corrected": 57343,
+        "Gini_aperture_v1": 59695,
+        "M20_aperture_v1": 59684,
+        "axis_ratio_positive_aperture_v1": 59695
+      },
+      "export_sha256": "ce78a7591010b47f49c8b3aad6a84bc8f736d421c11ea0295f66721bf397165e"
+    }
+  ],
+  "default_embedding": 58
+}

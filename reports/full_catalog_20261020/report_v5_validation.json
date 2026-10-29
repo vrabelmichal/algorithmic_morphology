@@ -1,0 +1,30 @@
+{
+  "validated_utc": "2026-10-29T12:57:05.600543+00:00",
+  "report": "report_v5.html",
+  "checks": {
+    "html_sha256": "5197f690fe451fbc80c80e4c2bffd6eb2964cf8143406f6fb515b396fff08003",
+    "frozen_inputs_unchanged": 25,
+    "asset_and_data_files": 971,
+    "previous_revisions_unchanged": [
+      "report_v1.html",
+      "report_v2.html",
+      "report_v3.html",
+      "report_v4.html"
+    ],
+    "internal_anchors": 186,
+    "images_verified": 368,
+    "local_links": 378,
+    "figures_referenced_from_text": 39,
+    "figure_panels": 368,
+    "embedding_maps": 630,
+    "references": 29,
+    "prose_numbers_checked": [
+      "0.61/0.73/0.74",
+      "0.72/0.75/0.78",
+      "-0.41/-0.44/-0.42",
+      "68\u201378%",
+      "2.57"
+    ]
+  },
+  "status": "passed"
+}
