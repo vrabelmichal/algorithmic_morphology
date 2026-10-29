@@ -176,3 +176,10 @@ static figures. It is embedded through inline `srcdoc`, so it also works when
 opening the report from disk. A separate `association_explorer.html` is provided.
 Reproduce this presentation-only addition with
 `python scripts/integrate_association_explorer.py` (new revision required if v4 exists).
+
+Report revision 5 reorganises the same results by morphology family: one section
+each for concentration, asymmetry and clumpiness, supplementary diagnostics kept
+separate, single-panel figures laid out in responsive HTML grids, and a
+plain-language glossary with citations. Rebuild with
+`python scripts/build_report_v5.py` and audit with
+`python scripts/validate_report_v5.py` (presentation-only; refuses to overwrite v5).

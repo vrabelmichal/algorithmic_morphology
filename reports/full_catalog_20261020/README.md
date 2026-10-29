@@ -57,3 +57,26 @@ Revision 4 adds the chat's interactive correlation explorer directly to section
 explorer inline; `association_explorer.html` also opens independently. All v3
 scientific data and figures remain unchanged. See `report_v4_manifest.json` and
 `report_v4_validation.json`.
+
+## Revision 5: organised by concentration, asymmetry and clumpiness
+
+`index.html` now defaults to [revision 5](report_v5.html). It is presentation-only:
+the same frozen morphology table and hashed v2/v3 analysis tables, redrawn as
+single-axes figures arranged in HTML grids that collapse to one column on phones.
+
+- Sections 4–6 cover C, A and S separately; Gini, M20 and shape are in Section 7.
+  Coloured tags mark the metric family of every section and figure.
+- Each of the 39 figures says why it is shown, what to look for and which data
+  it uses, and every figure is referenced from the text.
+- Section 2 explains each concept (Petrosian radius, the indices, Sersic/GALFIT
+  quantities, surface brightness, rank statistics, PCA/UMAP) in plain language,
+  with citations.
+- The 63 ten-panel embedding composites are redrawn as 630 single-metric maps
+  (`paper_v5_assets/emb_*`), with a map and band selector in Section 9.
+- Binned GALFIT trends for q+ were not stored in v2; they are recomputed with the
+  v2 algorithm after it reproduces the stored v2 rows exactly
+  (`paper_v5_data/galfit_binned_trends_axis_ratio.csv`).
+
+Build: `python scripts/build_report_v5.py`; audit: `python scripts/validate_report_v5.py`.
+See `report_v5_manifest.json` (input, asset and code hashes) and
+`report_v5_validation.json`. Revisions 1–4 are unchanged.

@@ -20,5 +20,10 @@
     "html": "report_v4.html",
     "sha256": "2fb9c1b17824847a39d98788f0aa223323d1aa38d5e8dd041aa08ee5888e0e71",
     "validation": "report_v4_validation.json"
+  },
+  "v5": {
+    "html": "report_v5.html",
+    "sha256": "5197f690fe451fbc80c80e4c2bffd6eb2964cf8143406f6fb515b396fff08003",
+    "validation": "report_v5_validation.json"
   }
 }
