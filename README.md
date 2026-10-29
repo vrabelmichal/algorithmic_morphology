@@ -183,3 +183,5 @@ separate, single-panel figures laid out in responsive HTML grids, and a
 plain-language glossary with citations. Rebuild with
 `python scripts/build_report_v5.py` and audit with
 `python scripts/validate_report_v5.py` (presentation-only; refuses to overwrite v5).
+Revision 6 (`scripts/build_report_v6.py`, `scripts/validate_report_v6.py`) refines
+that layout to three-column grids and data-driven map/trend ranges.

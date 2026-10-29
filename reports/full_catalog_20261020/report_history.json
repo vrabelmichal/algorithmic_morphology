@@ -25,5 +25,10 @@
     "html": "report_v5.html",
     "sha256": "5197f690fe451fbc80c80e4c2bffd6eb2964cf8143406f6fb515b396fff08003",
     "validation": "report_v5_validation.json"
+  },
+  "v6": {
+    "html": "report_v6.html",
+    "sha256": "561c18f4d1a3ea5cca3920c226e510c2c28f18a949c1ef6e6eac2a33275013bc",
+    "validation": "report_v6_validation.json"
   }
 }

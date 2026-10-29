@@ -80,3 +80,13 @@ single-axes figures arranged in HTML grids that collapse to one column on phones
 Build: `python scripts/build_report_v5.py`; audit: `python scripts/validate_report_v5.py`.
 See `report_v5_manifest.json` (input, asset and code hashes) and
 `report_v5_validation.json`. Revisions 1–4 are unchanged.
+
+## Revision 6: layout and colour-range fixes
+
+`index.html` now defaults to [revision 6](report_v6.html); revision 5 is unchanged.
+GALFIT, trend and three-band panels use three columns on desktop, with raw and
+sky-corrected outputs as labelled sub-grids; only sections (not figures) carry
+the family stripe. Clustering-map colour ranges now come from the pooled
+1st–99th percentile of the plotted *cell medians* across all 63 maps, and trend
+y ranges from the plotted medians and robust 16–84% band edges. Build with
+`python scripts/build_report_v6.py`; audit with `python scripts/validate_report_v6.py`.
